@@ -1,0 +1,73 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <main>
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'img/service/welding.png' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="hero-cap hero-cap2 pt-120">
+                                <h2>Perkhidmatan Pemesinan</h2>
+                                <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:index' %}">Utama</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' %}">Servis</a></li> 
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' 1 %}">Perkhidmatan Pemesinan</a></li> 
+                                </ol>
+                            </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Services Details Start -->
+        <div class="services-details-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-services section-padding2">
+                            <div class="details-img mb-40">
+                                <img src="{% static 'img/service/welding_picture.jpeg' %}" alt="">
+                            </div>
+                            <div class="details-caption">
+                                <p>KCK KOK ENGINEERING SDN BHD yang terletak di Jerteh, Terengganu adalah pengeluar besi terkemuka di bandar. Terkenal dengan ulasan pelanggan yang paling positif, perkhidmatan KCK dicari dan syarikat kerja logam Jerteh terbaik. Berlesen dan diinsuranskan dengan betul untuk semua perkhidmatan mereka, anda pasti mendapat produk dan perkhidmatan terbaik di sini. Dalam sector pengimpalan pula, syarikat kami menyediakan perkhidmatan pemesinan khusus untuk operasi pembuatan kecil, sederhana dan besar di industry seperti aeroangkasa, kerajaan dan penjagaan kesihatan.</p>
+
+                                <p>Antara perkhidmatan pemesinan yang kami sediakan ialah prototaip, produk pengeluaran kecil dan pesanan pembelian dengan pelepasan jadual berkala yang dihantar tepat pada waktunya sesuai dengan pelbagai jenis projek. 
+                                    <ul class="list-group text-center mb-50">
+                                        <li class="list-group-item list-group-item-success mb-10">Pemotongan Logam</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Pembakaran Logam</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Pengelasan Logam</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Merangkumi Logam</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Pembentukan Logam</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Pemasangan Logam</li>
+                                    </ul>
+                                </p>
+
+                                <h3>Bagaimana kita dapat membantu?</h3>
+                                <p>Syarikat ini adalah penyedia pemesinan yang berpusat di Terengganu dengan berpengalaman lebih dari 30 tahun dalam industri. Sehingga kini, kami secara beransur-ansur menerima pelanggan dari seluruh Malaysia. </p>
+                                <p>Projek kimpalan logam merangkumi segalanya dari pagar tangan hingga peralatan dan mesin berat. Subsektor tertentu merangkumi alat makan dan alat tangan; logam seni bina dan struktur; pembuatan perkakasan; pembuatan spring dan wayar; pembuatan skru, mur, dan bolt; dan penempaan dan penandaan.</p>
+                                <p>Perkhidmatan ini disediakan untuk memenuhi keperluan pelbagai jenis projek.</p>
+                                <p>Jika anda berminat untuk 'order', terdapat lima komponen dalam perkhidmatan pembekal konkrit iaitu: 
+                                    <ul class="text-center list-group">
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Menghantarkan gambar logam yang diingin diubah melalui <a href="wa.link/i8pybl">Whatsapp:</a> 012-958 3992</li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Cadangkan Masa yang sesuai untuk penghantaran </li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Proses Pembuatan </li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Penerimaan Produk Anda Di Lokasi Kilang Kami</li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Membuat Bayaran </li>
+                                    </ul><br>
+                                    Langkah-langkah ini perlu diikuti bagi mendapatkan perkhidmatan bekalan di syarikat kami. Kami juga menyediakan perkhidmatan kren dengan trak campuran konkrit bagi memudahkan semasa proses penghantaran jika pelanggan memerlukan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Details End -->
+    </main>
+{% endblock %}

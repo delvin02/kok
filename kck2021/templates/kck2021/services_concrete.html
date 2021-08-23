@@ -1,0 +1,76 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <main>
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'img/service/concrete.jpeg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="hero-cap hero-cap2 pt-120">
+                                <h2>KCK ReadyMix</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' %}"> Perkhidmatan</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' 2 %}"> Pembekal Konkrit</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Services Details Start -->
+        <div class="services-details-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-services section-padding2">
+                            <div class="details-img mb-40">
+                                <img src="{% static 'img/service/crane.jpeg' %}" alt="">
+                            </div>
+                            <div class="details-caption">
+                                <p>Antara salah satu perkhidmatan yang ditawarkan dalam syarikat ini ialah kami menyediakan perkhidmatan dalam sektor pembekalan konkrit.  Loji pencampuran konkrit digunakan terutamanya untuk menghasilkan konkrit untuk penggunaan sendiri, penduduk tempatan ataupun kontraktor lain. Oleh itu, ia dibina berdekatan dengan tapak pembinaan jalan raya. </p>
+
+                                <p>Loji pencampuran konkrit ini mempunyai beberapa kelebihan iaitu pendudukan tanah kecil, konfigurasi ditetapkan mengikut keperluan, penjimatan kos dan mudah dikendalikan.
+                                    KCK ReadyMix sesuai dalam sektor-sektor yang melibatkan dalam:
+                                    <ul class="list-group text-center mb-50">
+                                        <li class="list-group-item list-group-item-success mb-10">Cerapan</li>
+                                        <li class="list-group-item list-group-item-success mb-10"> Struktur Seni Bina</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Asas Pembangunan</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Lebuh Raya</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Jalan Raya dan Jambatan</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Struktur Tempat Letak Kereta</li>
+                                        <li class="list-group-item list-group-item-success mb-10">Dinding dan Tapak untuk Pintu Pagar</li>
+                                        <li class="list-group-item list-group-item-success mb-10"> Pagar dan Tiang</li>
+                                    </ul>
+                                </p>
+
+                                <h3>Bagaimana kita dapat bantu?</h3>
+                                <p>Untuk perkhidmatan sektor pembekal konkrit, kemudahan yang disediakan ini sesuai untuk mereka yang mahukan penjimatan daripada aspek masa, kos dan tenaga. Loji pencampur konkrit ini digunakan bagi menghasilkan konkrit homogen dan seragam dalam pelbagai aplikasi pembinaan. </p>
+                                <p>Jika anda berminat untuk 'order', terdapat lima komponen dalam perkhidmatan pembekal konkrit iaitu: 
+                                    <ul class="text-center list-group">
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Permintaan Sebut Harga melalui <a href="https://wa.link/218sbt">Whatsapp</a></li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Cadangkan Masa yang sesuai untuk penghantaran </li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Membuat bayaran </li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Proses Pembuatan </li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Penghantaran </li>
+                                        <li class="list-group-item list-group-item-secondary mb-10"> Penerimaan Produk anda </li>
+                                    </ul><br>
+                                    Langkah-langkah ini perlu diikuti bagi mendapatkan perkhidmatan bekalan di syarikat kami. Kami juga menyediakan perkhidmatan kren dengan trak campuran konkrit bagi memudahkan semasa proses penghantaran jika pelanggan memerlukan.
+                                </p>
+                                <p>Loji pencampur konkrit ini memainkan peranan penting dalam proses lapisan antara lapisan dengan agregat dan simen memandangkan sebilangan agregat memerlukan pencampuran yang konsisten antara simen dan air untuk mengukuhkan unsur-unsur konkrit. Hal ini demikian, setiap kilang mesti menghasilkan konkrit secara konsisten dalam perkadaran yang sama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Details End -->
+    </main>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <main>
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'img/service/construction.jpeg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="hero-cap hero-cap2 pt-120">
+                                <h2>Sektor Pembinaan</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' %}"> Perkhidmatan</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' 3 %}"> Pembinaan</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Services Details Start -->
+        <div class="services-details-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-services section-padding2">
+                            <div class="details-img mb-40">
+                                <img src="{% static 'img/service/construction_picture.jpeg' %}" alt="">
+                            </div>
+                            <div class="details-caption">
+                                <p>dalam sector pengimpalan pula, syarikat kami menyediakan perkhidmatan pemesinan khusus untuk operasi pembuatan kecil, sederhana dan besar di industry seperti aeroangkasa, kerajaan dan penjagaan kesihatan.</p>
+
+                                <p class="mb-50">Bagi memastikan perkhidmatan yang cemerlang,  kami menawarkan pelbagai khidmat kepakaran yang berpengalaman dan terbaik kepada semua pelanggan.  </p>
+
+                                <h3>Bagaimana kita dapat bantu?</h3>
+                                <p>Bagi perkhidmatan sector pembinaan, projek pembinaan skala besar memerlukan kepakaran dan teknologi. Sesuatu pembinaan biasanya diketuai oleh ketua projek yang akan dibantu oleh pengurus pembinaan, jurutera seni bina, jurutera pembinaan atau arkitek. </p>
+                                
+                                <p>Justeru itu, untuk memastikan pembinaan berjalan dengan lancar, perancangan yang berkesan amat penting. KCK terkenal dengan projek infrastruktur yang bertanggungjawab menjaga aliran elektrik dan air ke rumah dan tapak perniagaan. KCK juga bertanggungjawab untuk jalan raya, jambatan dan cara transit massa lain yang digunakan untuk menghantar orang dan barang ke seluruh negara.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Details End -->
+    </main>
+{% endblock %}

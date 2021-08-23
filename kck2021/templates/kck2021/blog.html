@@ -1,0 +1,197 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="slider-area ">
+    <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'img/hero/blog.jpeg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap pt-100">
+                        <h2> KCK Blog</h2>
+                        <nav aria-label="breadcrumb ">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#"> Blog</a></li> 
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="blog_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                    {% for post in pages %}
+                    
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ post.thumbnail.url }}" alt="{{ post.title }} ">
+                                <a href="{% url 'kck:readblog' post.slug %}" class="blog_item_date">
+                                    <h3>{{ post.day }}</h3>
+                                    <p>{{ post.month }}</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{% url 'kck:readblog' post.slug %}">
+                                    <h2> {{ post.title }}</h2>
+                                </a>
+                                <p>{{ post.intro }}</p>
+                                <a href="{% url 'kck:readblog' post.slug %}" class="genric-btn info-border">Read more » </a>
+<!--                                <ul class="blog-info-link">-->
+<!---->
+<!--                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>-->
+<!--                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>-->
+<!--                                </ul>-->
+                            </div>
+                        </article>
+                        {% empty %}
+                            <h2> No result found. </h2>
+                    {% endfor %}
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                {% if pages.has_previos %}
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <i class="ti-angle-left"></i>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% for i in nums %}
+
+                                <li class="page-item">
+                                    <a href="?page={{ forloop.counter }}" class="page-link">{{ forloop.counter }}</a>
+                                </li>
+                                {% endfor %}
+                                {% if pages.has_next%}
+                                <li class="page-item">
+                                    <a href="?page={{pages.next_page_number}}" class="page-link" aria-label="Next">
+                                        <i class="ti-angle-right"></i>
+                                    </a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                   <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget search_widget">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <input name="search" type="text" class="form-control" placeholder='Search Keyword'
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Masukan topik'">
+                                            <div class="input-group-append">
+                                                <button class="btns" type="button"><i class="ti-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit">Search</button>
+                                </form>
+
+                            </aside>
+                            <aside class="single_sidebar_widget post_category_widget">
+                                <div class="position-sticky">
+                                    <h4 class="widget_title text-center"><a class="kck" href="kckok.my">KCK KOK ENGINEERING</a> </h4>
+                                    <div class="media">
+                                        <p><a class="kck" href="kckok.my">KCK KOK ENGINEERING</a> adalah sebuah syarikat yang ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. Syarikat KCK menjalankan pelbagai jenis perniagaan yang merangkumi semua skop pembinaan yang awak dapat menamakan. Selain itu, syarikat KCK juga melibatkan diri dalam pelbagai projek sama ada projek swasta atau agensi kerajaan.</p>
+                                    </div>
+                                </div>
+                            </aside>
+                            {% if recent %}
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title">Artikel Rawak</h3>
+                                {% for post in recent %}
+                                <div class="media post_item">
+                                    <img src="{{ post.thumbnail.url }}" alt="{{ post.title }}" width="80px" height="auto">
+                                    <div class="media-body">
+                                        <a href="{% url 'kck:readblog' post.slug %}">
+                                            <h3>{{ post.title|truncatewords:7}} <h3>
+                                        </a>
+                                        <p>{{ post.date_added|date:'Y M d D' }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </aside>
+                            {% endif %}
+
+                        
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Kategori</h4>
+                            <ul class="list cat-list">
+                            {% for article in categories %}
+                                <li>
+                                    <a href="{% url 'kck:catBlog' article.category%}" class="d-flex">
+                                        <p> {{ article.category }} – </p>
+                                        <p> &nbsp; {{ article.articleCategories.count }}</p>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </aside>
+<!---->
+<!---->
+<!--                        <aside class="single_sidebar_widget instagram_feeds">-->
+<!--                            <h4 class="widget_title">Instagram Feeds</h4>-->
+<!--                            <ul class="instagram_row flex-wrap">-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img-fluid" src="assets/img/post/post_5.png" alt="">-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img-fluid" src="assets/img/post/post_6.png" alt="">-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img-fluid" src="assets/img/post/post_7.png" alt="">-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img-fluid" src="assets/img/post/post_8.png" alt="">-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img-fluid" src="assets/img/post/post_9.png" alt="">-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img-fluid" src="assets/img/post/post_10.png" alt="">-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </aside>-->
+<!---->
+<!---->
+<!--                        <aside class="single_sidebar_widget newsletter_widget">-->
+<!--                            <h4 class="widget_title">Newsletter</h4>-->
+<!---->
+<!--                            <form action="#">-->
+<!--                                <div class="form-group">-->
+<!--                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"-->
+<!--                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>-->
+<!--                                </div>-->
+<!--                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"-->
+<!--                                    type="submit">Subscribe</button>-->
+<!--                            </form>-->
+<!--                        </aside>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

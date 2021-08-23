@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js" lang="ms">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %} KCK KOK ENGINEERING SDN BHD {% endblock %}</title>
+    <meta name="description" content="KCK KOK ENGINEERING adalah sebuah syarikat yang berada di Jerteh Terengganu, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.">
+    <meta name="keywords" content="kck kok engineering, simen, kck kren, kck simen, kck readymix, kck jerteh, kok engineering, kckok, simen setiu, simen kampung raja, kck kampung raja, kck kren">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo/kcklogo.png' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)"
+        href="{% static 'css/mobile.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width:1024px)"
+        href="{% static 'css/tablet.css' %}" />
+
+
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'img/logo/kcklogo.png' %}" alt="kck">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header">
+                <div class="header-top d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>
+                                        <li>+(60) 12-988 6348 (AKOK)</li>
+                                        <li>kckokengineering@kckok.my</li>
+                                        <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <ul class="header-social">
+                                        <li><a href="https://www.instagram.com/kck.kok/"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/kckokengineering"><i class="fab fa-facebook-f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2 col-md-1">
+
+                                <div class="logo">
+                                    <!-- logo-1 -->
+                                    <a href="index.html" class="big-logo"><img src="assets/img/logo/kcklogo.png"
+                                            alt=""></a>
+                                    <!-- logo-2 -->
+                                    <a href="index.html" class="small-logo"><img src="assets/img/logo/kcklogo-small.png"
+                                            alt=""></a>
+                                    <a class="navbar-brand" href="{% url 'kck:index' %}">KCK <span>KOK </span>ENGINEERING</a>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="{% url 'kck:index' %}">Utama</a></li>
+                                            <li><a href="{% url 'kck:about' %}">Tentang Kami</a></li>
+                                            <li><a href="{% url 'kck:project' %}">Projek</a></li>
+                                            <li><a href="{% url 'kck:services' %}">Perkhidmatan</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{% url 'kck:services' 1 %}">KCK Kimpalan</a></li>
+                                                    <li><a href="{% url 'kck:services' 2 %}">KCK ReadyMix</a></li>
+                                                    <li><a href="{% url 'kck:services' 3 %}">KCK Pembinaan</a></li>
+                                                    <li><a href="{% url 'kck:services' 4 %}">KCK Pasir</a></li>
+                                                    <li><a href="{% url 'kck:services' 5 %}">KCK Mobil-Kren</a></li>
+                                                    <li><a href="{% url 'kck:services' 6 %}">KCK Fabrikasi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{% url 'kck:blog' %}">Blog</a></li>
+                                            <li><a href="{% url 'kck:career' %}">Jawatan</a></li>
+                                            <li><a href="{% url 'kck:contact' %}">Hubungi Kami</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-3">
+                                <div class="header-right-btn f-right d-none d-lg-block">
+                                    <a href="{% url 'kck:contact' %}" class="btn">Hubungi Sekarang!</a>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    {% block body %}
+    <!-- ANYTHING GOES HERE -->
+    {% endblock %}
+
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-main">
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-md-12 col-sm-8">
+                            <div class="single-footer-caption mb-30 text-center">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html"><img class="align-middle"
+                                            src="{%static 'img/logo/kcklogo.png' %}" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Alternatif</h4>
+                                    <ul>
+                                        <li><a href="{% url 'kck:about' %}">Tentang Kami</a></li>
+                                        <li><a href="{% url 'kck:services' %}">Perkhidmatan</a></li>
+                                        <li><a href="{% url 'kck:project' %}">Projek</a></li>
+                                        <li><a href="{% url 'kck:contact' %}">Hubungi Kami </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Hubungi Kami</h4>
+                                    <div class="footer-pera">
+                                        <p class="info1">Lot 1018 Taman Saujana, 22000 Jerteh Terengganu</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="https://wa.link/218sbt">Whatsapp: +60 12 988-6348</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <!-- Map -->
+                                <div class="map-footer" border="2px solid green">
+                                    <div class="mapouter-footer">
+                                        <div class="gmap_canvas-footer">
+                                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=326&amp;height=289&amp;hl=en&amp;q=kck kok Jerteh terengganu&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                            <a href="https://www.fnfgo.com/">FNF Go</a>
+                                        </div>
+                                        <style>
+                                            .mapouter-footer {
+                                            position: relative;
+                                            text-align: right;
+                                            width: 100%;
+                                            height: 289px;
+                                            }
+
+                                            .gmap_canvas-footer {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            width: 100%;
+                                            height: 289px;
+                                            }
+
+                                            .gmap_iframe {
+                                            height: 289px !important;
+                                            }
+                                        </style>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-info" style="background: #c0762b;color: white;border-radius: 20px;">
+                            <div class="col-sm-12 col-12">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="header-info-left">
+                                        <ul class="d-flex flex-column text-center pt-20 pb-20 justify-content-center">
+                                            <li>+(60) 12-988 6348 (AKOK)</li>
+                                            <li>kckokengineering@kckok.my</li>
+                                            <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-12 pb-20">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="header-info-right">
+                                        <ul class="header-social d-inline-flex justify-content-center">
+                                            <li class="pl-10 pr-10"><a href="https://www.instagram.com/kck.kok/" style="color: black;font-size: 24px;"><i class="fab fa-instagram"></i></a></li>
+                                            <li class="pl-10 pr-10"><a href="https://www.facebook.com/kckokengineering" style="color: black;font-size: 24px;"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Copy-Right -->
+                        <div class="row align-items-center">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right">
+                                    <p class="text-center">
+                                        Copyright &copy;<script>
+                                            document.write(new Date().getFullYear());
+                                        </script> All rights reserved
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!-- Date Picker -->
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/animated.headline.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Scrollup, nice-select, sticky-->
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+
+    <!-- counter , waypoint -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src={% static '/js/jquery.form.js"' %}></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

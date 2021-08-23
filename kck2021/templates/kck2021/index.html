@@ -1,0 +1,732 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <main>
+
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="slider-active">
+                <div class="single-slider hero-overly slider-height d-flex align-items-center"
+                    data-background="{% static 'img/hero/background-2.jpeg' %}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <div class="hero__caption">
+                                    <div class="hero-text1">
+                                        <span data-animation="fadeInUp" data-delay=".3s">Selamat Datang 😊</span>
+                                    </div>
+                                    <h1 data-animation="fadeInUp" data-delay=".5s">solid as concrete</h1>
+                                    <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
+                                        <h2>KCK</h2>
+                                        <h2>KCK</h2>
+                                    </div>
+                                    <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
+                                        <span>KCK KOK ENGINEERING</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Qualities start-->
+        
+        <section class="ftco-section ftco-no-pt ftco-no-pb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle mb-55">
+                            <div class="front-text">
+                                <h2 class=""><span class="companyColor">Kualiti </span> kami</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
+                        <div class="media block-6 d-block text-center pt-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="icon-img">
+                                    <img src="{% static 'img/icon/truck.svg' %}">
+                                </span>
+                            </div>
+                            <div class="media-body p-2 mt-3">
+                                <h3 class="heading">Pembekal</h3>
+                                <p>Pembekal sebagai penyedia perkhidmatan atau barang sama ada secara langsung kepada majikan atau pembekal lain dalam rantaian bekalan. Menyediakan loji pencampur konkrit bagi menghasilkan konkrit homogen dan seragam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
+                        <div class="media block-6 d-block text-center pt-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="icon-img">
+                                    <img src="{% static 'img/icon/welding-mask.svg' %}" alt="welding">
+                                </span>
+                            </div>
+                            <div class="media-body p-2 mt-3">
+                                <h3 class="heading">Kimpalan</h3>
+                                <p>Kimpalan berperanan dalam mengendalikan pelbagai sistem di sesebuah bangunan. Kaedah ini digunakan untuk fabrikasi dan pemeliharaan kerangka struktur dan struktur sokongan untuk komponen besar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
+                        <div class="media block-6 d-block text-center pt-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="icon-img">
+                                    <img src="{% static 'img/icon/building.svg' %}" alt="construction">
+                                </span>
+                            </div>
+                            <div class="media-body p-2 mt-3">
+                                <h3 class="heading">Pembinaan</h3>
+                                <p>Syarikat perniagaan yang berkenaan dengan pembinaan kemudahan infrastruktur seperti bangunan, jambatan, terowong, jalan raya dan telekomunikasi (termasuk sambungan Internet dan akses jalur lebar).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
+                        <div class="media block-6 d-block text-center pt-md-4">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="icon-img">
+                                    <img src="{% static 'img/icon/crane.svg' %}" alt="crane">
+                                </span>
+                            </div>
+                            <div class="media-body p-2 mt-3">
+                                <h3 class="heading">Penyewaan</h3>
+                                <p>Merupakan satu alternatif untuk memiliki sesuatu jentera untuk jangka masa yang pendek. Penyewaan membolehkan kontraktor mendapatkan jentera yang dikehendaki dalam jangka masa yang tertentu dengan kadar harga tertentu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters" style="border-bottom: 2px solid grey;">
+                    <div class="col-md-12 col-lg-4 services-2 p-4 py-5 d-flex ftco-animate">
+                        <div class="py-3 d-flex">
+                            <div class="icon">
+                                <span class="icon-img-section-quality">
+                                    <img src="{% static 'img/icon/engineer.svg' %}" alt="professional">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <h3>Pakar &amp; Profesional</h3>
+                                <p class="mb-0">Menggunakan teknologi GPS untuk memastikan bancuhan konkrit dituangkan dengan ketinggian yang tepat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 services-2 p-4 py-5 d-flex ftco-animate">
+                        <div class="py-3 d-flex">
+                            <div class="icon">
+                                <span class="icon-img-section-quality">
+                                    <img src="{% static 'img/icon/reliability.svg' %}" alt="amanah">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <h3>Kredibiliti Tinggi</h3>
+                                <p class="mb-0">Sebagai sebuah syarikat yang dipercayai untuk bekerjasama dalam mengendalikan sesebuah projek.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 services-2 p-4 py-5 d-flex ftco-animate">
+                        <div class="py-3 d-flex">
+                            <div class="icon">
+                                <span class="icon-img-section-quality">
+                                    <img src="{% static 'img/icon/efficient.svg' %}" alt="effisen">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <h3>okongan Perkhidmatan</h3>
+                                <p class="mb-0">Menyediakan kemudahan khidmat pelanggan sepanjang 24 jam sehari bagi menjawab segala pertanyaan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-4 services-2 p-4 py-5 d-flex ftco-animate">
+                        <div class="py-3 d-flex">
+                            <div class="icon">
+                                <span class="icon-img-section-quality">
+                                    <img src="{% static 'img/icon/innovate.svg' %}" alt="professional">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <h3>Inovasi</h3>
+                                <p class="mb-0">Mengenal pasti masalah dan menggariskan Langkah-langkah perlaksanaan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 services-2 p-4 py-5 d-flex ftco-animate">
+                        <div class="py-3 d-flex">
+                            <div class="icon">
+                                <span class="icon-img-section-quality">
+                                    <img src="{% static 'img/icon/efisen.svg' %}" alt="amanah">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <h3>Harga Berpatutan</h3>
+                                <p class="mb-0">Menawarkan harga yang berpatutan sesuai dengan bajet pelanggan mengikut pelbagai spesifikasi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 services-2 p-4 py-5 d-flex ftco-animate">
+                        <div class="py-3 d-flex">
+                            <div class="icon">
+                                <span class="icon-img-section-quality">
+                                    <img src="{% static 'img/icon/amanah.svg' %}" alt="effisen">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <h3>Amanah</h3>
+                                <p class="mb-0">Syarikat yang sentiasa memperkukuhkan tahap mekanisma kawalan dan integriti operasi perniagaan kami.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="ftco-no-pt ftco-no-pb">
+            <div class="container">
+                <div class="row d-flex no-gutters">
+                    <div class="col-sm-12 col-lg-6 d-flex">
+                        <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
+                            data-background="{% static 'img/hero/service1.jpg' %}">
+                            <a href="#" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                                <span class="icon-play">
+                                    <img src="{% static 'img/icon/playbutton.svg' %}" width="30px">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 pl-md-5">
+                        <div class="row justify-content-start py-5">
+                            <div class="col-md-12 heading-section ftco-animate pl-md-4 py-md-4">
+                                <span class="subheading">Selamat Datang ke KCK KOK Engineering</span>
+                                <h2 class="mb-4">IMAGINASI MENJADI SUATU REALITI </h2>
+                                <p>KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. Perniagaan teras utama KCK melibatkan perkhidmatan reka bentuk dan kejuruteraan dalaman untuk pelbagai projek.</p>
+                                <div class="tabulation-2 mt-4">
+                                    <ul class="nav nav-pills nav-fill d-md-flex d-block">
+                                        <li class="nav-item mb-md-0 mb-2">
+                                            <a class="nav-link active py-2" data-toggle="tab" href="#home1">
+                                                Misi</a>
+                                        </li>
+                                        <li class="nav-item px-lg-2 mb-md-0 mb-2">
+                                            <a class="nav-link py-2" data-toggle="tab" href="#home2">Visi</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">
+                                                Nilai</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content bg-light rounded mt-2">
+                                        <div class="tab-pane container p-0 active" id="home1">
+                                            <p>Menjadi peneraju dalam bidang pembinaan yang menyediakan perkhidmatan pengurusan atau bangunan projek yang unggul dan berkualiti untuk kemaslahatan pengguna. </p>
+                                        </div>
+                                        <div class="tab-pane container p-0 fade" id="home2">
+                                            <p>Memacu dan menjana nilai yang baik dalam menjadi kontraktor yang terbaik dalam menyiapkan projek dan menyediakan perkhidmatan bermutu tinggi untuk industri pembinaan yang kompetitif. </p>
+                                        </div>
+                                        <div class="tab-pane container p-0 fade" id="home3">
+                                            <p>Syarikat yang memaksimumkan penggunaan kemudahan teknologi binaan yang terkini ,menjadi proaktif dalam menjalani tren baru yang terlibat dalam projek-projek kerjasama yang besar.  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ftco-counter ftco-no-pt ftco-no-pb" id="section-counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18 d-flex">
+                            <div class="text d-flex align-items-center">
+                                <div class="count-number">
+                                    <span class="counter number"><strong>12</strong></span>+
+                                </div>
+                            </div>
+                            <div class="text-2">
+                                <span>Tahun <br>Perkhidmatan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18 d-flex">
+                            <div class="text d-flex align-items-center">
+                                <div class="count-number">
+                                    <span class="counter number"><strong>30</strong></span>+
+                                </div>
+                            </div>
+                            <div class="text-2">
+                                <span>Projek <br>Diselesai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18 d-flex">
+                            <div class="text d-flex align-items-center">
+                                <div class="count-number">
+                                    <span class="counter number"><strong>30</strong></span>+
+                                </div>
+                            </div>
+                            <div class="text-2">
+                                <span>Kepakaran Dalam<br>Pembinaan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18 d-flex">
+                            <div class="text d-flex align-items-center">
+                                <div class="count-number">
+                                    <span class="counter number"><strong>40</strong></span>+
+                                </div>
+                            </div>
+                            <div class="text-2">
+                                <span>Mesin <br>Peralatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Area Start -->
+        <div class="services-area1 section-padding30">
+            <div class="container">
+                <!-- section tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle mb-55">
+                            <div class="front-text">
+                                <h2 class=""><span class="companyColor">Perkhidmatan</span> Kami</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-service-cap mb-30">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/welding.png' %}" alt="kimpalan">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="{% url 'kck:services' 1 %}">KCK Kimpalan</a></h4>
+                                <p> KCK Kimpalan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam. </p>
+                                <a href="{% url 'kck:services' 1 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            </div>
+                            <div class="service-icon">
+                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-service-cap mb-30">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/concrete.jpeg' %}" alt="simen">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="{% url 'kck:services' 2 %}">KCK ReadyMix</a></h4>
+                                <p> KCK ReadyMix menyediakan perkhidmatan dalam sektor pembekalan konkrit untuk projek-projek yang diperlukan.</p>
+                                <a href="{% url 'kck:services' 2 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            </div>
+                            <div class="service-icon">
+                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-service-cap mb-30">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/construction.jpeg' %}" alt="kontraktor">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="{% url 'kck:services' 3 %}">KCK Pembinaan</a></h4>
+                                <p> KCK Pembinaan melibat dengan projek infrastruktur seperti jalan raya, jamabatan, pembangunan dan lain-lain. </p>
+                                <a href="{% url 'kck:services' 3 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            </div>
+                            <div class="service-icon">
+                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-service-cap mb-30">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="pasir">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="{% url 'kck:services' 1 %}">KCK Pasir</a></h4>
+                                <p> KCK Pasir menjalankan perniagaan pasir lombong kepada pelanggan untuk kegunaan persenderian ataupun projek. </p>
+                                <a href="{% url 'kck:services' 1 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            </div>
+                            <div class="service-icon">
+                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-service-cap mb-30">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/craneser.jpeg' %}" alt="kren">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="{% url 'kck:services' 2 %}">KCK Kren</a></h4>
+                                <p> KCK Kren menjalankan perniagaan berasas penyewaan Kren sekaligus dengan Lori Pencampur Konkrit sebagai pakej.</p>
+                                <a href="{% url 'kck:services' 2 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            </div>
+                            <div class="service-icon">
+                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-service-cap mb-30">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/steel.jpeg' %}" alt="kimpalan">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="{% url 'kck:services' 3 %}">KCK Fabrikasi </a></h4>
+                                <p> KCK Fabrikasi merupakan proses pengubahsuaian logam bernilai tambah yang diperlukan dalam pembuatan struktur untuk pelbagai industri. </p>
+                                <a href="{% url 'kck:services' 3 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            </div>
+                            <div class="service-icon">
+                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Area End -->
+        <!-- About Area Start -->
+        <section class="support-company-area fix pt-10">
+            <div class="support-wrapper align-items-end">
+                <div class="left-content">
+                    <!-- section tittle -->
+                    <div class="section-tittle section-tittle2 mb-55">
+                        <div class="front-text">
+                            <h2> Latar <span class="companyColor">Belakang</span></h2>
+                        </div>
+                    </div>
+                    <div class="support-caption">
+                        <p class="pera-top">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. </p>
+                        <p>Perniagaan yang berteraskan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam. Bagi perkhidmatan kimpalan dan fabrikasi, ia merangkumi kimpalan teras fluks, kimpalan aluminium, pemotongan plasma dan fabrikasi logam. </br> </br> 
+                        Selain itu, kami juga menjalankan perniagaan dalam konkrit siap pakai, yang disertakan dengan trak pengadun kren dan konkrit sebagai pakej. Ia digunakan untuk mencampurkan dan mengangkut sejumlah besar konkrit untuk kegunaan di tapak bangunan. </p>
+                        <a href="{% url 'kck:about' %}" class="btn red-btn2">read more</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <!-- img -->
+                    <div class="right-img">
+                        <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="kren">
+                    </div>
+                    <div class="support-img-cap text-center">
+                        <span>1997</span>
+                        <p>Since</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+        <!-- Project Area Start -->
+        <section class="project-area  section-padding30">
+            <div class="container">
+                <div class="project-heading mb-35">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle3">
+                                <div class="front-text">
+                                    <h2 class=""><span class="companyColor">Projek</span> Kami</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Nav Card -->
+                        <div class="tab-content active" id="nav-tabContent">
+                            <!-- card ONE -->
+                            <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <div class="project-caption">
+                                
+                                    <div class="row">
+                                        {% for project in projects %}
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img class="image-fit" src="{{ project.thumbnail.url }}" alt="{{ project.title }}">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="{% url 'kck:readproject' project.slug %}" class="plus-btn"><i
+                                                            class="ti-plus"></i></a>
+                                                    <h4><a href="{% url 'kck:readproject' project.slug %}">{{ project.title }}</a></h4>
+                                                    <h4><a href="{% url 'kck:readproject' project.slug %}">KCK</a></h4>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Nav Card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project Area End -->
+        <!-- contact with us Start -->
+        <section class="contact-with-area" data-background="{%static '/img/gallery/cr.jpeg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-9 offset-xl-1 offset-lg-1">
+                        <div class="contact-us-caption">
+                            <div class="team-info mb-30 pt-45">
+                                <!-- Section Tittle -->
+                                <div class="section-tittle section-tittle4">
+                                    <div class="front-text">
+                                        <h2 class="contact-us-h2">Berhubung dengan kami</h2>
+                                    </div>
+                                </div>
+                                <p>E-mel kepada kami untuk sebarang pertanyaan atau panggilan. kami dengan senang hati akan menjawab soalan anda dan mengadakan pertemuan dengan anda.</p>
+                                <a href="{% url 'kck:contact' %}" class="white-btn">Contact Us NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact with us End-->
+        <!-- CountDown Area Start -->
+        <div class="count-area">
+            <div class="container">
+                <div class="count-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="count-clients">
+                                <div class="single-counter">
+                                    <div class="count-number">
+                                        <span class="counter">15</span>
+                                    </div>
+                                    <div class="count-text">
+                                        <p>Lori</p>
+                                        <h5>Simen</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="count-clients">
+                                <div class="single-counter">
+                                    <div class="count-number">
+                                        <span class="counter">5</span>
+                                    </div>
+                                    <div class="count-text">
+                                        <p>Lori</p>
+                                        <h5>Pasir</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="count-clients">
+                                <div class="single-counter">
+                                    <div class="count-number">
+                                        <span class="counter">7</span>
+                                    </div>
+                                    <div class="count-text">
+                                        <p>Lori</p>
+                                        <h5>Kren</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CountDown Area End -->
+        <!-- Testimonial Start -->
+        <div class="testimonial-area t-bg testimonial-padding">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle section-tittle6 mb-50">
+                            <div class="front-text">
+                                <h2 class="t-h2"><span class="companyColor">Testimoni</span></h2>
+                            </div>
+                            <span class="back-text">Feedback</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-10 col-lg-11 col-md-10 offset-xl-1">
+                        <div class="h1-testimonial-active">
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <!-- SVG icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
+                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(192, 118, 43)"
+                                                fill-opacity="0" fill="rgb(0, 0, 0)"
+                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
+                                        </svg>
+                                        <p>Matlamat terpenting kami adalah untuk membuat pelanggan kami gembira. Untuk mencapai matlamat ini, kami mendengarkan dugaan, cabaran, dan tujuan anda dan memfokuskan usaha kami untuk memastikan bahawa kami memberikan hasil projek yang berkualiti, tepat pada waktunya dan dengan anggaran yang mempertimbangkan objektif terpenting anda. </br> Kami bangga dengan reputasi KCK sebagai kontraktor umum yang jujur ​​dan beretika yang memberikan perkhidmatan dan kualiti yang luar biasa. Kami menjemput pelanggan-pelanggan kami untuk meninjau beberapa komen dari banyak pelanggan kami yang berpuas hati.</p>
+                                    </div>
+                                    <!-- founder -->
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <div class="founder-text">
+                                            <span> Akok </span>
+                                            <p>Pengasas Syarikat</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <!-- SVG icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
+                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(192, 118, 43)"
+                                                fill-opacity="0" fill="rgb(0, 0, 0)"
+                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
+                                        </svg>
+                                        <p>Kami sangat gembira dengan rumah kami yang telah siap dibina. Keahlian dan kualiti pembinaannya luar biasa. Kami mengaitkan pembinaan yang sangat baik ini dengan profesionalisme dan kecekapan Kontraktor Projek</p>
+                                    </div>
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <div class="founder-text">
+                                            <span> Azri </span>
+                                            <p>Ex-pelanggan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <!-- SVG icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
+                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(192, 118, 43)"
+                                                fill-opacity="0" fill="rgb(0, 0, 0)"
+                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
+                                        </svg>
+                                        <p>KCK adalah salah satu kontraktor am terbaik yang pernah kami bekerjasama. Seluruh pasukan secara bijaksana menyampaikan projek dengan kualiti yang luar biasa sambil tetap mengikut jadual dan anggaran yang rendah. Kami berharap dapat bekerjasama dengan KCK lagi di masa hadapan.</p>
+                                    </div>
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <div class="founder-text">
+                                            <span>Ahmed Zakri</span>
+                                            <p>Kontraktor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <!-- SVG icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
+                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(192, 118, 43)"
+                                                fill-opacity="0" fill="rgb(0, 0, 0)"
+                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
+                                        </svg>
+                                        <p>Terima kasih kerana membimbing kami melalui proses pembinaan, bersikap baik, memahami, dan sentiasa bersedia untuk memenuhi keperluan kami. Kami menyukai ruang baru kami dan tahu bahawa ia dibina dengan yang terbaik!</p>
+                                    </div>
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <div class="founder-text">
+                                            <span> Asif</span>
+                                            <p>Ex-pelanggan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <!-- Testimonial Content -->
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <!-- SVG icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
+                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(192, 118, 43)"
+                                                fill-opacity="0" fill="rgb(0, 0, 0)"
+                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
+                                        </svg>
+                                        <p>KCK adalah salah satu kontraktor am terbaik yang pernah kami bekerjasama. Seluruh pasukan secara bijaksana menyampaikan projek dengan kualiti yang luar biasa sambil tetap mengikut jadual dan anggaran yang rendah. Kami berharap dapat bekerjasama dengan KCK lagi di masa hadapan.</p>
+                                    </div>
+                                    <div class="testimonial-founder d-flex align-items-center">
+                                        <div class="founder-text">
+                                            <span> Hadif </span>
+                                            <p>Ex-pelanggan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        <!--latest Nnews Area start -->
+        <div class="latest-news-area section-padding30" style="background: #E4B38B">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle section-tittle7 mb-50">
+                            <div class="front-text">
+                                <h2 class="">blog</h2>
+                            </div>
+                            <span class="back-text">Blog Kami</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                {% for article in latestBlog %}
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <!-- single-news -->
+                        <div class="single-news mb-30">
+                            <div class="news-img">
+                                <img src="{{ article.thumbnail.url }}" alt=" {{ article.title }}">
+                                <div class="news-date text-center">
+                                    <span>{{ article.day }}</span>
+                                    <p>{{ article.month }}</p>
+                                </div>
+                            </div>
+                            <div class="news-caption">
+                                <ul class="david-info">
+                                    <li> 
+                                    |  &nbsp; &nbsp;
+                                    {% for category in article.categories.all %}
+                                        {{ category }}&nbsp; &nbsp;
+                                    {% endfor %}
+                                    </li>
+                                </ul>
+                                <h2><a href="{% url 'kck:readblog' article.slug %}">{{ article.title }}</a></h2>
+                                <a href="{% url 'kck:readblog' article.slug %}" class="d-btn">Read more »</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!--latest News Area End -->
+
+    </main>
+{% endblock %}
