@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['kck2021.herokuapp.com', '127.0.0.1']
 INSTALLED_APPS = [
     'kck2021',
     'tinymce',
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -150,13 +151,14 @@ LOCALE_PATHS = (
 PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
 STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 
 MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
