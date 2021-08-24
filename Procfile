@@ -1,1 +1,1 @@
-web: gunicorn kok.wsgi --log-file -
+web: gunicorn kck.wsgi --log-file -
