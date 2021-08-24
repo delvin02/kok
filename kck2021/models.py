@@ -56,7 +56,7 @@ class Career(models.Model):
             MinValueValidator(1)
         ]
     )
-    timeAdded = models.DateTimeField(default=datetime.datetime.now)
+    timeAdded = models.DateTimeField(default=timezone.now)
 
     class Meta:
         ordering = ['jobName']
