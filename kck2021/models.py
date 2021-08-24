@@ -58,6 +58,7 @@ class Career(models.Model):
     )
     timeAdded = models.DateTimeField(auto_now_add=True, auto_now=False)
 
+
     class Meta:
         ordering = ['jobName']
     
