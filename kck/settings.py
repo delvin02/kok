@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@hn-38l2!17n0i+5pgfmc!lvsp!f*v%+^r+n)t1@fwkxw68v_6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kck2021.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -61,6 +61,7 @@ DEFAULT = {
 }
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     # translation
     'django.middleware.locale.LocaleMiddleware',
@@ -147,8 +148,10 @@ LOCALE_PATHS = (
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
+PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
+STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
@@ -169,3 +172,7 @@ EMAIL_POST=587
 EMAIL_HOST_USER="kckokengineering@gmail.com"
 EMAIL_HOST_PASSWORD="Kckokengineering8888"
 EMAIL_USE_TLS=True
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
