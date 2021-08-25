@@ -1,10 +1,10 @@
 from django.db import models
-from django.utils.timezone import timezone
+from django.utils.timezone import now
 from tinymce import models as tinymce_models
 from tinymce.models import HTMLField
 from datetime import datetime, date
 from django.core.validators import MinValueValidator, MaxValueValidator
-import datetime
+
 # Create your models here.
 
 class ArticleCategories(models.Model):
@@ -25,7 +25,7 @@ class Article(models.Model):
     author = models.CharField(max_length=255, default="False")
     intro = models.TextField()
     body = tinymce_models.HTMLField()
-    date_added = models.DateTimeField(default=datetime.datetime.now)
+    date_added = models.DateTimeField(default=datetime.now)
     categories = models.ManyToManyField(ArticleCategories,related_name="articleCategories")
    
     # ordered by 
@@ -56,8 +56,7 @@ class Career(models.Model):
             MinValueValidator(1)
         ]
     )
-    timeAdded = models.DateTimeField(auto_now_add=True, auto_now=False)
-
+    timeAdded = models.DateField(default=date.today)
 
     class Meta:
         ordering = ['jobName']
