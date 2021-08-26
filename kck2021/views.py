@@ -11,14 +11,9 @@ def index(request):
     latestBlog = Article.objects.all()[:2]
     projects = Project.objects.all()[:6]
 
-    for item in latestBlog:
-        query = Article.objects.get(pk=item.id)
-        categories = query.categories.all()
     return render(request, "kck2021/index.html", {
         "latestBlog": latestBlog,
-        "query": query,
-        "categories": categories,
-        "projects": projects
+        "projects": projects,
     })
 
 def about(request):

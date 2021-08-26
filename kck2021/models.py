@@ -4,7 +4,7 @@ from tinymce import models as tinymce_models
 from tinymce.models import HTMLField
 from datetime import datetime, date
 from django.core.validators import MinValueValidator, MaxValueValidator
-
+from django.utils import timezone
 # Create your models here.
 
 class ArticleCategories(models.Model):
@@ -56,7 +56,7 @@ class Career(models.Model):
             MinValueValidator(1)
         ]
     )
-    timeAdded = models.DateField(default=date.today)
+    timeAdded = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['jobName']
