@@ -97,14 +97,34 @@ WSGI_APPLICATION = 'kck.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'Delvin',
+#        'USER': 'postgres',
+#        'PASSWORD': 'admin',
+#        'HOST': '127.0.0.1',
+#        'PORT': '5432',
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbdjmfutnn3jep',
+        'USER': 'xtvbuaeepxmbyx',
+        'PASSWORD': '0dd65e237b5b214c1c098120af26f31724a4fbbb807561acdc8b45538ea42898',
+        'HOST': 'ec2-44-197-40-76.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -135,7 +155,7 @@ USE_I18N = False
 
 USE_L10N = True
 
-USE_TZ = False
+USE_TZ = True
 
 from django.utils.translation import gettext as _
 
@@ -171,7 +191,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_POST=587
 EMAIL_HOST_USER="kckokengineering@gmail.com"
-EMAIL_HOST_PASSWORD="Kckokengineering8888"
+EMAIL_HOST_PASSWORD="Kckokengineering1234"
 EMAIL_USE_TLS=True
 
 import dj_database_url
