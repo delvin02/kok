@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@hn-38l2!17n0i+5pgfmc!lvsp!f*v%+^r+n)t1@fwkxw68v_6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['kck2021.herokuapp.com', '127.0.0.1', '0.0.0.0']
 
@@ -196,5 +196,5 @@ EMAIL_HOST_PASSWORD="Kckokengineering1234"
 EMAIL_USE_TLS=True
 
 import dj_database_url
-prod_db  =  dj_database_url.config(conn_max_age=500)
+prod_db  =  dj_database_url.config(default='postgres://xtvbuaeepxmbyx:0dd65e237b5b214c1c098120af26f31724a4fbbb807561acdc8b45538ea42898@ec2-44-197-40-76.compute-1.amazonaws.com:5432/dbdjmfutnn3jep', conn_max_age=500)
 DATABASES['default'].update(prod_db)
