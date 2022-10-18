@@ -4,6 +4,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.generic import ListView, DetailView
+from django.core.mail import send_mail
 from .models import Article, ArticleCategories, Career, Department, Job, Project
 # Create your views here.
 
@@ -36,7 +37,9 @@ def servicesType(request, service_id):
         return render(request, "kck2021/services_construction.html")
 
 def contact(request):
-    return render(request, "kck2021/contact.html")
+    if request.method == "GET":
+        return render(request, "kck2021/contact.html")
+
 
 def blog(request):
     if 'search' in request.GET:
@@ -95,28 +98,6 @@ def career(request):
         "jobs": jobs
     })
 
-def enquiry(request):
-    messageContent = request.POST.get("message")
-    message_subject = request.POST.get("subject")
-    sender_name = request.POST.get("name")
-    sender_email = request.POST.get("email")
-    sender_number = request.POST.get("phoneNumber")
-
-    if messageContent and message_subject and sender_name and sender_name and sender_number:
-        concat = messageContent + ' WHATSAPP NUMBER: ' + sender_number    
-        email = EmailMessage(message_subject, concat, "kckokengineering@gmail.com", [sender_email], ['kckokengineering@kckok.my'])
-        email.content_subtype='html'
-        try:
-            email.send(fail_silently=True)
-        except BadHeaderError:
-            return HttpResponse("Invalid Header Found.")
-        return render(request, "kck2021/contact.html", {
-            "sender_name": sender_name
-        })
-    else:
-        return render(request, "kck2021/contact.html", {
-            "failed": True
-        })
 
 def project(request):
     projects = Project.objects.all()

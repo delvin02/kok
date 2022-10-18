@@ -7,7 +7,7 @@
         <!-- slider Area Start-->
         <div class="slider-area ">
             <div class="slider-active">
-                <div class="single-slider hero-overly slider-height d-flex align-items-center"
+                <div class="single-slider hero-overly vh-100 slider-height d-flex align-items-center"
                     data-background="{% static 'img/hero/background-2.jpeg' %}">
                     <div class="container">
                         <div class="row">
@@ -16,15 +16,32 @@
                                     <div class="hero-text1">
                                         <span data-animation="fadeInUp" data-delay=".3s">Selamat Datang 😊</span>
                                     </div>
-                                    <h1 data-animation="fadeInUp" data-delay=".5s">solid as concrete</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <div class="hero__caption">
                                     <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
                                         <h2>KCK</h2>
                                         <h2>KCK</h2>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <div class="hero__caption">
                                     <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
                                         <span>KCK KOK ENGINEERING</span>
                                     </div>
+                                    <h1 class="display-2 motto" data-animation="fadeInUp" data-delay=".5s"><span class="d-block">you dream it, we</span> <span id="typed" class="typed"></span></h1>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="button-hpage d-none row align-items-center justify-content-center mt-100 ">
+                            <div class="col-lg-12 text-center">
+                                <a href="{% url 'kck:contact' %}" class="btn btn-outline-success"> Talk to us </a>
                             </div>
                         </div>
                     </div>
@@ -37,6 +54,11 @@
         <section class="ftco-section ftco-no-pt ftco-no-pb">
             <div class="container">
                 <div class="row">
+                    <div class=" col-lg-12 border-bottom">
+                        <div class="malaysia-slogan text-center negara">
+                            <p class="font-weight-bold">BERKHIDMAT UNTUK <span class="malaysia-red">NEGARA</span>.<br> DEMI 🇲🇾, UNTUK 🇲🇾 </p>
+                        </div>
+                    </div>
                     <div class="col-lg-12">
                         <div class="section-tittle mb-55">
                             <div class="front-text">
@@ -132,7 +154,7 @@
                                 </span>
                             </div>
                             <div class="text">
-                                <h3>okongan Perkhidmatan</h3>
+                                <h3>Sokongan Perkhidmatan</h3>
                                 <p class="mb-0">Menyediakan kemudahan khidmat pelanggan sepanjang 24 jam sehari bagi menjawab segala pertanyaan.</p>
                             </div>
                         </div>
@@ -218,7 +240,7 @@
                                     </ul>
                                     <div class="tab-content bg-light rounded mt-2">
                                         <div class="tab-pane container p-0 active" id="home1">
-                                            <p>Menjadi peneraju dalam bidang pembinaan yang menyediakan perkhidmatan pengurusan atau bangunan projek yang unggul dan berkualiti untuk kemaslahatan pengguna. </p>
+                                            <p>Menjadi peneraju dalam bidang pembinaan yang menyediakan perkhidmatan pengurusan atau bangunan projek yang unggul untuk semua pengguna tidak kira bangsa, negara dan latar belakang. </p>
                                         </div>
                                         <div class="tab-pane container p-0 fade" id="home2">
                                             <p>Memacu dan menjana nilai yang baik dalam menjadi kontraktor yang terbaik dalam menyiapkan projek dan menyediakan perkhidmatan bermutu tinggi untuk industri pembinaan yang kompetitif. </p>
@@ -253,7 +275,7 @@
                         <div class="block-18 d-flex">
                             <div class="text d-flex align-items-center">
                                 <div class="count-number">
-                                    <span class="counter number"><strong>30</strong></span>+
+                                    <span class="counter number"><strong>20</strong></span>+
                                 </div>
                             </div>
                             <div class="text-2">
@@ -265,11 +287,11 @@
                         <div class="block-18 d-flex">
                             <div class="text d-flex align-items-center">
                                 <div class="count-number">
-                                    <span class="counter number"><strong>30</strong></span>+
+                                    <span class="counter number"><strong>20</strong></span>+
                                 </div>
                             </div>
                             <div class="text-2">
-                                <span>Kepakaran Dalam<br>Pembinaan</span>
+                                <span>Pakar Dalam<br>Pembinaan</span>
                             </div>
                         </div>
                     </div>
@@ -324,7 +346,7 @@
                                 <img src="{% static 'img/service/concrete.jpeg' %}" alt="simen">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 2 %}">KCK ReadyMix</a></h4>
+                                <h4><a href="{% url 'kck:services' 2 %}">Semix</a></h4>
                                 <p> KCK ReadyMix menyediakan perkhidmatan dalam sektor pembekalan konkrit untuk projek-projek yang diperlukan.</p>
                                 <a href="{% url 'kck:services' 2 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
@@ -402,7 +424,7 @@
         <!-- About Area Start -->
         <section class="support-company-area fix pt-10">
             <div class="support-wrapper align-items-end">
-                <div class="left-content">
+                <div class="left-content" style="padding-right: 15px;">
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
@@ -410,13 +432,13 @@
                         </div>
                     </div>
                     <div class="support-caption">
-                        <p class="pera-top">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. </p>
-                        <p>Perniagaan yang berteraskan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam. Bagi perkhidmatan kimpalan dan fabrikasi, ia merangkumi kimpalan teras fluks, kimpalan aluminium, pemotongan plasma dan fabrikasi logam. </br> </br> 
-                        Selain itu, kami juga menjalankan perniagaan dalam konkrit siap pakai, yang disertakan dengan trak pengadun kren dan konkrit sebagai pakej. Ia digunakan untuk mencampurkan dan mengangkut sejumlah besar konkrit untuk kegunaan di tapak bangunan. </p>
-                        <a href="{% url 'kck:about' %}" class="btn red-btn2">read more</a>
+                        <p class="pera-top">KCK KOK ENGINEERING, ditubuhkan pada tahun 1993, sudah berkhidmat hampir 12 tahun dalam industri konkrit dan hampir 20 tahun dalam perkhidmatan kimpalan. Perniagaan teras utama KCK melibatkan perkhidmatan reka bentuk (infra) dan kejuruteraan dalaman untuk pelbagai projek.</p>
+                        <p>Perniagaan yang berteraskan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam.
+                        <p>Menjalankan perniagaan dalam konkrit siap pakai, yang disertakan dengan trak pengadun kren dan konkrit sebagai pakej kepada sesiapa yang ingin membangunkan tapak kosong sendiri.</p>
+                        <a href="{% url 'kck:about' %}" class="mb-30 btn red-btn2">read more</a>
                     </div>
                 </div>
-                <div class="right-content">
+                <div class="right-content mb-55">
                     <!-- img -->
                     <div class="right-img">
                         <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="kren">
@@ -493,7 +515,7 @@
                                         <h2 class="contact-us-h2">Berhubung dengan kami</h2>
                                     </div>
                                 </div>
-                                <p>E-mel kepada kami untuk sebarang pertanyaan atau panggilan. kami dengan senang hati akan menjawab soalan anda dan mengadakan pertemuan dengan anda.</p>
+                                <p>E-mel kepada kami kckokengineering@gmail.com untuk sebarang pertanyaan atau panggilan. kami akan menjawab segala soalan dan pernyataan anda tentang produk kami.</p>
                                 <a href="{% url 'kck:contact' %}" class="white-btn">Contact Us NOW</a>
                             </div>
                         </div>
@@ -509,7 +531,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="count-clients">
-                                <div class="single-counter">
+                                <div class="single-counter text-left">
                                     <div class="count-number">
                                         <span class="counter">15</span>
                                     </div>
@@ -522,7 +544,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="count-clients">
-                                <div class="single-counter">
+                                <div class="single-counter text-left">
                                     <div class="count-number">
                                         <span class="counter">5</span>
                                     </div>
@@ -535,7 +557,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="count-clients">
-                                <div class="single-counter">
+                                <div class="single-counter text-left">
                                     <div class="count-number">
                                         <span class="counter">7</span>
                                     </div>
@@ -692,15 +714,14 @@
                             <div class="front-text">
                                 <h2 class="">blog</h2>
                             </div>
-                            <span class="back-text">Blog Kami</span>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                 {% for article in latestBlog %}
-                    <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class=" col-xl-6 col-lg-6 col-md-6">
                         <!-- single-news -->
-                        <div class="single-news mb-30">
+                        <div class="single-news mb-30 h-100">
                             <div class="news-img">
                                 <img src="{{ article.thumbnail.url }}" alt=" {{ article.title }}">
                                 <div class="news-date text-center">

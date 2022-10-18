@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{% static 'css/slick.css'%}">
     <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timeline.css' %}">
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)"
         href="{% static 'css/mobile.css' %}" />
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width:1024px)"
@@ -49,12 +50,12 @@
             <div class="main-header">
                 <div class="header-top d-none d-lg-block">
                     <div class="container-fluid">
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 col-md-12">
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left">
                                     <ul>
                                         <li>+(60) 12-988 6348 (AKOK)</li>
-                                        <li>kckokengineering@kckok.my</li>
+                                        <li>kckokengineering@gmail.com</li>
                                         <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
                                     </ul>
                                 </div>
@@ -70,54 +71,42 @@
                 </div>
                 <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
-                        <div class="row align-items-center">
+                        <div class="row d-flex justify-content-between align-items-center">
                             <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2 col-md-1">
-
+                            <div class="col-xl-2 col-lg-2 col-md-10">
                                 <div class="logo">
-                                    <!-- logo-1 -->
-                                    <a href="index.html" class="big-logo"><img src="{% static 'img/logo/kcklogo.png' %}"
-                                            alt=""></a>
-                                    <!-- logo-2 -->
-                                    <a href="index.html" class="small-logo"><img src="{% static 'img/logo/kcklogo-small.png' %}"
-                                            alt=""></a>
                                     <a class="navbar-brand" href="{% url 'kck:index' %}">KCK <span>KOK </span>ENGINEERING</a>
                                 </div>
 
                             </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
+                            <div class="col-lg-10">
                                 <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
+                                <div class="main-menu f-right d-none d-xl-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="{% url 'kck:index' %}">Utama</a></li>
-                                            <li><a href="{% url 'kck:about' %}">Tentang Kami</a></li>
-                                            <li><a href="{% url 'kck:project' %}">Projek</a></li>
-                                            <li><a href="{% url 'kck:services' %}">Perkhidmatan</a>
+                                            <li><a href="{% url 'kck:index' %}">Utama 🏠</a></li>
+                                            <li><a href="{% url 'kck:about' %}">Tentang Kami 📰</a></li>
+                                            <li><a href="{% url 'kck:project' %}">Projek 🚜</a></li>
+                                            <li><a href="{% url 'kck:services' %}">Perkhidmatan 🎖</a>
                                                 <ul class="submenu">
                                                     <li><a href="{% url 'kck:services' 1 %}">KCK Kimpalan</a></li>
-                                                    <li><a href="{% url 'kck:services' 2 %}">KCK ReadyMix</a></li>
+                                                    <li><a href="{% url 'kck:services' 2 %}">Semix</a></li>
                                                     <li><a href="{% url 'kck:services' 3 %}">KCK Pembinaan</a></li>
                                                     <li><a href="{% url 'kck:services' 4 %}">KCK Pasir</a></li>
                                                     <li><a href="{% url 'kck:services' 5 %}">KCK Mobil-Kren</a></li>
                                                     <li><a href="{% url 'kck:services' 6 %}">KCK Fabrikasi</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{% url 'kck:blog' %}">Blog</a></li>
-                                            <li><a href="{% url 'kck:career' %}">Jawatan</a></li>
-                                            <li><a href="{% url 'kck:contact' %}">Hubungi Kami</a></li>
+                                            <li><a href="{% url 'kck:blog' %}">Blog 📝</a></li>
+                                            <li><a href="{% url 'kck:career' %}">Jawatan 👷‍♂️</a></li>
+                                            <li><a href="{% url 'kck:contact' %}" class="p-3 contact-button">Hubungi Sekarang!</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-lg-2 col-md-3">
-                                <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="{% url 'kck:contact' %}" class="btn">Hubungi Sekarang!</a>
-                                </div>
-                            </div>
                             <!-- Mobile Menu -->
                             <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                <div class="mobile_menu d-xl-none"></div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +115,12 @@
         </div>
         <!-- Header End -->
     </header>
-
+    <div class="info-right sticky-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=60127288433" class="info-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <div class="fixed-whatsapp mt-1">
+            <h6 class="white-color bold">SITI</h6>
+        </div> 
+    </div>
     {% block body %}
     <!-- ANYTHING GOES HERE -->
     {% endblock %}
@@ -159,7 +153,9 @@
                                         <li><a href="{% url 'kck:about' %}">Tentang Kami</a></li>
                                         <li><a href="{% url 'kck:services' %}">Perkhidmatan</a></li>
                                         <li><a href="{% url 'kck:project' %}">Projek</a></li>
+                                        <li><a href="{% url 'kck:blog' %}">Blog </a></li>
                                         <li><a href="{% url 'kck:contact' %}">Hubungi Kami </a></li>
+                                        <li><a href="{% url 'kck:career' %}">Jawatan </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -169,7 +165,7 @@
                                 <div class="footer-tittle">
                                     <h4>Hubungi Kami</h4>
                                     <div class="footer-pera">
-                                        <p class="info1">Lot 1018 Taman Saujana, 22000 Jerteh Terengganu</p>
+                                        <p class="info1">Lot 2959, Kampung Padang Landak 22000 Jerteh, Terengganu</p>
                                     </div>
                                     <ul>
                                         <li><a href="https://wa.link/218sbt">Whatsapp: +60 12 988-6348</a></li>
@@ -234,18 +230,17 @@
                             </div>
                         </div>
                     <!-- Copy-Right -->
-                        <div class="row align-items-center">
-                            <div class="col-xl-12 ">
-                                <div class="footer-copy-right">
-                                    <p class="text-center">
-                                        Copyright &copy;<script>
-                                            document.write(new Date().getFullYear());
-                                        </script> All rights reserved
-                                    </p>
-                                </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right">
+                                <p class="text-center">
+                                    Copyright &copy;<script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved
+                                </p>
                             </div>
                         </div>
-
+                    </div>
                 </div>
             </div>
         </div>
@@ -291,9 +286,13 @@
     <script src="{% static 'js/mail-script.js' %}"></script>
     <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
 
+    <script src="{% static 'js/timeline.min.js' %}"></script>
+
+
     <!-- Jquery Plugins, main Jquery -->
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
 
 </body>
 

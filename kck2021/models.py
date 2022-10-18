@@ -1,3 +1,4 @@
+from tkinter import CASCADE
 from django.db import models
 from django.utils.timezone import now
 from tinymce import models as tinymce_models
@@ -56,7 +57,7 @@ class Career(models.Model):
             MinValueValidator(1)
         ]
     )
-    timeAdded = models.DateField(default=date.today)
+    timeAdded = models.DateField(default=datetime.now,blank=True)
 
     class Meta:
         ordering = ['jobName']
@@ -73,6 +74,12 @@ class Job(models.Model):
     def __str__(self):
         return self.specialization
 
+class ProjectImages(models.Model):
+    image = models.ImageField(upload_to='project/', null=True, blank=False)
+    
+    def __str__(self):
+        return self.image
+
 class Project(models.Model):
     thumbnail = models.ImageField(upload_to='media/')
     openingImage = models.ImageField(upload_to='media/')
@@ -83,6 +90,7 @@ class Project(models.Model):
     location = models.CharField(max_length=100)
     value = models.DecimalField(max_digits =4,decimal_places=2)
     jobType = models.ManyToManyField(Job, blank=False, related_name="job_spec")
+    photos = models.ForeignKey(ProjectImages, on_delete=models.CASCADE, null=True, blank=True, related_name="projectImages")
     firstImage = models.ImageField(upload_to='media/', blank= True)
     secondImage = models.ImageField(upload_to='media/',blank=True)
     thirdImage= models.ImageField(upload_to='media/', blank=True)
@@ -97,3 +105,4 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+

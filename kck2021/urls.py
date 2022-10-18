@@ -14,7 +14,6 @@ urlpatterns = [
     path("blog/category=<str:category>", views.catBlog, name="catBlog"),
     path("blog/<slug:slug_name>", views.readblog, name="readblog"),
     path("career", views.career, name="career"),
-    path("enquiry", views.enquiry, name="enquiry"),
     path("project", views.project, name="project"),
     path("project/<slug:slug_title>", views.readproject, name="readproject")
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

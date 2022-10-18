@@ -167,6 +167,11 @@
   text-decoration: none;
   color: #fff;
 }
+.slicknav_nav .submenu li a
+{
+  margin: 0px 5px !important;
+  border-left: 2px solid #c0762b;
+}
 
 .slicknav_nav a:hover {
   -webkit-border-radius: 0px;
@@ -330,4 +335,7 @@
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
   color: #dca73a;
+}
+.slicknav_hidden {
+  display: none !important;
 }

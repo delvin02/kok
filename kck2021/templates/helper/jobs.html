@@ -1,0 +1,65 @@
+<!-- 
+    <section class="featured-job-area feature-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle text-center">
+                    <span>Pekerja yang kami mencari</span>
+                    <h2>Jawatan Kosong</h2>
+                </div>
+            </div>
+        </div>
+        {% for job in jobs %}
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="single-job-items mb-30">
+                    <div class="job-items">
+                        <div class="company-img">
+                            <a href="job_details.html"><img src="{{ job.imageLogo }}" alt=""></a>
+                        </div>
+                        <div class="job-tittle">
+                            <a href="job_details.html"><h4>{{ job.jobName }}</h4></a>
+                            <ul>
+                                <li> {{ job.department }}</li>
+                                <li><i class="fas fa-map-marker-alt"></i> {{ job.jobLocation}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="items-link f-right">
+                        <a href="mailto:kckokengineering@gmail.com">Full Time</a>
+                        <span>{{ job.timeAdded|date:"D d M Y" }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+! About us
+    <section class="support-company-area fix pt-10 section-padding30">
+        <div class="support-wrapper align-items-end">
+            <div class="left-content">
+                <div class="section-tittle section-tittle2 mb-55">
+                    <div class="front-text">
+                        <h2 class="">Mengenai Syarikat Kami</h2>
+                    </div>
+                </div>
+                <div class="support-caption">
+                    <p class="pera-top">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. Perniagaan teras utama KCK melibatkan perkhidmatan reka bentuk dan kejuruteraan dalaman untuk pelbagai projek.</p>
+                    <p>Perniagaan pengelasan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam. Perkhidmatan kimpalan dan fabrikasi merangkumi kimpalan teras fluks, kimpalan aluminium, pemotongan plasma, fabrikasi logam, pembaikan kotak lori sampah, dan banyak lagi. Perniagaan pengelasan berkualiti tinggi dapat memperbaiki kebanyakan barang yang diperbuat daripada logam. Sejak 1997, pasukan dan kemudahan kami dilengkapi untuk memenuhi semua keperluan anda. Pasukan perancang, tukang las dan pengendali KCK yang berpengalaman telah membolehkan syarikat kami menjadi pasukan komprehensif yang diperlukan oleh projek anda. </br>
+                    </br> Selain itu, kami juga menjalankan perniagaan dalam konkrit siap pakai, yang disertakan dengan trak pengadun kren dan konkrit sebagai pakej. Ia digunakan untuk mencampurkan dan mengangkut sejumlah besar konkrit untuk kegunaan di tapak bangunan. Konkrit KCK boleh digunakan bagi menyokong bangunan pejabat tinggi, kemudahan atletik profesional dan kolej. Tambahan lagi, KCK telah berjaya dalam banyak projek di seluruh Malaysia seperti usaha komersial utama, lebuh raya dan pembangunan kediaman. Bergantung pada keperluan aplikasi, pengadun konkrit disediakan dengan pelbagai saiz dan jenis.</p>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="right-img">
+                    <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="">
+                </div>
+                <div class="support-img-cap text-center">
+                    <span>1994</span>
+                    <p>Since</p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->

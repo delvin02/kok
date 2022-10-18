@@ -1,6 +1,9 @@
 (function ($)
   { "use strict"
-  
+$(document).ready(function() {
+  init_typed();
+});
+
 /* 1. Proloder */
     $(window).on('load', function () {
       $('#preloader-active').delay(450).fadeOut('slow');
@@ -8,21 +11,31 @@
         'overflow': 'visible'
       });
     });
-
-
+/* Typing effect */
+function init_typed() {
+  var $typed = $("#typed");
+  if ($typed.length) {
+    var typed = new Typed("#typed", {
+      strings: ["Plan. 🧾", "Supply. 🚜", "Craft. 🛠", "Execute. 🏗", "Build. 👷‍♂️", "Deliver. 🏡"],
+      loop: true,
+      typeSpeed: 80
+    });
+  }
+}
 /* 2. slick Nav */
 // mobile_menu
     var menu = $('ul#navigation');
     if(menu.length < 1025){
       menu.slicknav({
-        prependTo: ".mobile_menu",
+        label: 'Main Menu',
+        prependTo: '.mobile_menu',
         closedSymbol: '+',
         openedSymbol:'-',
         duration: 1000,
-	      easingOpen: "easeOutBounce"
-      });
-    };
-
+	      easingOpen: "easeOutBounce",
+        closeOnClick:true,
+      })
+    }
 
 /* 3. MainSlider-1 */
     // h1-hero-active
@@ -240,6 +253,13 @@
           }
         });
       }
+
+// Vertical Timeline
+$('.timeline').timeline({
+  forceVerticalMode: 800,
+  mode: 'vertical',
+  visibleItems: 4
+});
 
 
 

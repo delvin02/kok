@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ArticleCategories, Article, Career, Department, Job, Project
+from .models import ArticleCategories, Article, Career, Department, Job, Project, ProjectImages
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ("id", "author", "title", "date_added", "categories")
@@ -16,7 +16,7 @@ class ArticleAdmin(admin.ModelAdmin):
 admin.site.register(Career)
 admin.site.register(Department)
 admin.site.register(Job)
-
+admin.site.register(ProjectImages)
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
 
