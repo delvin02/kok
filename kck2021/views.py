@@ -28,13 +28,19 @@ def about(request):
 def services(request):
     return render(request, "kck2021/services.html")
 
-def servicesType(request, service_id):
-    if service_id == 1:
+def servicesType(request, service_name):
+    if service_name == "kimpalan":
         return render(request, "kck2021/services_welding.html")
-    elif service_id == 2:
+    elif service_name == "semix":
         return render(request, "kck2021/services_concrete.html")
-    elif service_id == 3:
+    elif service_name == "pembinaan":
         return render(request, "kck2021/services_construction.html")
+    elif service_name == "pasir":
+        return render(request, "kck2021/services_sand.html")
+    elif service_name == "kren":
+        return render(request, "kck2021/services_crane.html")
+    elif service_name == "fabrikasi":
+        return render(request, "kck2021/services_fabrication.html")
 
 def contact(request):
     if request.method == "GET":
@@ -110,3 +116,8 @@ def readproject(request, slug_title):
     return render(request, "kck2021/projectbase.html", {
         "readProject": readProject,
     })
+def voucher(request):
+    return render(request, "kck2021/voucher.html")
+
+def error(request, exception):
+    return render(request, "404.html", status=404)

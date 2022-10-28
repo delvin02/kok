@@ -1,0 +1,234 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+<main>
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
+            data-background="{% static 'img/gallery/cr.jpeg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8">
+                        <div class="hero-cap hero-cap2 pt-120">
+                            <h2>KCK Mobile-Kren</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' %}"> Perkhidmatan</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' "kren" %}"> Sewaan
+                                            Kren</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+    <!-- Services Details Start -->
+    <div class="services-details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="single-services section-padding2">
+                        <div class="details-img mb-40">
+                            <img src="{% static 'img/service/cranetest.jpeg' %}" alt="kren">
+                        </div>
+                        <div class="details-caption">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="services-quality card mb-3" >
+                                        <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                            <span class="icon-img d-inline-flex text-center">
+                                                <img src="{% static 'img/icon/bell.svg' %}">
+                                                <h2 class="my-auto">PROMOSI</h2>
+                                                <img src="{% static 'img/icon/bell.svg' %}">
+                                            </span>
+                                        </div>
+                                        <div class="card-content p-3 text-primary text-center" style="background: linear-gradient(124deg, rgba(192,135,43,0.5) 26%, rgba(87,55,106,0.5) 72%);">
+                                            <h5 class="card-title font-weight-bold">Kemudahan pembekalan bahan pembinaan diberi seperti konkrit, pasir, batu dan kren sebagai pakej</h5>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Mempunyai hampir 20 tahun pengalaman menyewa mobil-kren.
+                                mulakan projek anda yang seterusnya dengan rangkaian kren terbesar di besut,
+                                perkhidmatan mengangkat lengkap, dan pasukan yang berkelayakan sepenuhnya. </p>
+                            <p>Pasukan kami boleh menyediakan penyelesaian inovatif untuk membantu memenuhi keperluan
+                                anda mengenai penutupan utama dan pekerjaan pakar.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Struktur Seni Bina</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Asas Pembangunan</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Jambatan</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Pusat Residen</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Bagaimana kita dapat bantu?</h3>
+                        <p>Menyewa kren mobil memastikan anda mempunyai akses kepada peralatan yang anda perlukan, tanpa mengira lokasi tapak kerja. Apabila anda memiliki kren, anda perlu bimbang tentang mengangkut jentera ke setiap tapak kerja, yang boleh menjadi sangat mencabar bagi syarikat yang bekerja di beberapa negeri. </p>
+                        <p>Jika anda berminat untuk 'order', terdapat lima komponen dalam perkhidmatan pembekal
+                            konkrit iaitu:</p>
+                        <div class="container py-2 mt-4 mb-4">
+
+                            <h2 class="font-weight-bold companyColor">Jika berminat. </h2>
+                            <div class="row">
+                                <!-- timeline item 1 left dot -->
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-right-company">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="card">
+                                        <div class="card-body border-company p-3">
+                                            <h4 class="card-title phase-icon my-auto"> <img
+                                                    src="{% static 'img/icon/whatsapp.svg' %}"> Permintaan Sebut Harga
+                                                Memalui Whatsapp</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right-company">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-right-company">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="card">
+                                        <div class="card-body border-company p-3">
+                                            <h4 class="card-title phase-icon my-auto"> <img
+                                                    src="{% static 'img/icon/calendar.svg' %}"> Cadangkan Masa yang
+                                                sesuai untuk penghantaran</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right-company">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-right-company">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="card">
+                                        <div class="card-body border-company p-3">
+                                            <h4 class="card-title phase-icon my-auto"> <img
+                                                    src="{% static 'img/icon/cash.svg' %}"> Membuat Bayaran</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/row-->
+                            <!-- timeline item 4 -->
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-right-company">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="card">
+                                        <div class="card-body border-company p-3">
+                                            <h4 class="card-title phase-icon my-auto"> <img
+                                                    src="{% static 'img/icon/truck.svg' %}"> Penerimaan produk anda</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Services Details End -->
+</main>
+{% endblock %}

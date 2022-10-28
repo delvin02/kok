@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% block title %} KCK KOK ENGINEERING SDN BHD {% endblock %}</title>
-    <meta name="description" content="KCK KOK ENGINEERING adalah sebuah syarikat yang berada di Jerteh Terengganu, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.">
-    <meta name="keywords" content="kck kok engineering, simen, kck kren, kck simen, kck readymix, kck jerteh, kok engineering, kckok, simen setiu, simen kampung raja, kck kampung raja, kck kren">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description"
+        content="KCK KOK ENGINEERING adalah sebuah syarikat yang berada di Jerteh Terengganu, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.">
+    <meta name="keywords"
+        content="kck kok engineering, simen, kck kren, kck simen, kck readymix, kck jerteh, kok engineering, kckok, simen setiu, simen kampung raja, kck kampung raja, kck kren">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo/kcklogo.png' %}">
 
@@ -45,6 +47,170 @@
     </div>
     <!-- Preloader Start -->
     <header>
+        <!-- Description -->
+        <!-- Popup -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal fade" id="myModal" tabindex="-2" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg m-3 mx-auto modal-dialog-centered" role="document">
+                            <div class="modal-content rounded">
+                                <div
+                                    class="row d-flex justiy-content-between align-items-center modal-header border-0 m-2">
+                                    <div class="col-10 align-self-center">
+                                        <div class="d-inline-flex my-auto">
+                                            <img src="{% static 'img/icon/Gift.svg' %}" alt="gift">
+                                            <h4 class="my-auto">Discount offer: RM100 off</h4>
+                                        </div>
+                                    </div>
+                                    <!--Close/Cross Button-->
+                                    <div class="col-2 align-self-center">
+                                        <button type="button" class="close companyColor p-0 m-0"
+                                            data-bs-dismiss="modal">
+                                            <h3>&times;</h3>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body p-0 font-poppin">
+                                    <div class="d-block main-content">
+                                        <div class="row mx-0 d-none d-lg-inline-flex">
+                                            <div class="col-lg-6 px-0">
+                                                <img src="{% static 'img/gallery/cr.jpeg' %}" alt="background"
+                                                    class="img-fluid opacity-75">
+                                            </div>
+                                            <div class="col-lg-6 d-flex align-items-center justify-content-center"
+                                                style="background: rgba(192, 116, 43, 0.7);">
+                                                <h1 class="text-center my-auto font-weight-bold font-roboto black-color"
+                                                    style="color: black;"> BAUCAR!<br>RM100 OFF.</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0">
+                                            <div class="col-lg-6 d-flex align-items-center justify-content-center"
+                                                style="background: rgba(192, 116, 43, 0.7);">
+                                                <h1 class="text-center my-auto font-weight-bold font-roboto"> BAUCAR!
+                                                </h1>
+                                            </div>
+                                            <div class="col-lg-6 px-0">
+                                                <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="background"
+                                                    class="img-fluid opacity-75">
+                                            </div>
+                                        </div>
+                                        <div class="content-text p-4">
+                                            <h3 class="mb-4 font-roboto"> Baucar berharga RM100 kepada 10 pelanggan
+                                                pertama!!</h3>
+                                            <div style="background: rgba(40,167,69, 0.7);">
+                                                <h4 class="p-2 text-center"> Baucar ini hanya boleh dipakai untuk
+                                                    konkrit sahaja. </h4>
+                                            </div>
+                                            <p class="mb-4"> 4 Langkah Untuk Menang: </p>
+                                            <ul class="list-group">
+                                                <li class="list-group-item justify-content-start align-items-center">
+                                                    <span class="badge rounded-pill companyColor mr-3">1.</span>
+                                                    Copy descripsi di <button role="button" id="btn-description"
+                                                        class="bg-transparent border border-info rounded cursor-pointer ">
+                                                        sini </button>
+                                                </li>
+                                                <div class="container" style="display: none;"
+                                                    id="description-container">
+                                                    <p id="description-content" class="p-3">
+                                                        Baucer istimewa untuk semua pembina, pemaju.
+                                                        </br>
+                                                        </br>
+                                                        Kepada Pelanggan yang dihormati sekalian,
+                                                        </br>
+                                                        </br>
+                                                        KCK KOK ENGINEERING MENGADAKAN KEMPEN BAUCAR BERNILAI SEHINGGA
+                                                        RM100!!
+                                                        </br>
+                                                        </br>
+                                                        Ini telah dibina selama berbulan-bulan dan tarikh pelancaran
+                                                        akhirnya tiba! Saya dengan bangganya mengumumkan bahawa laman
+                                                        web KCK kini disiarkan secara langsung dan terletak di alamat:
+                                                        </br>
+                                                        </br>
+                                                        https://www.kckok.my
+                                                        </br>
+                                                        KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di
+                                                        lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri
+                                                        konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan
+                                                        kimpalan (mesin-lay) berasas logam. Project utama KCK dalam
+                                                        sektor pembinaan melibatkan perkhidmatan struktur reka bentuk
+                                                        (infra), kejuruteraan pembangunan dan kemudahan infrastruktur.
+                                                        </br>
+                                                        </br>
+                                                        Di KCK, kami berusaha untuk menjadikan sebuah syarikat yang
+                                                        merealisasikan cara alternatif kepada semua para pelanggan dari
+                                                        bandar ataupun luar bandar yang ingin menjadikan tanah kosong
+                                                        menjadi sebuah ruang yang manfaat kepada semua pihak pengguna
+                                                        dengan mudah dan boleh diakses melalui perkhidmatan dan sumber
+                                                        kami, tanpa mengira saiz projek.
+                                                        </br>
+                                                        </br>
+                                                        Dalam laman web ini, anda akan dapati
+                                                        - pekerjaan
+                                                        - blog
+                                                        - kenaikan pangkat
+                                                        - perkhidmatan kami
+                                                        - portfolio syarikat
+                                                        </br>
+                                                        </br>
+                                                        Matlamat kami pada pelancaran laman web ini adalah untuk
+                                                        menjadikan perkhidmatan kami boleh diakses di mana-mana, pada
+                                                        bila-bila masa dengan cara yang paling mudah. Jika anda sendiri
+                                                        seorang pembina, kami mengalu-alukan anda untuk melihat halaman
+                                                        web kami kerana saya percaya anda boleh menemui sesuatu yang
+                                                        sangat bermanfaat.
+                                                        </br>
+                                                    </p>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button onclick="copyData('description-content');"
+                                                            class="btn font-medium uppercase  transition shadow ripple bg-gray-100 bg-white text-dark my-2 hover:shadow-lg  mx-auto">
+                                                            Copy </button>
+                                                    </div>
+                                                </div>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-start align-items-center">
+                                                    <span class="badge rounded-pill companyColor mr-3">2.</span>
+                                                    Kongsikan post dengan discripsinya di <a
+                                                        href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2Fshare-button%2Fkckok.my&display=popup&ref=plugin&src=share_button"
+                                                        class="mx-2 bg-transparent border close-hover border-info rounded cursor-pointer"
+                                                        style="padding: 1px 6px;"> sini </a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-start align-items-center">
+                                                    <span class="badge rounded-pill companyColor mr-3">3.</span>
+                                                    Kumpul sekurang-kurangnya 20 'likes'
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-start align-items-center">
+                                                    <span class="badge rounded-pill companyColor mr-3">4.</span>
+                                                    Tunjukkan tangkapan skrin (screenshot) kepada kerani kami sebagai
+                                                    tanda bukti sebelum membayar
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex bg-danger justify-content-start align-items-center white-color">
+                                                    AMARAN!! SETIAP ORANG MEMPUNYAI SATU PENYERTAAN SAHAJA!!
+                                                </li>
+                                            </ul>
+                                            <div class="d-flex mt-2">
+                                                <div class="ml-auto justify-content-between">
+                                                    <a class="btn btn-link bg-transparent" data-bs-dismiss="modal">Tutup
+                                                        <span style="font-size: 1.25rem;">&times;</span></a>
+                                                    <a href="{% url 'kck:voucher' %}"
+                                                        class="btn btn-primary">Berminat!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Header Start -->
         <div class="header-area header-transparent">
             <div class="main-header">
@@ -61,8 +227,10 @@
                                 </div>
                                 <div class="header-info-right">
                                     <ul class="header-social">
-                                        <li><a href="https://www.instagram.com/kck.kok/"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="https://www.facebook.com/kckokengineering"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/kck.kok/"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/kckokengineering"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -75,7 +243,8 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2 col-md-10">
                                 <div class="logo">
-                                    <a class="navbar-brand" href="{% url 'kck:index' %}">KCK <span>KOK </span>ENGINEERING</a>
+                                    <a class="navbar-brand" href="{% url 'kck:index' %}">KCK <span>KOK
+                                        </span>ENGINEERING</a>
                                 </div>
 
                             </div>
@@ -89,17 +258,24 @@
                                             <li><a href="{% url 'kck:project' %}">Projek 🚜</a></li>
                                             <li><a href="{% url 'kck:services' %}">Perkhidmatan 🎖</a>
                                                 <ul class="submenu">
-                                                    <li><a href="{% url 'kck:services' 1 %}">KCK Kimpalan</a></li>
-                                                    <li><a href="{% url 'kck:services' 2 %}">Semix</a></li>
-                                                    <li><a href="{% url 'kck:services' 3 %}">KCK Pembinaan</a></li>
-                                                    <li><a href="{% url 'kck:services' 4 %}">KCK Pasir</a></li>
-                                                    <li><a href="{% url 'kck:services' 5 %}">KCK Mobil-Kren</a></li>
-                                                    <li><a href="{% url 'kck:services' 6 %}">KCK Fabrikasi</a></li>
+                                                    <li><a href="{% url 'kck:services' "kimpalan" %}">KCK
+                                                            Kimpalan</a></li>
+                                                    <li><a href="{% url 'kck:services' "semix" %}">Semix</a>
+                                                    </li>
+                                                    <li><a href="{% url 'kck:services' "pembinaan" %}">KCK
+                                                            Pembinaan</a></li>
+                                                    <li><a href="{% url 'kck:services' "pasir" %}">KCK Pasir</a>
+                                                    </li>
+                                                    <li><a href="{% url 'kck:services' "kren" %}">KCK
+                                                            Mobil-Kren</a></li>
+                                                    <li><a href="{% url 'kck:services' "fabrikasi" %}">KCK
+                                                            Fabrikasi</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="{% url 'kck:blog' %}">Blog 📝</a></li>
                                             <li><a href="{% url 'kck:career' %}">Jawatan 👷‍♂️</a></li>
-                                            <li><a href="{% url 'kck:contact' %}" class="p-3 contact-button">Hubungi Sekarang!</a></li>
+                                            <li><a href="{% url 'kck:contact' %}" class="p-3 contact-button">Hubungi
+                                                    Sekarang!</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -116,10 +292,11 @@
         <!-- Header End -->
     </header>
     <div class="info-right sticky-whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=60127288433" class="info-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=60127288433" class="info-whatsapp"><i
+                class="fab fa-whatsapp"></i></a>
         <div class="fixed-whatsapp mt-1">
             <h6 class="white-color bold">SITI</h6>
-        </div> 
+        </div>
     </div>
     {% block body %}
     <!-- ANYTHING GOES HERE -->
@@ -140,7 +317,9 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p class="info1">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.</p>
+                                        <p class="info1">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah
+                                            berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan
+                                            kimpalan.</p>
                                     </div>
                                 </div>
                             </div>
@@ -179,56 +358,62 @@
                                 <div class="map-footer" border="2px solid green">
                                     <div class="mapouter-footer">
                                         <div class="gmap_canvas-footer">
-                                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=326&amp;height=289&amp;hl=en&amp;q=kck kok Jerteh terengganu&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                                marginheight="0" marginwidth="0"
+                                                src="https://maps.google.com/maps?width=326&amp;height=289&amp;hl=en&amp;q=kck kok Jerteh terengganu&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                                             <a href="https://www.fnfgo.com/">FNF Go</a>
                                         </div>
                                         <style>
                                             .mapouter-footer {
-                                            position: relative;
-                                            text-align: right;
-                                            width: 100%;
-                                            height: 289px;
+                                                position: relative;
+                                                text-align: right;
+                                                width: 100%;
+                                                height: 289px;
                                             }
 
                                             .gmap_canvas-footer {
-                                            overflow: hidden;
-                                            background: none !important;
-                                            width: 100%;
-                                            height: 289px;
+                                                overflow: hidden;
+                                                background: none !important;
+                                                width: 100%;
+                                                height: 289px;
                                             }
 
                                             .gmap_iframe {
-                                            height: 289px !important;
+                                                height: 289px !important;
                                             }
                                         </style>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-info" style="background: #c0762b;color: white;border-radius: 20px;">
-                            <div class="col-sm-12 col-12">
-                                <div class="row d-flex justify-content-center align-items-center">
-                                    <div class="header-info-left">
-                                        <ul class="d-flex flex-column text-center pt-20 pb-20 justify-content-center">
-                                            <li>+(60) 12-988 6348 (AKOK)</li>
-                                            <li>kckokengineering@kckok.my</li>
-                                            <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-12 pb-20">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="header-info-right">
-                                        <ul class="header-social d-inline-flex justify-content-center">
-                                            <li class="pl-10 pr-10"><a href="https://www.instagram.com/kck.kok/" style="color: black;font-size: 24px;"><i class="fab fa-instagram"></i></a></li>
-                                            <li class="pl-10 pr-10"><a href="https://www.facebook.com/kckokengineering" style="color: black;font-size: 24px;"><i class="fab fa-facebook-f"></i></a></li>
-                                        </ul>
-                                    </div>
+                    </div>
+                    <div class="footer-info" style="background: #c0762b;color: white;border-radius: 20px;">
+                        <div class="col-sm-12 col-12">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="header-info-left">
+                                    <ul class="d-flex flex-column text-center pt-20 pb-20 justify-content-center">
+                                        <li>+(60) 12-988 6348 (AKOK)</li>
+                                        <li>kckokengineering@kckok.my</li>
+                                        <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-12 col-12 pb-20">
+                            <div class="row d-flex justify-content-center">
+                                <div class="header-info-right">
+                                    <ul class="header-social d-inline-flex justify-content-center">
+                                        <li class="pl-10 pr-10"><a href="https://www.instagram.com/kck.kok/"
+                                                style="color: black;font-size: 24px;"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li class="pl-10 pr-10"><a href="https://www.facebook.com/kckokengineering"
+                                                style="color: black;font-size: 24px;"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Copy-Right -->
                     <div class="row align-items-center">
                         <div class="col-xl-12 ">
@@ -247,7 +432,6 @@
         <!-- Footer End-->
     </footer>
 
-    <!-- JS here -->
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
@@ -293,6 +477,19 @@
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+    <script>
+        function copyData(containerid) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById(containerid)); //changed here
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            alert('Copied!');
+        }
+    </script>
+    {% block js %}
+    {% endblock %}
 
 </body>
 

@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  django:
+    image: kck-web:2.0.0
+    build: .
+    command: python manage.py runserver 0.0.0.0:8005
+    volumes:
+      - .:/code
+    ports:
+      - "8005:8005"

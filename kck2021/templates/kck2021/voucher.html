@@ -1,0 +1,155 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+
+{% block body %}
+<main id="voucher">
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
+            data-background="{% static 'img/gallery/kck-headline.png' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8">
+                        <div class="hero-cap hero-cap2 pt-120">
+                            <h2>Baucer</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:index' %}">Utama</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:voucher' %}">Baucer</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+    <!-- Services Details Start -->
+    <div class="services-details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="single-services section-padding2">
+                        <div class="details-img mb-40">
+                            <img src="{% static 'img/banner/kck-off-poster.png' %}" alt="offer baucer headline">
+                        </div>
+                        <div class="details-caption">
+                            <h1> Baucer istimewa untuk semua pembina, pemaju. </h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="{% static 'img/banner/baucer.png' %}" class="img-fluid"
+                                    alt="offer baucer headline">
+                            </div>
+                            <div class="col-lg-6 my-auto">
+                                <div class="content-text p-4">
+                                    <h3 class="mb-4 font-roboto"> Baucar berharga RM100 kepada 10 pelanggan
+                                        pertama!!</h3>
+                                    <div style="background: rgba(40,167,69, 0.7);">
+                                        <h4 class="p-2 text-center"> Baucar ini hanya boleh dipakai untuk
+                                            konkrit sahaja. </h4>
+                                    </div>
+                                    <p class="mb-4"> 4 Langkah Untuk Menang: </p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item justify-content-start align-items-center">
+                                            <span class="badge rounded-pill companyColor mr-3">1.</span>
+                                            Copy descripsi di <button role="button" id="btn-description"
+                                                class="bg-transparent border border-info rounded cursor-pointer ">
+                                                bawah </button>
+                                        </li>
+                                        <div class="container" id="description-container">
+                                            <p id="description-content" class="p-3">
+                                                Baucer istimewa untuk semua pembina, pemaju.
+                                                </br>
+                                                </br>
+                                                Kepada Pelanggan yang dihormati sekalian,
+                                                </br>
+                                                </br>
+                                                KCK KOK ENGINEERING MENGADAKAN KEMPEN BAUCAR BERNILAI SEHINGGA
+                                                RM100!!
+                                                </br>
+                                                </br>
+                                                Ini telah dibina selama berbulan-bulan dan tarikh pelancaran
+                                                akhirnya tiba! Saya dengan bangganya mengumumkan bahawa laman
+                                                web KCK kini disiarkan secara langsung dan terletak di alamat:
+                                                </br>
+                                                </br>
+                                                https://www.kckok.my
+                                                </br>
+                                                KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di
+                                                lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri
+                                                konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan
+                                                kimpalan (mesin-lay) berasas logam. Project utama KCK dalam
+                                                sektor pembinaan melibatkan perkhidmatan struktur reka bentuk
+                                                (infra), kejuruteraan pembangunan dan kemudahan infrastruktur.
+                                                </br>
+                                                </br>
+                                                Di KCK, kami berusaha untuk menjadikan sebuah syarikat yang
+                                                merealisasikan cara alternatif kepada semua para pelanggan dari
+                                                bandar ataupun luar bandar yang ingin menjadikan tanah kosong
+                                                menjadi sebuah ruang yang manfaat kepada semua pihak pengguna
+                                                dengan mudah dan boleh diakses melalui perkhidmatan dan sumber
+                                                kami, tanpa mengira saiz projek.
+                                                </br>
+                                                </br>
+                                                Dalam laman web ini, anda akan dapati
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"> pekerjaan</li>
+                                                    <li class="list-group-item"> blog </li>
+                                                    <li class="list-group-item"> promosi</li>
+                                                    <li class="list-group-item"> perkhidmatan kami </li>
+                                                    <li class="list-group-item"> portfolio syarikat </li>
+                                                </ul>
+                                                </br>
+                                                </br>
+                                                Matlamat kami pada pelancaran laman web ini adalah untuk
+                                                menjadikan perkhidmatan kami boleh diakses di mana-mana, pada
+                                                bila-bila masa dengan cara yang paling mudah. Jika anda sendiri
+                                                seorang pembina, kami mengalu-alukan anda untuk melihat halaman
+                                                web kami kerana saya percaya anda boleh menemui sesuatu yang
+                                                sangat bermanfaat.
+                                                </br>
+                                            </p>
+                                        </div>
+                                        <li class="list-group-item d-flex justify-content-start align-items-center">
+                                            <span class="badge rounded-pill companyColor mr-3">2.</span>
+                                            Kongsikan post dengan discripsinya di <a
+                                                href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2Fshare-button%2Fkckok.my&display=popup&ref=plugin&src=share_button"
+                                                class="mx-2 bg-transparent border close-hover border-info rounded cursor-pointer"
+                                                style="padding: 1px 6px;"> sini </a>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-start align-items-center">
+                                            <span class="badge rounded-pill companyColor mr-3">3.</span>
+                                            Kumpul sekurang-kurangnya 20 'likes'
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-start align-items-center">
+                                            <span class="badge rounded-pill companyColor mr-3">4.</span>
+                                            Tunjukkan tangkapan skrin (screenshot) kepada kerani kami sebagai
+                                            tanda bukti sebelum membayar
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex bg-danger justify-content-start align-items-center white-color">
+                                            AMARAN!! SETIAP ORANG MEMPUNYAI SATU PENYERTAAN SAHAJA!!
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex mt-2">
+                                        <div class="ml-auto justify-content-between">
+                                            <a class="btn btn-link bg-transparent" data-bs-dismiss="modal">Tutup
+                                                <span style="font-size: 1.25rem;">&times;</span></a>
+                                            <a href="{% url 'kck:voucher' %}" class="btn btn-primary">Berminat!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Details End -->
+</main>
+{% endblock %}
+{% block js %}
+{% endblock %}
