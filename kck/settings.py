@@ -30,7 +30,7 @@ environ.Env.read_env()
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -173,13 +173,14 @@ LOCALE_PATHS = (
 )
 
 # Security
+'''
 SECURE_SSL_REDIRECT = True
 SECURE_HSTS_PRELOAD = True
 SECURE_HSTS_SECONDS = 31536000
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-
+'''
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
