@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import psycopg2
 import os
-import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,15 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# Initialise environment variables
-env = environ.Env()
-environ.Env.read_env()
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = '&0^_enc-c4l79p7d=g7p5_2nx4)&_s9v5vpux^m3!7&!ep!3ef'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -197,6 +192,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

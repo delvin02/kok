@@ -13,6 +13,7 @@
     });
   });
   /* Modal */
+  /*
   function load_modal() {
     var $index = $("#index");
     if ($index.length)
@@ -22,6 +23,7 @@
       }, 5000);
     }
   }
+  */
   /* Typing effect */
   function init_typed() {
     var $typed = $("#typed");
