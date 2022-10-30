@@ -33,9 +33,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'kck2021',
     'tinymce',
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,8 +62,8 @@ DEFAULT = {
 }
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -168,14 +168,14 @@ LOCALE_PATHS = (
 )
 
 # Security
-'''
-SECURE_SSL_REDIRECT = True
-SECURE_HSTS_PRELOAD = True
+
+SECURE_SSL_REDIRECT = False
+SECURE_HSTS_PRELOAD = False
 SECURE_HSTS_SECONDS = 31536000
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-'''
+SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
@@ -188,7 +188,7 @@ MEDIA_DIR = os.path.join(BASE_DIR,'media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
