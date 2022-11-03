@@ -18,13 +18,24 @@ from django.urls import path, include
 from django.conf.urls import handler404, include, url
 from django.views.static import serve 
 from django.conf import settings
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticSitemap, BlogSitemap 
+from django.views.generic.base import TemplateView
 
+# Add sitemaps
+sitemaps = {
+    'static': StaticSitemap,
+    'blog': BlogSitemap,
+}
+ 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("kck2021.urls")),
     path('tinymce/', include('tinymce.urls')),
     url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT})
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path("robots.txt", TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),),
 ]
 
 

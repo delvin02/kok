@@ -5,9 +5,21 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.views.generic import ListView, DetailView
 from django.core.mail import send_mail
+from django.http import HttpResponse
 from .models import Article, ArticleCategories, Career, Department, Job, Project
-# Create your views here.
+from django.views.decorators.http import require_POST, require_GET
 
+# Views for /robots.txt
+@require_GET
+def robots_txt(request):
+    lines = [
+        "User-Agent: *",
+        "Disallow: /private/",
+        "Disallow: /junk/",
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
+
+# Create your views here.
 def index(request):
     latestBlog = Article.objects.all()[:2]
     projects = Project.objects.all()[:6]

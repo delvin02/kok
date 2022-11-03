@@ -1,11 +1,22 @@
-<!DOCTYPE html>
 {% load static %}
+
+{% load compress %}
+<!DOCTYPE html>
 <html lang="ms">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW9L4K5GPN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PW9L4K5GPN');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{% block title %} KCK KOK ENGINEERING SDN BHD {% endblock %}</title>
+    <title> KCK KOK ENGINEERING SDN BHD {% block title %}{% endblock %}</title>
     <meta name="description"
         content="KCK KOK ENGINEERING adalah sebuah syarikat yang berada di Jerteh Terengganu, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.">
     <meta name="keywords"
@@ -21,6 +32,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo/kcklogo.png' %}">
 
     <!-- CSS here -->
+    {% compress css %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
@@ -30,13 +42,15 @@
     <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
     <link rel="stylesheet" href="{% static 'css/slick.css'%}">
     <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/timeline.css' %}">
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)"
         href="{% static 'css/mobile.css' %}" />
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width:1024px)"
         href="{% static 'css/tablet.css' %}" />
+    {% endcompress %}
 
+    <!-- Main CSS File - Witout Compression -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -440,8 +454,7 @@
         </div>
         <!-- Footer End-->
     </footer>
-
-
+    {% compress js %}
     <!-- All JS Custom Plugins Link Here here -->
     <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
     <!-- Jquery, Popper, Bootstrap -->
@@ -467,9 +480,10 @@
     <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
     <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
     <script src="{% static 'js/jquery.sticky.js' %}"></script>
-
+    {% endcompress %}
     <!-- counter , waypoint -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    {% compress js %}
     <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
 
     <!-- contact js -->
@@ -481,9 +495,10 @@
 
     <script src="{% static 'js/timeline.min.js' %}"></script>
 
-
     <!-- Jquery Plugins, main Jquery -->
     <script src="{% static 'js/plugins.js' %}"></script>
+    {% endcompress %}
+    <!-- Main Javascript File - Without Compression -->
     <script src="{% static 'js/main.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
     <script>
@@ -497,6 +512,8 @@
             alert('Copied!');
         }
     </script>
+
+    <!-- Optional Javascript Files -->
     {% block js %}
     {% endblock %}
 

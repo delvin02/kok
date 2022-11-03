@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '&0^_enc-c4l79p7d=g7p5_2nx4)&_s9v5vpux^m3!7&!ep!3ef'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -42,7 +42,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    # Django Sitemap - installed app
+    'django.contrib.sitemaps',
+    'compressor',
 ]
+
+# Define Site Id 
+SITE_ID = 1
+
+# Cache
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
 
 DEFAULT = {
     'selector': 'textarea',
@@ -62,6 +77,11 @@ DEFAULT = {
 }
 
 MIDDLEWARE = [
+    # Compressor Starts
+    'django.middleware.gzip.GZipMiddleware', 
+    'htmlmin.middleware.HtmlMinifyMiddleware', 
+    'htmlmin.middleware.MarkRequestMiddleware',
+    # Compressor Ends
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -168,30 +188,52 @@ LOCALE_PATHS = (
 )
 
 # Security
-
+'''
 SECURE_SSL_REDIRECT = False
 SECURE_HSTS_PRELOAD = False
 SECURE_HSTS_SECONDS = 31536000
 SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+'''
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-
 
 MEDIA_DIR = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
 
+STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
-MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+
+    # Compressor
+    'compressor.finders.CompressorFinder',
+)
+
+# Minifying files
+COMPRESS_ENABLED = not DEBUG
+COMPRESS_CSS_HASHING_METHOD = 'content'
+COMPRESS_FILTERS = {
+    'css':[
+        'compressor.filters.css_default.CssAbsoluteFilter',
+        'compressor.filters.cssmin.rCSSMinFilter',
+    ],
+    'js':[
+        'compressor.filters.jsmin.JSMinFilter',
+    ]
+}
+HTML_MINIFY = True
+KEEP_COMMENTS_ON_MINIFYING = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

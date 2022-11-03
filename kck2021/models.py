@@ -36,6 +36,9 @@ class Article(models.Model):
     def __str__(self):
         return f"{self.id} | {self.title} | {self.date_added} "
 
+    def get_absolute_url(self):
+        return reverse("kck:readblog", args=[self.slug,])
+    
 class Department(models.Model):
     agency = models.CharField(max_length=50)
 
