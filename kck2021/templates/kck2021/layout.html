@@ -51,6 +51,8 @@
 
     <!-- Main CSS File - Witout Compression -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -267,7 +269,7 @@
                             <div class="col-xl-2 col-lg-2 col-md-10">
                                 <div class="logo">
                                     <a class="navbar-brand" href="{% url 'kck:index' %}">KCK <span>KOK
-                                        </span>ENGINEERING</a>
+                                        </span> ENGINEERING</a>
                                 </div>
 
                             </div>
@@ -501,6 +503,8 @@
     <!-- Main Javascript File - Without Compression -->
     <script src="{% static 'js/main.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         function copyData(containerid) {
             var range = document.createRange();
@@ -512,7 +516,9 @@
             alert('Copied!');
         }
     </script>
-
+    <script>
+        AOS.init();
+      </script>
     <!-- Optional Javascript Files -->
     {% block js %}
     {% endblock %}

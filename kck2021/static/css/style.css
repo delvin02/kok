@@ -223,6 +223,9 @@ a {
 a:hover {
     color: #191a33;
 }
+a.navbar-brand:hover {
+    color: #C0762b;
+}
 
 a:focus,
 a:hover,
@@ -7903,6 +7906,9 @@ del {
     line-height: 1;
 }
 
+.navbar-brand:hover {
+    color: #c0762b !important;
+}
 .navbar-brand span {
     color: #c0762b;
 }
@@ -8393,7 +8399,7 @@ del {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .marquee-headline span  {
-        font-size: 55px;
+        font-size: 60px;
     }
     .marquee-headline p {
         font-size: 35px;
@@ -8402,7 +8408,7 @@ del {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .marquee-headline span  {
-        font-size: 45px;
+        font-size: 55px;
     }
     .marquee-headline p {
         font-size: 30px;
@@ -8411,7 +8417,7 @@ del {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .marquee-headline span  {
-        font-size: 35px;
+        font-size: 50px;
     }
     .marquee-headline p {
         font-size: 25px;
@@ -8420,7 +8426,7 @@ del {
 
 @media (max-width: 575px) {
     .marquee-headline span  {
-        font-size: 25px;    
+        font-size: 40px;    
     }
     .marquee-headline p {
         font-size: 20px;

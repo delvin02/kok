@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
-                        <div class="media block-6 d-block text-center pt-md-4">
+                        <div class="media block-6 d-block text-center pt-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="icon-img">
                                     <img src="{% static 'img/icon/mixer.svg' %}">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
-                        <div class="media block-6 d-block text-center pt-md-4">
+                        <div class="media block-6 d-block text-center pt-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="icon-img">
                                     <img src="{% static 'img/icon/welding-mask.svg' %}" alt="welding">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
-                        <div class="media block-6 d-block text-center pt-md-4">
+                        <div class="media block-6 d-block text-center pt-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="icon-img">
                                     <img src="{% static 'img/icon/building.svg' %}" alt="construction">
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 d-flex services align-self-stretch p-4 py-md-5 ftco-animate">
-                        <div class="media block-6 d-block text-center pt-md-4">
+                        <div class="media block-6 d-block text-center pt-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="icon-img">
                                     <img src="{% static 'img/icon/crane.svg' %}" alt="crane">
@@ -209,8 +209,8 @@
             <div class="container">
                 <div class="row d-flex no-gutters">
                     <div class="col-sm-12 col-lg-6 d-flex">
-                        <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
-                            data-background="{% static 'img/hero/service1.jpg' %}">
+                        <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" 
+                            data-background="{% static 'img/hero/service1.jpg' %}" data-aos="fade-up" data-aos-duration="3000">
                             <a href="#" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                                 <span class="icon-play">
                                     <img src="{% static 'img/icon/playbutton.svg' %}" width="30px">
@@ -220,7 +220,7 @@
                     </div>
                     <div class="col-sm-12 col-lg-6 pl-md-5">
                         <div class="row justify-content-start py-5">
-                            <div class="col-md-12 heading-section ftco-animate pl-md-4 py-md-4">
+                            <div class="col-md-12 heading-section ftco-animate pl-md-4 py-md-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                                 <span class="subheading">Selamat Datang ke KCK KOK Engineering</span>
                                 <h2 class="mb-4 font-weight-bold">repurpose, renovate, refine - spaces </h2>
                                 <p>KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. Perniagaan teras utama KCK melibatkan perkhidmatan reka bentuk dan kejuruteraan dalaman untuk pelbagai projek.</p>
@@ -329,14 +329,14 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <div class="single-service-cap mb-30">
+                        <div class="single-service-cap mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/welding.png' %}" alt="kimpalan">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 1 %}">KCK Kimpalan</a></h4>
+                                <h4><a href="{% url 'kck:services' "kimpalan" %}">KCK Kimpalan</a></h4>
                                 <p> KCK Kimpalan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam. </p>
-                                <a href="{% url 'kck:services' 1 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <a href="{% url 'kck:services' "kimpalan" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
                                 <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
@@ -344,14 +344,14 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="single-service-cap mb-30">
+                        <div class="single-service-cap mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/concrete.jpeg' %}" alt="simen">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 2 %}">Semix</a></h4>
+                                <h4><a href="{% url 'kck:services' "semix" %}">Semix</a></h4>
                                 <p> KCK ReadyMix menyediakan perkhidmatan dalam sektor pembekalan konkrit untuk projek-projek yang diperlukan.</p>
-                                <a href="{% url 'kck:services' 2 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <a href="{% url 'kck:services' "semix" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
                                 <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
@@ -359,14 +359,14 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="single-service-cap mb-30">
+                        <div class="single-service-cap mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/construction.jpeg' %}" alt="kontraktor">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 3 %}">KCK Pembinaan</a></h4>
+                                <h4><a href="{% url 'kck:services' "pembinaan" %}">KCK Pembinaan</a></h4>
                                 <p> KCK Pembinaan melibat dengan projek infrastruktur seperti jalan raya, jamabatan, pembangunan dan lain-lain. </p>
-                                <a href="{% url 'kck:services' 3 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <a href="{% url 'kck:services' "pembinaan" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
                                 <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
@@ -376,14 +376,14 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <div class="single-service-cap mb-30">
+                        <div class="single-service-cap mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="pasir">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 1 %}">KCK Pasir</a></h4>
+                                <h4><a href="{% url 'kck:services' "pasir" %}">KCK Pasir</a></h4>
                                 <p> KCK Pasir menjalankan perniagaan pasir lombong kepada pelanggan untuk kegunaan persenderian ataupun projek. </p>
-                                <a href="{% url 'kck:services' 1 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <a href="{% url 'kck:services' "pasir" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
                                 <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
@@ -391,14 +391,14 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="single-service-cap mb-30">
+                        <div class="single-service-cap mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/craneser.jpeg' %}" alt="kren">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 2 %}">KCK Kren</a></h4>
+                                <h4><a href="{% url 'kck:services' "kren" %}">KCK Kren</a></h4>
                                 <p> KCK Kren menjalankan perniagaan berasas penyewaan Kren sekaligus dengan Lori Pencampur Konkrit sebagai pakej.</p>
-                                <a href="{% url 'kck:services' 2 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <a href="{% url 'kck:services' "kren" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
                                 <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
@@ -406,14 +406,14 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="single-service-cap mb-30">
+                        <div class="single-service-cap mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/steel.jpeg' %}" alt="kimpalan">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' 3 %}">KCK Fabrikasi </a></h4>
+                                <h4><a href="{% url 'kck:services' "fabrikasi" %}">KCK Fabrikasi </a></h4>
                                 <p> KCK Fabrikasi merupakan proses pengubahsuaian logam bernilai tambah yang diperlukan dalam pembuatan struktur untuk pelbagai industri. </p>
-                                <a href="{% url 'kck:services' 3 %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <a href="{% url 'kck:services' "fabrikasi" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
                                 <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
@@ -429,7 +429,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-9 offset-xl-1 offset-lg-1">
-                        <div class="contact-us-caption">
+                        <div class="contact-us-caption" data-aos="zoom-in" data-aos-duration="2500">
                             <div class="team-info mb-30 pt-45">
                                 <!-- Section Tittle -->
                                 <div class="section-tittle section-tittle4">
@@ -511,7 +511,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-10 col-lg-11 col-md-10 offset-xl-1">
-                        <div class="h1-testimonial-active">
+                        <div class="h1-testimonial-active" data-aos="zoom-out-left" data-aos-duration="2500">
                             <!-- Single Testimonial -->
                             <div class="single-testimonial">
                                 <!-- Testimonial Content -->
