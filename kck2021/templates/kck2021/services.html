@@ -44,7 +44,7 @@
                                 <img src="{% static 'img/service/welding.png' %}" alt="steel moudling">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">KCK Kimpalan</a></h4>
+                                <h4><a href="{% url 'kck:services' "kimpalan" %}">KCK Kimpalan</a></h4>
                                 <a href="{% url 'kck:services' "kimpalan" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
@@ -58,7 +58,7 @@
                                 <img src="{% static 'img/service/concrete.jpeg' %}" alt="konkrit, concrete">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">Semix</a></h4>
+                                <h4><a href="{% url 'kck:services' "semix" %}">Semix</a></h4>
                                 <a href="{% url 'kck:services' "semix" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
@@ -72,7 +72,7 @@
                                 <img src="{% static 'img/service/construction.jpeg' %}" alt="construction pembangunan">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">KCK Pembinaan</a></h4>
+                                <h4><a href="{% url 'kck:services' "pembinaan" %}">KCK Pembinaan</a></h4>
                                 <a href="{% url 'kck:services' "pembinaan" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
@@ -88,7 +88,7 @@
                                 <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="sand, pasir">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">KCK Pasir</a></h4>
+                                <h4><a href="{% url 'kck:services' "pasir" %}">KCK Pasir</a></h4>
                                 <a href="{% url 'kck:services' "pasir" %}"  class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
@@ -102,7 +102,7 @@
                                 <img src="{% static 'img/service/craneser.jpeg' %}" alt="kren">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">KCK Mobil-Kren</a></h4>
+                                <h4><a href="{% url 'kck:services' "kren" %}">KCK Mobil-Kren</a></h4>
                                 <a href="{% url 'kck:services' "kren" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
@@ -116,7 +116,7 @@
                                 <img src="{% static 'img/service/steel.jpeg' %}" alt="metal fabrication">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">KCK Fabrikasi</a></h4>
+                                <h4><a href="{% url 'kck:services' "fabrikasi" %}">KCK Fabrikasi</a></h4>
                                 <a href="{% url 'kck:services' "fabrikasi" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
                             </div>
                             <div class="service-icon">
