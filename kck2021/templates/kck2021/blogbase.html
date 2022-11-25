@@ -1,6 +1,15 @@
 {% extends "kck2021/layout.html" %}
 {% load static %}
-{% block title%}- Blog Description {% endblock %}
+{% block title%}{{ post.title }} {% endblock %}
+
+{% block og %}
+<meta property="og:url" content="http://kckok.my" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ project.title }}" />
+<meta property="og:description" content="KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan kimpalan (mesin-lay) berasas logam" />
+<meta property="og:image" content="{{ request.get_host }}{{ post.thumbnail.url }}" />
+{% endblock %}
+
 {% block body %}
     <div class="slider-area ">
     <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'img/hero/blog.jpeg' %}">
@@ -13,6 +22,7 @@
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{% url 'kck:index' %}">Home</a></li>
                             <li class="breadcrumb-item"><a href="{% url 'kck:blog' %}"> Blog</a></li> 
+                            <li class="breadcrumb-item"><a href="{% url 'kck:readblog' post.slug %}"> {{ post.title }}</a></li> 
                             </ol>
                         </nav>
                     </div>
@@ -26,32 +36,30 @@
          <div class="row">
             <div class="col-lg-8 posts-list">
 
-            {% for detail in post %}
                <div class="single-post">
                   <div class="feature-img">
-                     <img class="img-fluid" src="{{ detail.thumbnail }}" alt="">
+                     <img class="img-fluid" src="{{ post.thumbnail }}" alt="{{post.title}}">
                   </div>
                   <div class="blog_details">
-                     <h2>{{ detail.title}}
+                     <h2>{{ post.title}}
                      </h2>
                      <ul class="blog-info-link mt-3 mb-4">
-                        <li>{{ detail.author}} </li>
-                        <li> {{ detail.date_added|date }}
+                        <li>{{ post.author}} </li>
+                        <li> {{ post.date_added|date }}
                      </ul>
                      <p>
-                        {{ detail.body | safe }}
+                        {{ post.body | safe }}
                      </p>
                   </div>
                </div>
                <div class="blog-author">
                   <div class="media align-items-center">
                      <div class="media-body">
-                        <h4> Penulis:{{ detail.author }} | {{ detail.date_added|date }}</h4>
+                        <h4> Penulis:{{ post.author }} | {{ post.date_added|date }}</h4>
                         <p> KCK KOK ENGINEERING &copy; </p>
                      </div>
                   </div>
                </div>
-            {% endfor %}
             </div>
 
     <div class="col-lg-4">

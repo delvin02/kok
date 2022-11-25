@@ -101,7 +101,7 @@ def catBlog(request, category):
     })
 
 def readblog(request, slug_name):
-    post = Article.objects.filter(slug=slug_name)
+    post = Article.objects.get(slug=slug_name)
     categories = ArticleCategories.objects.all()
     recent = Article.objects.all().order_by('?')[:5]
     return render(request, "kck2021/blogbase.html", {
@@ -124,9 +124,9 @@ def project(request):
     })
 
 def readproject(request, slug_title):
-    readProject = Project.objects.filter(slug=slug_title)
+    project = Project.objects.get(slug=slug_title)
     return render(request, "kck2021/projectbase.html", {
-        "readProject": readProject,
+        "project": project,
     })
 def voucher(request):
     return render(request, "kck2021/voucher.html")

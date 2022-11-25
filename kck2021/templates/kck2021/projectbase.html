@@ -1,8 +1,15 @@
 {% extends "kck2021/layout.html" %}
 {% load static %}
-{% block title%}- Project Description{% endblock %}
+{% block title%}KCK KOK ENGINEERING SDN BHD | Project | {{project.title }}{% endblock %}
+
+{% block og %}
+<meta property="og:url" content="http://kckok.my" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="KCK Kok Engineering SDN BHD | Projek | {{ project.title }}" />
+<meta property="og:description" content="KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan kimpalan (mesin-lay) berasas logam" />
+<meta property="og:image" content="{{ request.get_host }}{{ project.openingImage.url }}" />
+{% endblock %}
 {% block body %}
-    {% for project in readProject %}
     <main>
         <!-- slider Area Start-->
         <div class="slider-area ">
@@ -62,62 +69,6 @@
                 </div>
             </div>
         </div>
-        {% if project.firstImage %}
-        <section class="gallery min-vw-100">
-            <div class="container-lg">
-                <div class="row mt-4">
-                    <div class="col-sm-6 col-md-4 pl-0 pr-0">
-                        <img class="img-fluid image-gallery" src="{{ project.firstImage.url }}">
-                    </div>
-                    <div class="col-sm-6 col-md-4 pl-0 pr-0">
-                        <img class="img-fluid image-gallery" src="{{ project.secondImage.url }}">
-                    </div>
-                    <div class="col-sm-6 col-md-4 pl-0 pr-0">
-                        <img class="img-fluid image-gallery" src="{{ project.thirdImage.url}}">
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                    <div class="col-sm-6 col-md-4 pl-0 pr-0">
-                        <img class="img-fluid image-gallery" src="{{ project.fourthImage.url }}">
-                    </div>
-                    <div class="col-sm-6 col-md-4 pl-0 pr-0">
-                        <img class="img-fluid image-gallery" src="{{ project.fifthImage.url }}">
-                    </div>
-                    <div class="col-sm-6 col-md-4 pl-0 pr-0">
-                        <img class="img-fluid image-gallery" src="{{ project.sixthImage.url }}">
-                    </div>
-                </div>
-            </div>
-        </section>
-        {% else %}
-        <div id="carouselExampleIndicators" class="carousel slide projectpad" data-ride="carousel">
-            <ol class="carousel-indicators padding">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner carousel-project ">
-                <div class="carousel-item active">
-                <img class="d-block w-100" src="{{ project.secondImage.url }}" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="{{ project.thirdImage.url }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="{{ project.fourthImage.url }}" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        {% endif %}
         <!-- Services Details End -->
     </main>
-    {% endfor %}
 {% endblock %}

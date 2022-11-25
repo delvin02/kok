@@ -27,7 +27,7 @@ SECRET_KEY = '&0^_enc-c4l79p7d=g7p5_2nx4)&_s9v5vpux^m3!7&!ep!3ef'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['185.201.9.2', 'kckok.my', 'http://kckok.my', 'www.kckok.my', 'http://www.kckok.my', '.kckok.my']
 
 
 # Application definition
