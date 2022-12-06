@@ -3,10 +3,10 @@
 {% block title%}{{ post.title }} {% endblock %}
 
 {% block og %}
-<meta property="og:url" content="http://kckok.my" />
+<meta property="og:url" content="{{ request.get_host }}{{ request.get_full_path }}" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="{{ project.title }}" />
-<meta property="og:description" content="KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan kimpalan (mesin-lay) berasas logam" />
+<meta property="og:title" content="{{ post.title }}" />
+<meta property="og:description" content="{{ post.intro }}" />
 <meta property="og:image" content="{{ request.get_host }}{{ post.thumbnail.url }}" />
 {% endblock %}
 
