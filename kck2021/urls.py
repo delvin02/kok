@@ -13,6 +13,11 @@ urlpatterns = [
     path("services", views.services, name="services"),
     path("voucher", views.voucher, name="voucher"),
     path("services/<str:service_name>/", views.servicesType, name="services"),
+    
+    # Policies
+    path("services/semix/terms-and-conditions", views.semix_terms, name="semix_terms"),
+    path("services/semix/whistle-blowing-policy", views.semix_whistle, name="semix_whistle"),
+
     path("blog", views.blog, name="blog"),
     path("blog/category=<str:category>", views.catBlog, name="catBlog"),
     path("blog/<slug:slug_name>", views.readblog, name="readblog"),

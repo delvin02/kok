@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.mail import EmailMessage, BadHeaderError
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
-from django.http import HttpResponse
+from django.http import HttpResponse, FileResponse, Http404
 from django.views.generic import ListView, DetailView
 from django.core.mail import send_mail
 from django.http import HttpResponse
@@ -128,6 +128,12 @@ def readproject(request, slug_title):
     return render(request, "kck2021/projectbase.html", {
         "project": project,
     })
+def semix_terms(request):
+    return render(request, "kck2021/semix-terms.html")
+
+def semix_whistle(request):
+    return render(request, "kck2021/semix-whistle.html")
+
 def voucher(request):
     return render(request, "kck2021/voucher.html")
 

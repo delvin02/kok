@@ -30,15 +30,16 @@
     if ($typed.length) {
       var typed = new Typed("#typed", {
         strings: [
-          "Plan. 🧾",
-          "Supply. 🚜",
-          "Craft. 🛠",
-          "Execute. 🏗",
-          "Build. 👷‍♂️",
-          "Deliver. 🏡",
+          "Plan. &#128203;",
+          "Supply. &#128668;",
+          "Craft. &#128736;",
+          "Execute. &#127959;",
+          "Build. &#128119;",
+          "Deliver. &#127969;",
         ],
         loop: true,
         typeSpeed: 80,
+        backSpeed: 30,
       });
     }
   }
