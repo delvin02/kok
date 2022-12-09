@@ -8,11 +8,14 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW9L4K5GPN"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-PW9L4K5GPN');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PW9L4K5GPN');
     </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,7 +29,7 @@
     <meta name="facebook-domain-verification" content="iafdmnej033a9az3l66om38vq6hcsa" />
     <!-- OG -->
     {% block og %}
-    {% endblock %}  
+    {% endblock %}
 
     <!-- Author -->
     <meta name='author' content='Weei Waai Khor (Delvin)'>
@@ -71,7 +74,7 @@
                     <small class="uppercase companyColor font-barlow">Kok Engineering</small>
                 </div>
             </div>
-            <h3 class="pt-10 font-roboto companyColor text-center"> Where space being repurposed, where confidence being restored. </h3>
+            <h3 class="pt-10 font-roboto companyColor text-center"> Repurposing spaces. </h3>
         </div>
     </div>
     <!-- Preloader Start -->
@@ -373,57 +376,67 @@
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>Hubungi Kami</h4>
+                                    <ul>
+                                        <li><a href="https://api.whatsapp.com/send?phone=60127288433">Whatsapp: 012 728 8433</a></li>
+                                    </ul>
                                     <div class="footer-pera">
                                         <p class="info1">Lot 2959, Kampung Padang Landak 22000 Jerteh, Terengganu</p>
+                                        <p class="info1">23, Jln Haji Omar, Kampung Raja
+                                            22200 Besut, Terengganu</p>
+                                        <p class="info1"> Kampung Anak Ikan, 22020 Jerteh
+                                            22200 Besut, Terengganu</p>
                                     </div>
-                                    <ul>
-                                        <li><a href="https://wa.link/218sbt">Whatsapp: +60 12 988-6348</a></li>
-                                    </ul>
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
-                                <!-- Map -->
-                                <div class="map-footer" border="2px solid green">
-                                    <div class="mapouter-footer">
-                                        <div class="gmap_canvas-footer">
-                                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
-                                                marginheight="0" marginwidth="0"
-                                                src="https://maps.google.com/maps?width=326&amp;height=289&amp;hl=en&amp;q=kck kok Jerteh terengganu&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                                            <a href="https://www.fnfgo.com/">FNF Go</a>
-                                        </div>
+                                <div class="footer-tittle">
+                                    <h4>Terms</h4>
+                                    <ul>
+                                        <li><a href="{% url 'kck:semix_terms' %}">Terms and Conditions Sales</a></li>
+                                        <li><a href="{% url 'kck:semix_whistle' %}">Whistle blowing Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- Map -->
+                            <div class="map-footer mb-10">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe width="100%" height="290" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?q=Kck%20kok%20engineering&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                                         <style>
-                                            .mapouter-footer {
+                                            .mapouter {
                                                 position: relative;
                                                 text-align: right;
-                                                width: 100%;
-                                                height: 289px;
+                                                height: 290px;
+                                                width: 100%%;
                                             }
-
-                                            .gmap_canvas-footer {
+                                        </style><a href="https://www.embedgooglemap.net">embed google maps iframe</a>
+                                        <style>
+                                            .gmap_canvas {
                                                 overflow: hidden;
                                                 background: none !important;
-                                                width: 100%;
-                                                height: 289px;
-                                            }
-
-                                            .gmap_iframe {
-                                                height: 289px !important;
+                                                height: 290px;
+                                                width: 100%%;
                                             }
                                         </style>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Map End -->
                         </div>
                     </div>
-                    <div class="footer-info" style="background: #c0762b;color: white;border-radius: 20px;">
+                    <div class="footer-info" style="background: #c0762b; color: white;border-radius: 20px; opacity: 0.85;">
                         <div class="col-sm-12 col-12">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div class="header-info-left">
                                     <ul class="d-flex flex-column text-center pt-20 pb-20 justify-content-center">
                                         <li>+(60) 12-988 6348 (AKOK)</li>
-                                        <li>kckokengineering@kckok.my</li>
+                                        <li>kckokengineering@gmail.com</li>
                                         <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
                                     </ul>
                                 </div>
@@ -433,12 +446,17 @@
                             <div class="row d-flex justify-content-center">
                                 <div class="header-info-right">
                                     <ul class="header-social d-inline-flex justify-content-center">
-                                        <li class="pl-10 pr-10"><a href="https://www.instagram.com/kck.kok/"
-                                                style="color: black;font-size: 24px;"><i
-                                                    class="fab fa-instagram"></i></a></li>
+                                        <li class="pl-10 pr-10">
+                                            <a href="https://www.instagram.com/kck.kok/"
+                                                style="color: black;font-size: 24px;">
+                                                <u><i class="fab fa-instagram"></i></u>
+                                            </a>
+                                        </li>
                                         <li class="pl-10 pr-10"><a href="https://www.facebook.com/kckokengineering"
-                                                style="color: black;font-size: 24px;"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
+                                                style="color: black;font-size: 24px;">
+                                                <u><i class="fab fa-facebook-f"></i></u>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -525,10 +543,14 @@
         AOS.init();
     </script>
     <script>
-        
-    <!-- Optional Javascript Files -->
-    {% block js %}
-    {% endblock %}
+        <!-- Optional Javascript Files 
+        -->
+        {
+            % block js %
+        }
+        {
+            % endblock %
+        }
 
 </body>
 
