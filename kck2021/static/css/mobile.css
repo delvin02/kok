@@ -8,8 +8,14 @@
     display: none;
 }
 .navbar-brand {
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: 28px !important;
+    vertical-align: middle !important;
+}
+.slicknav_btn {
+    top: -35px !important;
+}
+.slicknav_menu .slicknav_icon {
+    right: -5px !important;
 }
 .img-video {
     height: 400px;

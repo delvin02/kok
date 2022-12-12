@@ -2833,7 +2833,7 @@ div.info-right {
 }
 
 .header-area .slicknav_btn {
-  top: -36px;
+  top: -35px;
 }
 
 .slicknav_menu .slicknav_nav a:hover {
@@ -7937,6 +7937,12 @@ del {
   font-weight: 800;
   font-size: 30px;
   line-height: 1;
+}
+@media (max-width: 576px)
+{
+  .navbar-brand {
+    font-size: 28px;
+  }
 }
 
 .navbar-brand:hover {
