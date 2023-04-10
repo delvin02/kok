@@ -3284,26 +3284,38 @@ div.info-right
 
 .services-area1 .single-service-cap .service-cap {
     padding: 20px 30px 20px 30px;
-    background: rgba(232, 232, 232, 0.8);
+    background: rgba(232, 232, 232, 0.5);
 }
 
-.services-area1 .single-service-cap .service-cap h4 {
+.services-area1 .single-service-cap .service-cap div  {
     margin-bottom: 35px
 }
 
 .services-area1 .single-service-cap .service-cap h4 a {
     color: #0e132a;
     font-size: 24px;
-    font-weight: 700
+    font-weight: 700;
+}
+
+.services-area1 .single-service-cap .service-cap span {
+    font-size: 100%;
+    color: white;
+    background: #C0762B;
+}
+.services-area1 .single-service-cap .service-cap .badge-new {
+    background: rgba(220, 220, 220, 0.95);
+    font-size: 12px;
+    color: black;
+
 }
 
 @media (max-width: 575px) {
-    .services-area1 .single-service-cap .service-cap h4 a {
+    .services-area1 .single-service-cap .service-cap div h4 a {
         font-size: 18px
     }
 }
 
-.services-area1 .single-service-cap .service-cap h4 a:hover {
+.services-area1 .single-service-cap .service-cap div h4 a:hover {
     color: #c0762b;
 }
 
@@ -3316,13 +3328,14 @@ div.info-right
 }
 
 .single-service-cap:hover .more-btn i {
-    color: #fff;
+    color: #000;
+    font-weight: 900;
 }
 
 .more-btn {
     color: #161e46;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     display: block;
     margin-bottom: 10px;
     padding: 4px;

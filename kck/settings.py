@@ -54,10 +54,10 @@ SITE_ID = 1
 # Cache
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
     }
 }
+
 
 DEFAULT = {
     'selector': 'textarea',
@@ -82,8 +82,8 @@ MIDDLEWARE = [
     'htmlmin.middleware.HtmlMinifyMiddleware', 
     'htmlmin.middleware.MarkRequestMiddleware',
     # Compressor Ends
-    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -211,7 +211,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -222,7 +222,7 @@ STATICFILES_FINDERS = (
 )
 
 # Minifying files
-COMPRESS_ENABLED = not DEBUG
+COMPRESS_ENABLED = False
 COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_FILTERS = {
     'css':[
@@ -233,8 +233,8 @@ COMPRESS_FILTERS = {
         'compressor.filters.jsmin.JSMinFilter',
     ]
 }
-HTML_MINIFY = True
-KEEP_COMMENTS_ON_MINIFYING = True
+HTML_MINIFY = False
+KEEP_COMMENTS_ON_MINIFYING = False
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
