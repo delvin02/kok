@@ -48,7 +48,7 @@
                         </div>
                         <div class="details-caption">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 ringing">
                                     <div class="services-quality card mb-3" >
                                         <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                             <span class="icon-img d-inline-flex text-center">
@@ -72,7 +72,7 @@
                                 anda mengenai penutupan utama dan pekerjaan pakar.</p>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                         <span class="icon-img text-center">
@@ -85,7 +85,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                         <span class="icon-img text-center">
@@ -98,7 +98,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                         <span class="icon-img text-center">
@@ -111,7 +111,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                         <span class="icon-img text-center">
@@ -233,10 +233,61 @@
                             <!--/row-->
                         </div>
                     </div>
+                    <h1 class="mb-5">Perkhidmatan Lain</h1>
+                        <div class="row more-services d-flex justify-content-between mb-5 companyColor">
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "semix" %}">
+            
+                                <div class="service-col card card" >
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/crane.jpeg' %}" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">Semix Concrete</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "backhoe" %}">
+                                <div class="card">
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/backhoe.jpeg' %}" class="card-img-top" alt="backhoe hydraulic">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">Backhoe</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "fabrikasi" %}">
+                                    <div class="card">
+                                        <div class="card-img" style="overflow:hidden;">
+                                            <img src="{% static 'img/service/steel.jpeg' %}" class="card-img-top" alt="crane">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text companyColor">Fabrikasi</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "pasir" %}">
+                                    <div class="card">
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/sandevacation.jpeg' %}" class="card-img-top" alt="crane">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">KCK Pasir</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- Services Details End -->
 </main>

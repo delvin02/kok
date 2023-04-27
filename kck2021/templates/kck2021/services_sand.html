@@ -47,7 +47,7 @@
                         </div>
                         <div class="details-caption">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 ringing">
                                     <div class="services-quality card mb-3" >
                                         <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                             <span class="icon-img d-inline-flex text-center">
@@ -70,7 +70,7 @@
                                 anda mengenai penutupan utama dan pekerjaan pakar.</p>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex check justify-content-center align-items-center">
                                         <img src="{% static 'img/service/pasir-sedang.jpeg' %}" alt="pasir sedang"style="width:100%; max-height: 280px; object-fit:cover;">
@@ -88,7 +88,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex check justify-content-center align-items-center">
                                         <img src="{% static 'img/service/pasir-kotor.jpeg' %}" alt="pasir kotor" style="width:100%; max-height: 280px; object-fit:cover;">
@@ -106,7 +106,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                 <div class="services-quality card mb-3" >
                                     <div class="icon d-flex check justify-content-center align-items-center">
                                         <img src="{% static 'img/service/plaster-sand.jpeg' %}" alt="pasir plaster" style="width:100%; max-height: 280px; object-fit:cover;">
@@ -230,13 +230,63 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--/row-->
+                        </div>
+                    </div>
+                    <h1 class="mb-5">Perkhidmatan Lain</h1>
+                    <div class="row more-services d-flex justify-content-between mb-5 companyColor">
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "semix" %}">
+        
+                            <div class="service-col card card" >
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/service/crane.jpeg' %}" alt="semix concrete">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">Semix Concrete</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "kren" %}">
+                            <div class="card">
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/gallery/cr.jpeg' %}" class="card-img-top" alt="crane">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">KCK Mobil-Kren</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "kimpalan" %}">
+                            <div class="card">
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/service/lathe-machine.jpeg' %}" class="card-img-top" alt="product kimpalan">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">KCK Kimpalan</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "longarm" %}">
+                            <div class="card">
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/service/long_arm.jpeg' %}" class="card-img-top" alt="product long arm excavator">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">Long Arm Excavator</p>
+                                </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- Services Details End -->
 </main>

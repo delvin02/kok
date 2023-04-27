@@ -93,14 +93,7 @@ class Project(models.Model):
     location = models.CharField(max_length=100)
     value = models.DecimalField(max_digits =4,decimal_places=2)
     jobType = models.ManyToManyField(Job, blank=False, related_name="job_spec")
-    photos = models.ForeignKey(ProjectImages, on_delete=models.CASCADE, null=True, blank=True, related_name="projectImages")
-    firstImage = models.ImageField(upload_to='media/', blank= True)
-    secondImage = models.ImageField(upload_to='media/',blank=True)
-    thirdImage= models.ImageField(upload_to='media/', blank=True)
-    fourthImage = models.ImageField(upload_to='media/', blank=True)
-    fifthImage = models.ImageField(upload_to='media/', blank=True)
-    sixthImage = models.ImageField(upload_to='media/', blank=True)
-
+    photos = models.ForeignKey(ProjectImages, on_delete=models.CASCADE, null=True, blank=True, related_name="images")
     dateTime = models.DateTimeField(auto_now_add=True)
 
     class Meta: 
@@ -108,4 +101,8 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+    
+class ProjectImage(models.Model):
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name="images")
+    images = models.ImageField(upload_to='media/', blank=True)
 

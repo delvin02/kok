@@ -45,7 +45,7 @@
                                 <p>KCK KOK ENGINEERING SDN BHD yang terletak di Jerteh, Terengganu adalah pengeluar besi terkemuka di bandar. Terkenal dengan ulasan pelanggan yang paling positif, perkhidmatan KCK dicari dan syarikat kerja logam Jerteh terbaik. Berlesen dan diinsuranskan dengan betul untuk semua perkhidmatan mereka, anda pasti mendapat produk dan perkhidmatan terbaik di sini. Dalam sector pengimpalan pula, syarikat kami menyediakan perkhidmatan pemesinan khusus untuk operasi pembuatan kecil, sederhana dan besar di industry seperti aeroangkasa, kerajaan dan penjagaan kesihatan.</p>
                             </div>
                             <div class="row">
-                                <div class="col-lg-3">
+                                <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                     <div class="services-quality card mb-3" >
                                         <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                             <span class="icon-img text-center">
@@ -59,7 +59,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <div class="services-quality card mb-3" >
+                                    <div class="services-quality card mb-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                         <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                             <span class="icon-img text-center">
                                                 <img src="{% static 'img/icon/Circle_Check.svg' %}">
@@ -72,7 +72,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <div class="services-quality card mb-3" >
+                                    <div class="services-quality card mb-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                         <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                             <span class="icon-img text-center">
                                                 <img src="{% static 'img/icon/Circle_Check.svg' %}">
@@ -85,7 +85,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <div class="services-quality card mb-3" >
+                                    <div class="services-quality card mb-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
                                         <div class="icon d-flex p-3 check justify-content-center align-items-center">
                                             <span class="icon-img text-center">
                                                 <img src="{% static 'img/icon/Circle_Check.svg' %}">
@@ -204,6 +204,58 @@
                                 Langkah-langkah ini perlu diikuti bagi mendapatkan perkhidmatan bekalan dari syarikat
                                 kami. Kami juga menyediakan perkhidmatan kren dengan trak campuran <a href="{% url 'kck:services' "semix" %}">konkrit</a> bagi
                                 memudahkan semasa proses penghantaran jika pelanggan memerlukan.
+                        </div>
+                        <h1 class="mb-5">Perkhidmatan Lain</h1>
+                        <div class="row more-services d-flex justify-content-between mb-5 companyColor">
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "semix" %}">
+            
+                                <div class="service-col card card" >
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/crane.jpeg' %}" alt="concrete">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">Semix Concrete</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "kren" %}">
+                                <div class="card">
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/gallery/cr.jpeg' %}" class="card-img-top" alt="crane">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">KCK Mobil-Kren</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "longarm" %}">
+                                <div class="card">
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/long_arm.jpeg' %}" class="card-img-top" alt="long arm excavator">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">Long Arm Excavator</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                                <a href="{% url 'kck:services' "backhoe" %}">
+                                <div class="card">
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/backhoe.jpeg' %}" class="card-img-top" alt="backhoe hydraulic">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">Backhoe</p>
+                                    </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

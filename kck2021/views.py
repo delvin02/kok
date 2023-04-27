@@ -53,7 +53,13 @@ def servicesType(request, service_name):
         return render(request, "kck2021/services_crane.html")
     elif service_name == "fabrikasi":
         return render(request, "kck2021/services_fabrication.html")
-
+    elif service_name == "backhoe":
+        return render(request, "kck2021/services_backhoe.html")
+    elif service_name =="longarm":
+        return render(request, "kck2021/services_longarm.html")
+    elif service_name == "loadcovering":
+        return render(request, "kck2021/services_loadcovering.html")
+    
 def contact(request):
     if request.method == "GET":
         return render(request, "kck2021/contact.html")

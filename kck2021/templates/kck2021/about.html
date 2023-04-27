@@ -202,7 +202,7 @@
                                 <img  src="{% static 'img/icon/people.svg' %}" style="width: 50px; height: 50px;" />
                                 <h5 class="card-title font-weight-bold font-poppin my-2">Our People</h5>
                             </div>
-                          <p class="card-text"> Our employees are our great asset.</p>
+                          <p class="card-text"> Our employees are our greatest asset.</p>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                                 <img  src="{% static 'img/icon/medal-star.svg' %}" style="width: 50px; height: 50px;" />
                                 <h5 class="card-title font-weight-bold font-poppin my-2"> Excellence</h5>
                             </div>
-                          <p class="card-text"> What we do well, we deliver the best services as we are capable of</p>
+                          <p class="card-text"> We as one, always aim to strive for excellence at the highest level.</p>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                                 <img  src="{% static 'img/icon/flash.svg' %}" style="width: 50px; height: 50px;" />
                                 <h5 class="card-title font-weight-bold font-poppin my-2">Empower</h5>
                             </div>
-                            <p class="card-text"> Striving for higher productivity and personal development</p>
+                            <p class="card-text"> Empowering for higher productivity and personal development.</p>
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,6 @@
                         </div>
                     </div>
                 </div>
-            -->
             </div>
         </div>
     </section>
@@ -260,208 +259,214 @@
             <p class="pb-10">1994</p>
         </div>
         <div class="container-fluid p-0 mb-5">
-            <div class="row d-flex flex-row flex-nowrap justify-around slideshow-image">
-                <div class="col-lg-4 col-md-6 col-8 ">
-                    <div class="items">
-                        <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Penyewaan Kren</p>
+            <article>
+                <div class="row d-flex flex-row flex-nowrap justify-around slideshow-image">
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "longarm" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/long_arm.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Long Arm Excavator</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "pembinaan" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Kontraktor</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "fabrikasi" %}">
+                        <div class="items ">
+                            <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
+                            <div class="support-img-cap text-center">
+                                <p class="mb-0">Fabrikasi</p>
+                            </div>
                         </div>
+                    </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "kren" %}">
+                            <div class="items">
+                                <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Penyewaan Kren</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "kimpalan" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Mesin Lay</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "backhoe" %}">
+
+                            <div class="items ">
+                                <img src="{% static 'img/service/backhoe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Backhoe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "loadcovering" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/load_covering.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Sistem Penutup Lori</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "longarm" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/long_arm.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Long Arm Excavator</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "semix" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/crane.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p>Semix Concrete</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "pasir" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p>KCK Pasir</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "longarm" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/long_arm.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Long Arm Excavator</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "pembinaan" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Kontraktor</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "fabrikasi" %}">
+                        <div class="items ">
+                            <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
+                            <div class="support-img-cap text-center">
+                                <p class="mb-0">Fabrikasi</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "kren" %}">
+                            <div class="items">
+                                <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Penyewaan Kren</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "kimpalan" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Mesin Lay</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "backhoe" %}">
+
+                            <div class="items ">
+                                <img src="{% static 'img/service/backhoe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Backhoe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "loadcovering" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/load_covering.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Sistem Penutup Lori</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "longarm" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/long_arm.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p class="mb-0">Long Arm Excavator</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "semix" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/crane.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p>Semix Concrete</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-8 image">
+                        <a href="{% url 'kck:services' "pasir" %}">
+                            <div class="items ">
+                                <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="evacuator" class="w-100 h-100">
+                                <div class="support-img-cap text-center">
+                                    <p>KCK Pasir</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kimpalan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kontraktor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/metal.jpeg' %}" alt="besi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Mesin Lay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Fabrikasi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8 ">
-                    <div class="items">
-                        <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Penyewaan Kren</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kimpalan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kontraktor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/metal.jpeg' %}" alt="besi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Mesin Lay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Fabrikasi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8 ">
-                    <div class="items">
-                        <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Penyewaan Kren</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kimpalan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kontraktor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/metal.jpeg' %}" alt="besi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Mesin Lay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Fabrikasi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8 ">
-                    <div class="items">
-                        <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Penyewaan Kren</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kimpalan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kontraktor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/metal.jpeg' %}" alt="besi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Mesin Lay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Fabrikasi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8 ">
-                    <div class="items">
-                        <img src="{% static 'img/gallery/cranee.jpeg' %}" alt="crane" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Penyewaan Kren</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/lathe.jpeg' %}" alt="kimpalan" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kimpalan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/evacuator.jpeg' %}" alt="evacuator" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Kontraktor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/metal.jpeg' %}" alt="besi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Mesin Lay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-8">
-                    <div class="items ">
-                        <img src="{% static 'img/service/steel.jpeg' %}" alt="fabrikasi" class="w-100 h-100">
-                        <div class="support-img-cap text-center">
-                            <p>Fabrikasi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
     </section>
 </main>

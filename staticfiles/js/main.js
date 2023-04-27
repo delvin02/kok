@@ -192,6 +192,12 @@
     });
   }
 
+
+  
+  var timer = setInterval(moveSlide, 3000);
+  
+  
+
   /* 5. Gallery Active */
   var client_list = $(".gallery-active");
   if (client_list.length) {

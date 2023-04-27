@@ -1,0 +1,271 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+{% block title%}KCK KOK ENGINEERING SDN BHD | Services | Concrete {% endblock %}
+
+{% block og %}
+<meta property="og:url" content="http://kckok.my" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="KCK Kok Engineering SDN BHD | Services | Concrete" />
+<meta property="og:description" content="KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan kimpalan (mesin-lay) berasas logam" />
+<meta property="og:image" content="http://kckok.my/static/img/hero/background-2.jpg" />
+{% endblock %}
+
+{% block body %}
+<main>
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
+            data-background="{% static 'img/service/long_arm.jpeg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8">
+                        <div class="hero-cap hero-cap2 pt-120">
+                            <h2>KCK Long Arm Excavator</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:index' %}">Utama</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' %}"> Perkhidmatan</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:services' "longarm" %}"> Pembekal
+                                            KCK Long Arm Excavator</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+    <!-- Services Details Start -->
+    <div class="services-details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="single-services section-padding2">
+                        <div class="details-img mb-40">
+                            <img src="{% static 'img/service/longarm.jpeg' %}" alt="long arm excavator">
+                        </div>
+                        <div class="details-caption">
+                            <p>Long Arm Excavator jenis ekskavator yang mempunyai boom dan lengan yang lebih panjang berbanding dengan ekskavator standard. Boom dan lengan yang lebih panjang ini membolehkan ekskavator mencapai ke dalam kawasan penggalian dengan lebih jauh, membolehkannya menggali lebih dalam dan meliputi kawasan yang lebih besar tanpa perlu untuk berpindah tempat.</p>
+
+                            <p>Long Arm Excavator biasanya digunakan dalam projek pembinaan yang memerlukan penggalian dengan dinding vertikal yang dalam, seperti:</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Menggali asas bangunan tinggi</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Membuat parit untuk paip</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Penggalian tanah dalam air</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in">
+                                <div class="services-quality card mb-3" >
+                                    <div class="icon d-flex p-3 check justify-content-center align-items-center">
+                                        <span class="icon-img text-center">
+                                            <img src="{% static 'img/icon/Circle_Check.svg' %}">
+                                        </span>
+                                    </div>
+                                    <div class="card-content p-3 text-primary text-center">
+                                        <h5 class="card-title font-weight-bold">Membongkar struktur tinggi</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Bagaimana kita dapat bantu?</h2>
+                        <p>Untuk perkhidmatan sektor pembekal konkrit, kemudahan yang disediakan ini sesuai untuk
+                            mereka yang mahukan penjimatan daripada aspek masa, kos dan tenaga. Loji pencampur
+                            konkrit ini digunakan bagi menghasilkan konkrit homogen dan seragam dalam pelbagai
+                            aplikasi pembinaan. </p>
+                        <p>Jika anda berminat untuk 'order', terdapat lima komponen dalam perkhidmatan pembekal
+                            konkrit iaitu:</p>
+                            <div class="container py-2 mt-4 mb-4">
+
+                                <h2 class="font-weight-bold companyColor">Jika berminat. </h2>
+                                <div class="row">
+                                    <!-- timeline item 1 left dot -->
+                                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                        <div class="row h-50">
+                                            <div class="col">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                        <h5 class="m-2">
+                                            <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                        </h5>
+                                        <div class="row h-50">
+                                            <div class="col border-right-company">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="col py-2">
+                                        <div class="card">
+                                            <div class="card-body border-company p-3">
+                                                <h4 class="card-title phase-icon my-auto"> <img src="{% static 'img/icon/whatsapp.svg' %}"> Permintaan Sebut Harga Memalui Whatsapp</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                        <div class="row h-50">
+                                            <div class="col border-right-company">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                        <h5 class="m-2">
+                                            <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                        </h5>
+                                        <div class="row h-50">
+                                            <div class="col border-right-company">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="col py-2">
+                                        <div class="card">
+                                            <div class="card-body border-company p-3">
+                                                <h4 class="card-title phase-icon my-auto"> <img src="{% static 'img/icon/calendar.svg' %}"> Cadangkan Masa yang sesuai untuk penghantaran</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                        <div class="row h-50">
+                                            <div class="col border-right-company">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                        <h5 class="m-2">
+                                            <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                        </h5>
+                                        <div class="row h-50">
+                                            <div class="col border-right-company">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="col py-2">
+                                        <div class="card">
+                                            <div class="card-body border-company p-3">
+                                                <h4 class="card-title phase-icon my-auto"> <img src="{% static 'img/icon/cash.svg' %}"> Membuat Bayaran</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                                <!-- timeline item 4 -->
+                                <div class="row">
+                                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                        <div class="row h-50">
+                                            <div class="col border-right-company">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                        <h5 class="m-2">
+                                            <span class="badge badge-pill bg-badge border-company">&nbsp;</span>
+                                        </h5>
+                                        <div class="row h-50">
+                                            <div class="col">&nbsp;</div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="col py-2">
+                                        <div class="card">
+                                            <div class="card-body border-company p-3">
+                                                <h4 class="card-title phase-icon my-auto"> <img src="{% static 'img/icon/truck.svg' %}"> Penerimaan produk anda</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                    </div>
+                    <h1 class="mb-5">Perkhidmatan Lain</h1>
+                    <div class="row more-services d-flex justify-content-between mb-5 companyColor">
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "semix" %}">
+        
+                            <div class="service-col card card" >
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/service/crane.jpeg' %}" alt="semix concrete">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">Semix Concrete</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "kren" %}">
+                            <div class="card">
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/gallery/cr.jpeg' %}" class="card-img-top" alt="crane">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">KCK Mobil-Kren</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "pembinaan" %}">
+                            <div class="card">
+                                <div class="card-img" style="overflow:hidden;">
+                                    <img src="{% static 'img/service/construction.jpeg' %}" class="card-img-top" alt="long arm excavator">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text companyColor">Pembinaan</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-col col-lg-3 col-md-4 col-sm-6 mb-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-out">
+                            <a href="{% url 'kck:services' "backhoe" %}">
+                                <div class="card">
+                                    <div class="card-img" style="overflow:hidden;">
+                                        <img src="{% static 'img/service/backhoe.jpeg' %}" class="card-img-top" alt="backhoe hydraulic">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text companyColor">Backhoe</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Details End -->
+</main>
+{% endblock %}

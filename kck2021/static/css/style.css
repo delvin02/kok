@@ -223,8 +223,27 @@ a {
 a:hover {
     color: #191a33;
 }
+.navbar-brand {
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
 a.navbar-brand:hover {
     color: #C0762b;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    .navbar-brand {
+        font-size: 28px!important;
+        vertical-align: middle!important;
+    }
 }
 
 a:focus,
@@ -2750,7 +2769,7 @@ div.info-right
 
 .main-header .main-menu ul ul.submenu {
     position: absolute;
-    width: 170px;
+    width: 220px;
     background: #fff;
     left: 0;
     top: 90%;
@@ -3279,31 +3298,43 @@ div.info-right
     -moz-transition: all .5s ease-out 0s;
     -ms-transition: all .5s ease-out 0s;
     -o-transition: all .5s ease-out 0s;
-    transition: all .5s ease-out 0s
+    transition: all .5s ease-out 0s;
 }
 
 .services-area1 .single-service-cap .service-cap {
     padding: 20px 30px 20px 30px;
-    background: rgba(232, 232, 232, 0.8);
+    background: rgba(232, 232, 232, 0.5);
 }
 
-.services-area1 .single-service-cap .service-cap h4 {
+.services-area1 .single-service-cap .service-cap div  {
     margin-bottom: 35px
 }
 
 .services-area1 .single-service-cap .service-cap h4 a {
     color: #0e132a;
     font-size: 24px;
-    font-weight: 700
+    font-weight: 700;
+}
+
+.services-area1 .single-service-cap .service-cap span {
+    font-size: 100%;
+    color: white;
+    background: #C0762B;
+}
+.services-area1 .single-service-cap .service-cap .badge-new {
+    background: rgba(220, 220, 220, 0.95);
+    font-size: 12px;
+    color: black;
+
 }
 
 @media (max-width: 575px) {
-    .services-area1 .single-service-cap .service-cap h4 a {
+    .services-area1 .single-service-cap .service-cap div h4 a {
         font-size: 18px
     }
 }
 
-.services-area1 .single-service-cap .service-cap h4 a:hover {
+.services-area1 .single-service-cap .service-cap div h4 a:hover {
     color: #c0762b;
 }
 
@@ -3316,13 +3347,14 @@ div.info-right
 }
 
 .single-service-cap:hover .more-btn i {
-    color: #fff;
+    color: #000;
+    font-weight: 900;
 }
 
 .more-btn {
     color: #161e46;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     display: block;
     margin-bottom: 10px;
     padding: 4px;
@@ -5801,6 +5833,24 @@ div.info-right
     font-weight: 400
 }
 /*  Department */
+.ringing {
+    animation: ring 2s infinite;
+  }
+  
+  @keyframes ring {
+    0% {
+      transform:  scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform:  scale(1);
+    }
+  }
+  
+  
+  
 
 .departments {
   overflow: hidden;
@@ -5864,6 +5914,9 @@ div.info-right
         margin: 20px auto;
     }
 }
+.navBrandColor {
+    color: #fff !important;
+}
 .timeline-section {
     background-image: white;
 }
@@ -5872,6 +5925,44 @@ div.info-right
     font-weight: 900;
     color: #c0762b;
 }
+.more-services {
+    overflow:hidden;
+}
+.more-services .service-col .card-body
+{
+    border: 1px solid #c0762b;
+  border-top: none;
+}
+.more-services .card {
+    position: relative;
+    overflow: hidden;
+} 
+.more-services img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;     
+    -webkit-transition: all .5s ease-out 0s;
+    -moz-transition: all .5s ease-out 0s;
+    -ms-transition: all .5s ease-out 0s;
+    -o-transition: all .5s ease-out 0s;
+    transition: all .5s ease-out 0s;
+}
+.more-service .service-col .card-img{
+    overflow: hidden !important;
+}
+
+.more-service .service-col .card-img img{
+    overflow: hidden;
+}
+.more-services img:hover {
+    transform: scale(1.1);
+}
+.more-services .card-body:hover p {
+    color:#191a33 !important;
+}
+
+
 .section-tittle .kck {
     text-transform: uppercase;
     display: block;
@@ -7939,9 +8030,10 @@ del {
     padding-top: 7em 0;
     position: relative;
 }
-@media (max-width: 1199.98px)
+@media (max-width: 1199.98px){
 .ftco-counter {
     background-position: center center !important;
+}
 }
 @media (max-width: 767.98px) {
     .ftco-section {
@@ -8332,54 +8424,51 @@ del {
     background-color: #0b1c39;
     opacity: 0.5;
 }
-.image-animation {
-    position: relative;
-    overflow: hidden;
-}
-.slideshow-image {
-    max-width: 100vw;
-}
+
 .slideshow-image > div
 {
     transform: translate3d(0, 0, 0);
 }
 
-@keyframes moving {
+@keyframes sliding {
     0% {
-        transform: translateX(0)
-    }
-    20% {
-        transform: translateX(-100%);
-    }
-    40% {
-        transform: translateX(-200%);
-    }
-    60% {
-        transform: translateX(-300%);
-    }
-    80% {
-        transform: translateX(-400%);
-    }
-    100% {
-        transform: translateX(-500%);
-    }
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-120%);
+      }
+}
+.image-animation .container-fluid {
+    width: 100%;
+    overflow: hidden;
 }
 .slideshow-image{
-    animation: moving 120s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
 }
-.slideshow-image:hover {
+article {
+    animation: sliding 30s linear infinite;
+}
+article:hover {
     animation-play-state: paused;
+}
+.image {
+    scroll-snap-align: center;
+    flex-shrink: 0;
 }
 
 .items{
-
     height: 100%;
     width: 100%;
 }
+
 .items img {
     box-shadow: 2.5px 2.5px 10px #c0762b;
     transition: all .2s ease-out;
     opacity: .85;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 .items img:hover {
     transform: scale(1.05);
@@ -8410,7 +8499,7 @@ del {
     position: absolute;
     bottom: 0px;
     background: rgba(192, 118,43, 0.6);
-    padding: 3px;
+    padding: 15px;
     border-radius: 5px;
     color: white;
 }
@@ -8419,12 +8508,29 @@ del {
     font-weight: 600;
 }
 
+@media only screen and (max-width: 480px) {
+    .support-img-cap
+    {
+        padding: 5px;
+    }
+    .support-img-cap p {
+        font-size: 20px;
+    }
+    article {
+        animation: sliding 10s linear infinite;
+    }
+
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .marquee-headline span  {
         font-size: 60px;
     }
     .marquee-headline p {
         font-size: 35px;
+    }
+    article {
+        animation: sliding 20s linear infinite;
     }
 }
 
@@ -8444,15 +8550,19 @@ del {
     .marquee-headline p {
         font-size: 25px;
     }
+    article {
+        animation: sliding 20s linear infinite;
+    }
 }
 
 @media (max-width: 575px) {
     .marquee-headline span  {
-        font-size: 40px;    
+        font-size: 32px;    
     }
     .marquee-headline p {
         font-size: 20px;
     }
+
 }
 .carousel-item img {
     width: 100%;
@@ -8499,6 +8609,9 @@ span.badge .close-hover:hover {
 .section-error {
     padding-top: 80px;
     padding-bottom: 90px;
+}
+.border-company {
+    border: #c0762b; 
 }
 
 .error-headline {

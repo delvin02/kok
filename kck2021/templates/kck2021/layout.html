@@ -5,6 +5,14 @@
 <html lang="ms">
 
 <head>
+    <script>
+        !function (w, d, t) {
+          w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+        
+          ttq.load('CERMKF3C77UDF971MLKG');
+          ttq.page();
+        }(window, document, 'ttq');
+        </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW9L4K5GPN"></script>
     <script>
@@ -17,6 +25,17 @@
 
         gtag('config', 'G-PW9L4K5GPN');
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPBBPHP');
+    </script>
+    
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
@@ -64,6 +83,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPBBPHP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="preloader-active">
         <div class="preloader d-flex flex-column align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
@@ -253,7 +276,7 @@
                                 <div class="header-info-left">
                                     <ul>
                                         <li>+(60) 12-988 6348 (AKOK)</li>
-                                        <li>kckokengineering@gmail.com</li>
+                                        <li>hello@kckok.my</li>
                                         <li>Ahad - Sabtu 8:00 - 17:30, Friday - CLOSED</li>
                                     </ul>
                                 </div>
@@ -269,14 +292,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-bottom  header-sticky">
+                <div class="header-bottom  header-sticky sticky-bar sticky">
                     <div class="container-fluid">
                         <div class="row d-flex justify-content-between align-items-center">
                             <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2 col-md-10 pl-0 pl-sm-0">
+                            <div class="col-xl-2 col-lg-2 col-md-10 pl-0">
                                 <div class="logo">
-                                    <a class="navbar-brand" href="{% url 'kck:index' %}">KCK <span>KOK
-                                        </span> ENGINEERING</a>
+                                    <a class="navbar-brand" href="{% url 'kck:index' %}"><span>KCK</span> KOK ENGINEERING</a>
                                 </div>
 
                             </div>
@@ -290,18 +312,39 @@
                                             <li><a href="{% url 'kck:project' %}">Projek </a></li>
                                             <li><a href="{% url 'kck:services' %}">Perkhidmatan </a>
                                                 <ul class="submenu">
-                                                    <li><a href="{% url 'kck:services' "kimpalan" %}">KCK
-                                                            Kimpalan</a></li>
-                                                    <li><a href="{% url 'kck:services' "semix" %}">Semix</a>
+                                                    <li class="d-flex flex-row align-items-center mt-sm-1">
+                                                        <img src="{% static 'img/icon/lathe-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "kimpalan" %}" class="border-0">KCK
+                                                            Kimpalan</a>
                                                     </li>
-                                                    <li><a href="{% url 'kck:services' "pembinaan" %}">KCK
+                                                    <li class="d-flex flex-row align-items-center mt-sm-1"><img src="{% static 'img/icon/concrete-mixer-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "semix" %}" class="border-0">Semix</a>
+                                                    </li>
+                                                    <li class="d-flex flex-row align-items-center mt-sm-1"><img src="{% static 'img/icon/contractor-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "pembinaan" %}"class="border-0">KCK
                                                             Pembinaan</a></li>
-                                                    <li><a href="{% url 'kck:services' "pasir" %}">KCK Pasir</a>
+                                                    <li class="d-flex flex-row align-items-center mt-sm-1"><img src="{% static 'img/icon/sand-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                                <a href="{% url 'kck:services' "pasir" %}" class="border-0">KCK Pasir</a>
                                                     </li>
-                                                    <li><a href="{% url 'kck:services' "kren" %}">KCK
+                                                    <li class="d-flex flex-row align-items-center mt-sm-1">
+                                                        <img src="{% static 'img/icon/crane-icon.svg' %}"style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "kren" %}" class="border-0">KCK
                                                             Mobil-Kren</a></li>
-                                                    <li><a href="{% url 'kck:services' "fabrikasi" %}">KCK
+                                                    <li class="d-flex flex-row align-items-center mt-sm-1"><img src="{% static 'img/icon/fabrication-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "fabrikasi" %}" class="border-0">KCK
                                                             Fabrikasi</a></li>
+                                                    <li class="d-flex flex-row align-items-center"><img src="{% static 'img/icon/longarm-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "longarm" %}" class="border-0">KCK
+                                                        Crane (Long Arm)</a>
+                                                    </li>
+                                                    <li class="d-flex flex-row align-items-center"><img src="{% static 'img/icon/loadcovering-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "loadcovering" %}" class="border-0">KCK
+                                                        Sistem Penutup Muatan</a>
+                                                    </li>
+                                                    <li class="d-flex flex-row align-items-center"><img src="{% static 'img/icon/crusher-icon.svg' %}" style="height: 100%; width: 28px;">
+                                                        <a href="{% url 'kck:services' "backhoe" %}" class="border-0">KCK
+                                                        Backhoe</a>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li><a href="{% url 'kck:blog' %}">Blog </a></li>
@@ -527,6 +570,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <script>
         function copyData(containerid) {
@@ -542,15 +586,6 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        <!-- Optional Javascript Files 
-        -->
-        {
-            % block js %
-        }
-        {
-            % endblock %
-        }
 
 </body>
 
