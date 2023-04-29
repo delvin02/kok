@@ -3177,12 +3177,64 @@ div.info-right
     }
 }
 
-@media (max-width: 1000px) {
-    .button-hpage {
-        display: block !important 
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid #c0762b;
+    border-right: 3px solid #c0762b;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down 4s ease-in-out infinite;
+    animation:         fade_move_down 4s ease-in-out infinite;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .scroll-down {
+        border-bottom: 5px solid #c0762b !important;
+        border-right: 5px solid #c0762b !important;
     }
 }
-
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
 .hero-overly {
     position: relative;
     z-index: 1
@@ -8446,10 +8498,8 @@ del {
     display: flex;
     flex-wrap: nowrap;
 }
-article {
-    animation: sliding 30s linear infinite;
-}
-article:hover {
+
+.image-animation article:hover {
     animation-play-state: paused;
 }
 .image {
@@ -8522,7 +8572,7 @@ article:hover {
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) {
     .marquee-headline span  {
         font-size: 60px;
     }
@@ -8530,7 +8580,7 @@ article:hover {
         font-size: 35px;
     }
     article {
-        animation: sliding 20s linear infinite;
+        animation: sliding 30s linear infinite;
     }
 }
 
@@ -8551,7 +8601,7 @@ article:hover {
         font-size: 25px;
     }
     article {
-        animation: sliding 20s linear infinite;
+        animation: sliding 15s linear infinite;
     }
 }
 

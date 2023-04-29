@@ -14,7 +14,7 @@
 <main>
         <!-- slider Area Start-->
         <div class="slider-area ">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'img/hero/services.jpeg' %}">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" style="background-image: url({% static 'img/hero/services.jpeg' %});">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -41,95 +41,153 @@
                     <div class="col-lg-12">
                         <div class="section-tittle mb-55">
                             <div class="front-text">
-                                <h2 class="">Our Services</h2>
+                                <h2 class="">Perkhidmatan kami</h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
                             <div class="service-img">
-                                <img src="{% static 'img/service/welding.png' %}" alt="steel moudling">
+                                <img src="{% static 'img/service/welding.png' %}" alt="kimpalan">
                             </div>
-                            <div class="service-cap">
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Bekalan</span>
+                                </div>
                                 <h4><a href="{% url 'kck:services' "kimpalan" %}">KCK Kimpalan</a></h4>
-                                <a href="{% url 'kck:services' "kimpalan" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                                <p> KCK Kimpalan membaiki, memulihkan, dan membantu membina barang-barang berasaskan logam. </p>
+                                <a href="{% url 'kck:services' "kimpalan" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border"></i></a>
                             </div>
-                            <div class="service-icon">
-                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
-                            </div>
+
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
                             <div class="service-img">
-                                <img src="{% static 'img/service/concrete.jpeg' %}" alt="konkrit, concrete">
+                                <img src="{% static 'img/service/concrete.jpeg' %}" alt="simen">
                             </div>
-                            <div class="service-cap">
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Bekalan</span>
+                                </div>
                                 <h4><a href="{% url 'kck:services' "semix" %}">Semix</a></h4>
-                                <a href="{% url 'kck:services' "semix" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
-                            </div>
-                            <div class="service-icon">
-                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                                <p> KCK ReadyMix menyediakan perkhidmatan dalam sektor pembekalan konkrit untuk projek-projek yang diperlukan.</p>
+                                <a href="{% url 'kck:services' "semix" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border "></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
                             <div class="service-img">
-                                <img src="{% static 'img/service/construction.jpeg' %}" alt="construction pembangunan">
+                                <img src="{% static 'img/service/construction.jpeg' %}" alt="kontraktor">
                             </div>
-                            <div class="service-cap">
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Bekalan</span>
+                                </div>
                                 <h4><a href="{% url 'kck:services' "pembinaan" %}">KCK Pembinaan</a></h4>
-                                <a href="{% url 'kck:services' "pembinaan" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
-                            </div>
-                            <div class="service-icon">
-                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                                <p> KCK Pembinaan melibat dengan projek infrastruktur seperti jalan raya, jamabatan, pembangunan dan lain-lain. </p>
+                                <a href="{% url 'kck:services' "pembinaan" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
                             <div class="service-img">
-                                <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="sand, pasir">
+                                <img src="{% static 'img/service/sandevacation.jpeg' %}" alt="pasir">
                             </div>
-                            <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' "pasir" %}">KCK Pasir</a></h4>
-                                <a href="{% url 'kck:services' "pasir" %}"  class="more-btn">Read More <i class="ti-plus"></i></a>
-                            </div>
-                            <div class="service-icon">
-                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Bekalan</span>
+                                </div>
+                                <h4 class="align-self-center my-auto"><a href="{% url 'kck:services' "pasir" %}">KCK Pasir</a> <span class="my-auto badge badge-new text-uppercase my-auto">New</span></h4>
+                                    
+                                <p> KCK Pasir menjalankan perniagaan pasir lombong kepada pelanggan untuk kegunaan persenderian ataupun projek. </p>
+                                <a href="{% url 'kck:services' "pasir" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
                             <div class="service-img">
                                 <img src="{% static 'img/service/craneser.jpeg' %}" alt="kren">
                             </div>
-                            <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' "kren" %}">KCK Mobil-Kren</a></h4>
-                                <a href="{% url 'kck:services' "kren" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Sewaan</span>
+                                </div>
+                                <h4><a href="{% url 'kck:services' "kren" %}">KCK Kren</a></h4>
+                                <p> KCK Kren menjalankan perniagaan berasas penyewaan Kren sekaligus dengan Lori Pencampur Konkrit sebagai pakej.</p>
+                                <a href="{% url 'kck:services' "kren" %}" class="more-btn d-inline-block ">Read More <i class="ti-plus border"></i></a>
                             </div>
-                            <div class="service-icon">
-                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/steel.jpeg' %}" alt="kimpalan">
+                            </div>
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">MESINAN</span>
+                                </div>
+                                <h4><a href="{% url 'kck:services' "fabrikasi" %}">KCK Fabrikasi </a></h4>
+                                <p> KCK Fabrikasi merupakan proses pengubahsuaian logam bernilai tambah yang diperlukan dalam pembuatan struktur untuk pelbagai industri. </p>
+                                <a href="{% url 'kck:services' "fabrikasi" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
+                </div>
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
                             <div class="service-img">
-                                <img src="{% static 'img/service/steel.jpeg' %}" alt="metal fabrication">
+                                <img src="{% static 'img/service/long_arm.jpeg' %}" alt="long arm excavator">
                             </div>
-                            <div class="service-cap">
-                                <h4><a href="{% url 'kck:services' "fabrikasi" %}">KCK Fabrikasi</a></h4>
-                                <a href="{% url 'kck:services' "fabrikasi" %}" class="more-btn">Read More <i class="ti-plus"></i></a>
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Sewaan</span>
+                                </div>
+                                <h4 class="align-self-center my-auto"><a href="{% url 'kck:services' "longarm" %}">KCK Long Arm Excavator</a> <span class="my-auto badge badge-new text-uppercase my-auto">New</span></h4>
+                                    
+                                <p> Long Arm Excavator jenis ekskavator yang mempunyai boom dan lengan yang lebih panjang berbanding dengan ekskavator standard. </p>
+                                <a href="{% url 'kck:services' "longarm" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border"></i></a>
                             </div>
-                            <div class="service-icon">
-                                <img src="{% static 'img/icon/divider.svg' %}" alt="divider">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/load_covering.jpeg' %}" alt="hydraulic">
+                            </div>
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">Produk</span>
+                                </div>
+                                <h4><a href="{% url 'kck:services' "loadcovering" %}">Load Covering System</a> <span class="my-auto badge badge-new text-uppercase my-auto">New</span></h4>
+                                <p> Sistem penutup muatan merupakan produk aksesori untuk kenderaan kargo atau trak yang digunakan untuk melindungi dan menutup barang-barang yang diangkut dari pelbagai faktor luar seperti cuaca buruk, pencurian dan kerosakan. </p>
+                                <a href="{% url 'kck:services' "loadcovering" %}" class="more-btn d-inline-block ">Read More <i class="ti-plus border"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="single-service-cap border border-company shadow mb-30" data-aos="zoom-in">
+                            <div class="service-img">
+                                <img src="{% static 'img/service/backhoe.jpeg' %}" alt="backhoe hydraulic">
+                            </div>
+                            <div class="service-cap h-100">
+                                <div class="mb-1 p-0 group rounded">
+                                    <span class="align-left badge text-uppercase">MESINAN</span>
+                                </div>
+                                <h4><a href="{% url 'kck:services' "backhoe" %}">KCK Backhoe </a> <span class="my-auto badge badge-new text-uppercase my-auto">New</span></h4>
+                                <p> Backhoe adalah jenis peralatan berat yang digunakan dalam projek pembinaan, penggalian, dan pembongkaran. </p>
+                                <a href="{% url 'kck:services' "backhoe" %}" class="more-btn d-inline-block">Read More <i class="ti-plus border"></i></a>
                             </div>
                         </div>
                     </div>
