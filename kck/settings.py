@@ -17,7 +17,7 @@ SECRET_KEY = '&0^_enc-c4l79p7d=g7p5_2nx4)&_s9v5vpux^m3!7&!ep!3ef'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['185.201.9.2', 'kckok.my', 'http://kckok.my', 'www.kckok.my', 'http://www.kckok.my', '.kckok.my', '*']
+ALLOWED_HOSTS = ['185.201.9.2', 'kckok.my', 'http://kckok.my', 'www.kckok.my', 'http://www.kckok.my', '.kckok.my']
 
 
 # Application definition
@@ -45,7 +45,7 @@ SITE_ID = 1
 # Cache
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
         'LOCATION': '127.0.0.1:11211',
     }
 }

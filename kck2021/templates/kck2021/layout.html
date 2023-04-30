@@ -34,7 +34,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WPBBPHP');
     </script>
-    
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -565,13 +564,14 @@
 
     <!-- Jquery Plugins, main Jquery -->
     <script src="{% static 'js/plugins.js' %}"></script>
-    {% endcompress %}
     <!-- Main Javascript File - Without Compression -->
     <script src="{% static 'js/main.js' %}"></script>
+    {% endcompress %}
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
+    {% compress js preload %}
     <script>
         function copyData(containerid) {
             var range = document.createRange();
@@ -586,6 +586,7 @@
     <script>
         AOS.init();
     </script>
+    {% endcompress %}
 
 </body>
 
