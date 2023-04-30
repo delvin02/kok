@@ -564,8 +564,8 @@
 
     <!-- Jquery Plugins, main Jquery -->
     <script src="{% static 'js/plugins.js' %}"></script>
-    <!-- Main Javascript File - Without Compression -->
-    <script src="{% static 'js/main.js' %}"></script>
+        <!-- Main Javascript File - Without Compression -->
+        <script src="{% static 'js/main.js' %}"></script>
     {% endcompress %}
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
@@ -583,11 +583,10 @@
             alert('Copied!');
         }
     </script>
+    {% endcompress %}
     <script>
         AOS.init();
     </script>
-    {% endcompress %}
-
 </body>
 
 </html>
