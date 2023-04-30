@@ -3704,6 +3704,14 @@ div.info-right
         padding-bottom: 0px;
         text-align: center
     }
+    .count-clients {
+        justify-content: left !important;
+        padding-left: 12px;
+    }
+    .count-number 
+    {
+        width: 125px;
+    }
 }
 
 .count-area .count-clients {
@@ -3720,8 +3728,9 @@ div.info-right
     margin-right: 0px
 }
 
-.count-area .count-clients .single-counter .count-number span {
+.count-area .count-clients .single-counter .count-number h1 {
     color: #fff;
+
     font-size: 55px;
     font-weight: 700;
     margin-bottom: 0;
@@ -3750,7 +3759,7 @@ div.info-right
 
 .count-area .count-clients .single-counter .count-text h5 {
     color: #fff;
-    font-size: 36px;
+    font-size: 28px;
     text-transform: capitalize;
     margin-bottom: 0px;
     display: block
@@ -4723,6 +4732,9 @@ div.info-right
     font-family: "Teko", sans-serif;
     background-color: #f1f2f8;
 }
+.single-services .details-img img {
+    width: 100%
+}
 .success-color {
     background-color: #4EEB98;
 }
@@ -4741,6 +4753,10 @@ div.info-right
     .single-services .details-img img {
         width: 100%;
         height:100%;
+    }
+    .image-gallery img {
+        max-height: 400px;
+        width: 100%;
     }
 }
 .projectpad {
@@ -8439,7 +8455,7 @@ del {
     padding: 30px
 }
 .count-wrapper {
-    background-image: linear-gradient(to right, #c2b280, #c0a86e, #bf9e5d, #bf934d, #bf873e, #b77e3a, #ae7536, #a66c32, #936436, #805d3a, #6d553e, #5a4d41) !important;
+    background: linear-gradient(180deg, rgba(7,11,17,0.7455357142857143) 0%, rgba(156,99,43,1) 55%, rgba(192,118,43,1) 100%);
 }
   
 .media-body p {
@@ -8566,7 +8582,7 @@ del {
     .support-img-cap p {
         font-size: 20px;
     }
-    article {
+    .image-animation article {
         animation: sliding 10s linear infinite;
     }
 
@@ -8579,7 +8595,7 @@ del {
     .marquee-headline p {
         font-size: 35px;
     }
-    article {
+    .image-animation article {
         animation: sliding 30s linear infinite;
     }
 }
@@ -8600,7 +8616,7 @@ del {
     .marquee-headline p {
         font-size: 25px;
     }
-    article {
+    .image-animation article {
         animation: sliding 15s linear infinite;
     }
 }
@@ -8674,4 +8690,8 @@ span.badge .close-hover:hover {
     color:white !important;
     background-color: #191a33;
     text-decoration: none;
+}
+.single-services .row {
+    width: 100% !important;
+    margin: 0 auto !important;
 }

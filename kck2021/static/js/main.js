@@ -270,8 +270,8 @@
 
   /* 13. counterUp*/
   $(".counter").counterUp({
-    delay: 10,
-    time: 3000,
+    delay: 13,
+    time: 4000,
   });
 
   // 11. ---- Mailchimp js --------//
