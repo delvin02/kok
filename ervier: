@@ -1,0 +1,1361 @@
+-- Logs begin at Fri 2022-03-18 07:39:01 UTC, end at Sun 2023-04-30 12:11:47 UTC. --
+Apr 29 21:20:51 vps.kck sshd[24323]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:20:51 vps.kck sshd[24323]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:20:51 vps.kck sshd[24323]: Invalid user pi from 42.2.209.46 port 41128
+Apr 29 21:20:51 vps.kck sshd[24323]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:20:51 vps.kck sshd[24323]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=42.2.209.46[0m
+Apr 29 21:20:53 vps.kck sshd[24321]: Failed password for invalid user pi from 42.2.209.46 port 41112 ssh2
+Apr 29 21:20:53 vps.kck sshd[24321]: Connection closed by invalid user pi 42.2.209.46 port 41112 [preauth]
+Apr 29 21:20:53 vps.kck sshd[24323]: Failed password for invalid user pi from 42.2.209.46 port 41128 ssh2
+Apr 29 21:20:53 vps.kck sshd[24323]: Connection closed by invalid user pi 42.2.209.46 port 41128 [preauth]
+Apr 29 21:42:39 vps.kck sshd[24326]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:39 vps.kck sshd[24326]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:39 vps.kck sshd[24326]: Did not receive identification string from 150.158.20.185 port 37078
+Apr 29 21:42:40 vps.kck sshd[24327]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24327]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:40 vps.kck sshd[24329]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24329]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:40 vps.kck sshd[24331]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24331]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:40 vps.kck sshd[24332]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24332]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:40 vps.kck sshd[24335]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24335]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:40 vps.kck sshd[24336]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24336]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:40 vps.kck sshd[24339]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:42:40 vps.kck sshd[24339]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:42:41 vps.kck sshd[24327]: Invalid user pi from 150.158.20.185 port 46226
+Apr 29 21:42:41 vps.kck sshd[24331]: Invalid user devops from 150.158.20.185 port 46224
+Apr 29 21:42:41 vps.kck sshd[24332]: Invalid user zjw from 150.158.20.185 port 46220
+Apr 29 21:42:41 vps.kck sshd[24335]: Invalid user orangepi from 150.158.20.185 port 46230
+Apr 29 21:42:41 vps.kck sshd[24336]: Invalid user felipe from 150.158.20.185 port 46232
+Apr 29 21:42:41 vps.kck sshd[24339]: Invalid user laura from 150.158.20.185 port 46228
+Apr 29 21:42:41 vps.kck sshd[24327]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:42:41 vps.kck sshd[24327]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185[0m
+Apr 29 21:42:41 vps.kck sshd[24331]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:42:41 vps.kck sshd[24331]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185[0m
+Apr 29 21:42:41 vps.kck sshd[24332]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:42:41 vps.kck sshd[24332]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185[0m
+Apr 29 21:42:41 vps.kck sshd[24329]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185  user=root[0m
+Apr 29 21:42:41 vps.kck sshd[24335]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:42:41 vps.kck sshd[24335]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185[0m
+Apr 29 21:42:41 vps.kck sshd[24336]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:42:41 vps.kck sshd[24336]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185[0m
+Apr 29 21:42:42 vps.kck sshd[24339]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:42:42 vps.kck sshd[24339]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=150.158.20.185[0m
+Apr 29 21:42:43 vps.kck sshd[24339]: Failed password for invalid user laura from 150.158.20.185 port 46228 ssh2
+Apr 29 21:42:44 vps.kck sshd[24327]: Failed password for invalid user pi from 150.158.20.185 port 46226 ssh2
+Apr 29 21:42:44 vps.kck sshd[24331]: Failed password for invalid user devops from 150.158.20.185 port 46224 ssh2
+Apr 29 21:42:44 vps.kck sshd[24332]: Failed password for invalid user zjw from 150.158.20.185 port 46220 ssh2
+Apr 29 21:42:44 vps.kck sshd[24329]: Failed password for root from 150.158.20.185 port 46222 ssh2
+Apr 29 21:42:44 vps.kck sshd[24335]: Failed password for invalid user orangepi from 150.158.20.185 port 46230 ssh2
+Apr 29 21:42:44 vps.kck sshd[24336]: Failed password for invalid user felipe from 150.158.20.185 port 46232 ssh2
+Apr 29 21:42:44 vps.kck sshd[24339]: Connection closed by invalid user laura 150.158.20.185 port 46228 [preauth]
+Apr 29 21:42:44 vps.kck sshd[24331]: Connection closed by invalid user devops 150.158.20.185 port 46224 [preauth]
+Apr 29 21:42:44 vps.kck sshd[24327]: Connection closed by invalid user pi 150.158.20.185 port 46226 [preauth]
+Apr 29 21:42:44 vps.kck sshd[24332]: Connection closed by invalid user zjw 150.158.20.185 port 46220 [preauth]
+Apr 29 21:42:44 vps.kck sshd[24329]: Connection closed by authenticating user root 150.158.20.185 port 46222 [preauth]
+Apr 29 21:42:44 vps.kck sshd[24335]: Connection closed by invalid user orangepi 150.158.20.185 port 46230 [preauth]
+Apr 29 21:42:44 vps.kck sshd[24336]: Connection closed by invalid user felipe 150.158.20.185 port 46232 [preauth]
+Apr 29 21:48:01 vps.kck CRON[24342]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 29 21:48:01 vps.kck CRON[24343]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 29 21:48:01 vps.kck CRON[24342]: pam_unix(cron:session): session closed for user root
+Apr 29 21:57:15 vps.kck sshd[24349]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 21:57:15 vps.kck sshd[24349]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 21:57:17 vps.kck sshd[24349]: Invalid user admin from 136.185.18.222 port 38478
+Apr 29 21:57:17 vps.kck sshd[24349]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 21:57:17 vps.kck sshd[24349]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=136.185.18.222[0m
+Apr 29 21:57:20 vps.kck sshd[24349]: Failed password for invalid user admin from 136.185.18.222 port 38478 ssh2
+Apr 29 21:57:20 vps.kck sshd[24349]: Connection closed by invalid user admin 136.185.18.222 port 38478 [preauth]
+Apr 29 22:48:01 vps.kck CRON[24355]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 29 22:48:01 vps.kck CRON[24356]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 29 22:48:01 vps.kck CRON[24355]: pam_unix(cron:session): session closed for user root
+Apr 29 22:57:22 vps.kck sshd[24362]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 22:57:22 vps.kck sshd[24362]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 22:57:25 vps.kck sshd[24362]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.213.161.138  user=root[0m
+Apr 29 22:57:27 vps.kck sshd[24362]: Failed password for root from 58.213.161.138 port 59700 ssh2
+Apr 29 22:57:28 vps.kck sshd[24362]: Connection closed by authenticating user root 58.213.161.138 port 59700 [preauth]
+Apr 29 22:57:30 vps.kck sshd[24364]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 22:57:30 vps.kck sshd[24364]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 22:57:33 vps.kck sshd[24364]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.213.161.138  user=root[0m
+Apr 29 22:57:35 vps.kck sshd[24364]: Failed password for root from 58.213.161.138 port 59712 ssh2
+Apr 29 22:57:39 vps.kck sshd[24364]: Connection closed by authenticating user root 58.213.161.138 port 59712 [preauth]
+Apr 29 22:57:40 vps.kck sshd[24366]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 22:57:40 vps.kck sshd[24366]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 22:57:40 vps.kck sshd[24366]: Did not receive identification string from 178.62.237.183 port 61000
+Apr 29 23:28:37 vps.kck sshd[24371]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 23:28:37 vps.kck sshd[24371]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 23:28:38 vps.kck sshd[24371]: Connection closed by 212.49.92.67 port 36654 [preauth]
+Apr 29 23:43:41 vps.kck sshd[24374]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 23:43:41 vps.kck sshd[24374]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 23:43:41 vps.kck sshd[24376]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 23:43:41 vps.kck sshd[24376]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 23:43:42 vps.kck sshd[24374]: Invalid user pi from 37.77.167.64 port 37828
+Apr 29 23:43:42 vps.kck sshd[24374]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 23:43:42 vps.kck sshd[24374]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=37.77.167.64[0m
+Apr 29 23:43:42 vps.kck sshd[24376]: Invalid user pi from 37.77.167.64 port 37842
+Apr 29 23:43:42 vps.kck sshd[24376]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 23:43:42 vps.kck sshd[24376]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=37.77.167.64[0m
+Apr 29 23:43:44 vps.kck sshd[24374]: Failed password for invalid user pi from 37.77.167.64 port 37828 ssh2
+Apr 29 23:43:44 vps.kck sshd[24374]: Connection closed by invalid user pi 37.77.167.64 port 37828 [preauth]
+Apr 29 23:43:44 vps.kck sshd[24376]: Failed password for invalid user pi from 37.77.167.64 port 37842 ssh2
+Apr 29 23:43:44 vps.kck sshd[24376]: Connection closed by invalid user pi 37.77.167.64 port 37842 [preauth]
+Apr 29 23:48:01 vps.kck CRON[24378]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 29 23:48:01 vps.kck CRON[24379]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 29 23:48:01 vps.kck CRON[24378]: pam_unix(cron:session): session closed for user root
+Apr 29 23:48:40 vps.kck sshd[24384]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 29 23:48:40 vps.kck sshd[24384]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 29 23:48:43 vps.kck sshd[24384]: Invalid user ubuntu from 212.49.92.67 port 37274
+Apr 29 23:48:43 vps.kck sshd[24384]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 29 23:48:43 vps.kck sshd[24384]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=212.49.92.67[0m
+Apr 29 23:48:44 vps.kck sshd[24384]: Failed password for invalid user ubuntu from 212.49.92.67 port 37274 ssh2
+Apr 29 23:48:45 vps.kck sshd[24384]: Received disconnect from 212.49.92.67 port 37274:11: Bye Bye [preauth]
+Apr 29 23:48:45 vps.kck sshd[24384]: Disconnected from invalid user ubuntu 212.49.92.67 port 37274 [preauth]
+Apr 30 00:08:01 vps.kck CRON[24388]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 00:08:01 vps.kck CRON[24389]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Apr 30 00:08:01 vps.kck systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+Apr 30 00:08:02 vps.kck systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+Apr 30 00:08:02 vps.kck CRON[24388]: pam_unix(cron:session): session closed for user root
+Apr 30 00:18:41 vps.kck apache2[24423]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 00:42:36 vps.kck sshd[24477]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:36 vps.kck sshd[24477]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:37 vps.kck sshd[24477]: Connection closed by authenticating user root 31.214.243.131 port 42964 [preauth]
+Apr 30 00:42:37 vps.kck sshd[24479]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:37 vps.kck sshd[24479]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:38 vps.kck sshd[24479]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:42:40 vps.kck sshd[24479]: Failed password for root from 31.214.243.131 port 42980 ssh2
+Apr 30 00:42:41 vps.kck sshd[24479]: Connection closed by authenticating user root 31.214.243.131 port 42980 [preauth]
+Apr 30 00:42:41 vps.kck sshd[24481]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:41 vps.kck sshd[24481]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:42 vps.kck sshd[24481]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:42:44 vps.kck sshd[24481]: Failed password for root from 31.214.243.131 port 42988 ssh2
+Apr 30 00:42:44 vps.kck sshd[24481]: Connection closed by authenticating user root 31.214.243.131 port 42988 [preauth]
+Apr 30 00:42:44 vps.kck sshd[24483]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:44 vps.kck sshd[24483]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:45 vps.kck sshd[24483]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:42:47 vps.kck sshd[24483]: Failed password for root from 31.214.243.131 port 59292 ssh2
+Apr 30 00:42:48 vps.kck sshd[24483]: Connection closed by authenticating user root 31.214.243.131 port 59292 [preauth]
+Apr 30 00:42:48 vps.kck sshd[24485]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:48 vps.kck sshd[24485]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:49 vps.kck sshd[24485]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:42:50 vps.kck sshd[24485]: Failed password for root from 31.214.243.131 port 59308 ssh2
+Apr 30 00:42:51 vps.kck sshd[24485]: Connection closed by authenticating user root 31.214.243.131 port 59308 [preauth]
+Apr 30 00:42:51 vps.kck sshd[24487]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:51 vps.kck sshd[24487]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:52 vps.kck sshd[24487]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:42:54 vps.kck sshd[24487]: Failed password for root from 31.214.243.131 port 59318 ssh2
+Apr 30 00:42:54 vps.kck sshd[24487]: Connection closed by authenticating user root 31.214.243.131 port 59318 [preauth]
+Apr 30 00:42:54 vps.kck sshd[24489]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:54 vps.kck sshd[24489]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:55 vps.kck sshd[24489]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:42:57 vps.kck sshd[24489]: Failed password for root from 31.214.243.131 port 50134 ssh2
+Apr 30 00:42:58 vps.kck sshd[24489]: Connection closed by authenticating user root 31.214.243.131 port 50134 [preauth]
+Apr 30 00:42:58 vps.kck sshd[24491]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:42:58 vps.kck sshd[24491]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:42:58 vps.kck sshd[24491]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:01 vps.kck sshd[24491]: Failed password for root from 31.214.243.131 port 50150 ssh2
+Apr 30 00:43:01 vps.kck sshd[24491]: Connection closed by authenticating user root 31.214.243.131 port 50150 [preauth]
+Apr 30 00:43:01 vps.kck sshd[24493]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:01 vps.kck sshd[24493]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:02 vps.kck sshd[24493]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:04 vps.kck sshd[24493]: Failed password for root from 31.214.243.131 port 45520 ssh2
+Apr 30 00:43:04 vps.kck sshd[24493]: Connection closed by authenticating user root 31.214.243.131 port 45520 [preauth]
+Apr 30 00:43:04 vps.kck sshd[24495]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:04 vps.kck sshd[24495]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:05 vps.kck sshd[24495]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:08 vps.kck sshd[24495]: Failed password for root from 31.214.243.131 port 45528 ssh2
+Apr 30 00:43:08 vps.kck sshd[24495]: Connection closed by authenticating user root 31.214.243.131 port 45528 [preauth]
+Apr 30 00:43:08 vps.kck sshd[24497]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:08 vps.kck sshd[24497]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:09 vps.kck sshd[24497]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:11 vps.kck sshd[24497]: Failed password for root from 31.214.243.131 port 45532 ssh2
+Apr 30 00:43:11 vps.kck sshd[24497]: Connection closed by authenticating user root 31.214.243.131 port 45532 [preauth]
+Apr 30 00:43:11 vps.kck sshd[24499]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:11 vps.kck sshd[24499]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:12 vps.kck sshd[24499]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:14 vps.kck sshd[24499]: Failed password for root from 31.214.243.131 port 37404 ssh2
+Apr 30 00:43:14 vps.kck sshd[24499]: Connection closed by authenticating user root 31.214.243.131 port 37404 [preauth]
+Apr 30 00:43:14 vps.kck sshd[24501]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:14 vps.kck sshd[24501]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:15 vps.kck sshd[24501]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:17 vps.kck sshd[24501]: Failed password for root from 31.214.243.131 port 37416 ssh2
+Apr 30 00:43:17 vps.kck sshd[24501]: Connection closed by authenticating user root 31.214.243.131 port 37416 [preauth]
+Apr 30 00:43:17 vps.kck sshd[24503]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:17 vps.kck sshd[24503]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:18 vps.kck sshd[24503]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:20 vps.kck sshd[24503]: Failed password for root from 31.214.243.131 port 37424 ssh2
+Apr 30 00:43:21 vps.kck sshd[24503]: Connection closed by authenticating user root 31.214.243.131 port 37424 [preauth]
+Apr 30 00:43:21 vps.kck sshd[24505]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:21 vps.kck sshd[24505]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:22 vps.kck sshd[24505]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:23 vps.kck sshd[24505]: Failed password for root from 31.214.243.131 port 37436 ssh2
+Apr 30 00:43:23 vps.kck sshd[24505]: Connection closed by authenticating user root 31.214.243.131 port 37436 [preauth]
+Apr 30 00:43:24 vps.kck sshd[24507]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:24 vps.kck sshd[24507]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:24 vps.kck sshd[24507]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:26 vps.kck sshd[24507]: Failed password for root from 31.214.243.131 port 40838 ssh2
+Apr 30 00:43:26 vps.kck sshd[24507]: Connection closed by authenticating user root 31.214.243.131 port 40838 [preauth]
+Apr 30 00:43:26 vps.kck sshd[24509]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:26 vps.kck sshd[24509]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:27 vps.kck sshd[24509]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:29 vps.kck sshd[24509]: Failed password for root from 31.214.243.131 port 40850 ssh2
+Apr 30 00:43:29 vps.kck sshd[24509]: Connection closed by authenticating user root 31.214.243.131 port 40850 [preauth]
+Apr 30 00:43:30 vps.kck sshd[24511]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:30 vps.kck sshd[24511]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:30 vps.kck sshd[24511]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:32 vps.kck sshd[24511]: Failed password for root from 31.214.243.131 port 40866 ssh2
+Apr 30 00:43:33 vps.kck sshd[24511]: Connection closed by authenticating user root 31.214.243.131 port 40866 [preauth]
+Apr 30 00:43:33 vps.kck sshd[24513]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:33 vps.kck sshd[24513]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:34 vps.kck sshd[24513]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:35 vps.kck sshd[24513]: Failed password for root from 31.214.243.131 port 47156 ssh2
+Apr 30 00:43:35 vps.kck sshd[24513]: Connection closed by authenticating user root 31.214.243.131 port 47156 [preauth]
+Apr 30 00:43:36 vps.kck sshd[24515]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:36 vps.kck sshd[24515]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:36 vps.kck sshd[24515]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:38 vps.kck sshd[24515]: Failed password for root from 31.214.243.131 port 47172 ssh2
+Apr 30 00:43:38 vps.kck sshd[24515]: Connection closed by authenticating user root 31.214.243.131 port 47172 [preauth]
+Apr 30 00:43:38 vps.kck sshd[24517]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:38 vps.kck sshd[24517]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:39 vps.kck sshd[24517]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:41 vps.kck sshd[24517]: Failed password for root from 31.214.243.131 port 47188 ssh2
+Apr 30 00:43:42 vps.kck sshd[24517]: Connection closed by authenticating user root 31.214.243.131 port 47188 [preauth]
+Apr 30 00:43:42 vps.kck sshd[24519]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:42 vps.kck sshd[24519]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:43 vps.kck sshd[24519]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:44 vps.kck sshd[24519]: Failed password for root from 31.214.243.131 port 44072 ssh2
+Apr 30 00:43:45 vps.kck sshd[24519]: Connection closed by authenticating user root 31.214.243.131 port 44072 [preauth]
+Apr 30 00:43:45 vps.kck sshd[24521]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:45 vps.kck sshd[24521]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:46 vps.kck sshd[24521]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:47 vps.kck sshd[24521]: Failed password for root from 31.214.243.131 port 44092 ssh2
+Apr 30 00:43:47 vps.kck sshd[24521]: Connection closed by authenticating user root 31.214.243.131 port 44092 [preauth]
+Apr 30 00:43:48 vps.kck sshd[24523]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:48 vps.kck sshd[24523]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:48 vps.kck sshd[24523]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:50 vps.kck sshd[24523]: Failed password for root from 31.214.243.131 port 44106 ssh2
+Apr 30 00:43:50 vps.kck sshd[24523]: Connection closed by authenticating user root 31.214.243.131 port 44106 [preauth]
+Apr 30 00:43:51 vps.kck sshd[24525]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:51 vps.kck sshd[24525]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:51 vps.kck sshd[24525]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:54 vps.kck sshd[24525]: Failed password for root from 31.214.243.131 port 44134 ssh2
+Apr 30 00:43:54 vps.kck sshd[24525]: Connection closed by authenticating user root 31.214.243.131 port 44134 [preauth]
+Apr 30 00:43:54 vps.kck sshd[24527]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:54 vps.kck sshd[24527]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:55 vps.kck sshd[24527]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:43:57 vps.kck sshd[24527]: Failed password for root from 31.214.243.131 port 41254 ssh2
+Apr 30 00:43:57 vps.kck sshd[24527]: Connection closed by authenticating user root 31.214.243.131 port 41254 [preauth]
+Apr 30 00:43:57 vps.kck sshd[24529]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:43:57 vps.kck sshd[24529]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:43:58 vps.kck sshd[24529]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:00 vps.kck sshd[24529]: Failed password for root from 31.214.243.131 port 41262 ssh2
+Apr 30 00:44:00 vps.kck sshd[24529]: Connection closed by authenticating user root 31.214.243.131 port 41262 [preauth]
+Apr 30 00:44:00 vps.kck sshd[24531]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:00 vps.kck sshd[24531]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:01 vps.kck sshd[24531]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:03 vps.kck sshd[24531]: Failed password for root from 31.214.243.131 port 41274 ssh2
+Apr 30 00:44:04 vps.kck sshd[24531]: Connection closed by authenticating user root 31.214.243.131 port 41274 [preauth]
+Apr 30 00:44:04 vps.kck sshd[24533]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:04 vps.kck sshd[24533]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:04 vps.kck sshd[24533]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:06 vps.kck sshd[24533]: Failed password for root from 31.214.243.131 port 59582 ssh2
+Apr 30 00:44:06 vps.kck sshd[24533]: Connection closed by authenticating user root 31.214.243.131 port 59582 [preauth]
+Apr 30 00:44:07 vps.kck sshd[24535]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:07 vps.kck sshd[24535]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:07 vps.kck sshd[24535]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:10 vps.kck sshd[24535]: Failed password for root from 31.214.243.131 port 59588 ssh2
+Apr 30 00:44:10 vps.kck sshd[24535]: Connection closed by authenticating user root 31.214.243.131 port 59588 [preauth]
+Apr 30 00:44:10 vps.kck sshd[24537]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:10 vps.kck sshd[24537]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:11 vps.kck sshd[24537]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:13 vps.kck sshd[24537]: Failed password for root from 31.214.243.131 port 59594 ssh2
+Apr 30 00:44:13 vps.kck sshd[24537]: Connection closed by authenticating user root 31.214.243.131 port 59594 [preauth]
+Apr 30 00:44:13 vps.kck sshd[24539]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:13 vps.kck sshd[24539]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:14 vps.kck sshd[24539]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:15 vps.kck sshd[24539]: Failed password for root from 31.214.243.131 port 44610 ssh2
+Apr 30 00:44:16 vps.kck sshd[24539]: Connection closed by authenticating user root 31.214.243.131 port 44610 [preauth]
+Apr 30 00:44:16 vps.kck sshd[24541]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:16 vps.kck sshd[24541]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:17 vps.kck sshd[24541]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:19 vps.kck sshd[24541]: Failed password for root from 31.214.243.131 port 44620 ssh2
+Apr 30 00:44:19 vps.kck sshd[24541]: Connection closed by authenticating user root 31.214.243.131 port 44620 [preauth]
+Apr 30 00:44:19 vps.kck sshd[24543]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:19 vps.kck sshd[24543]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:20 vps.kck sshd[24543]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:21 vps.kck sshd[24543]: Failed password for root from 31.214.243.131 port 44622 ssh2
+Apr 30 00:44:21 vps.kck sshd[24543]: Connection closed by authenticating user root 31.214.243.131 port 44622 [preauth]
+Apr 30 00:44:21 vps.kck sshd[24545]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:21 vps.kck sshd[24545]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:23 vps.kck sshd[24545]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:24 vps.kck sshd[24545]: Failed password for root from 31.214.243.131 port 45402 ssh2
+Apr 30 00:44:24 vps.kck sshd[24545]: Connection closed by authenticating user root 31.214.243.131 port 45402 [preauth]
+Apr 30 00:44:25 vps.kck sshd[24547]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:25 vps.kck sshd[24547]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:25 vps.kck sshd[24547]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:27 vps.kck sshd[24547]: Failed password for root from 31.214.243.131 port 45406 ssh2
+Apr 30 00:44:28 vps.kck sshd[24547]: Connection closed by authenticating user root 31.214.243.131 port 45406 [preauth]
+Apr 30 00:44:28 vps.kck sshd[24549]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:28 vps.kck sshd[24549]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:29 vps.kck sshd[24549]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:31 vps.kck sshd[24549]: Failed password for root from 31.214.243.131 port 45408 ssh2
+Apr 30 00:44:31 vps.kck sshd[24549]: Connection closed by authenticating user root 31.214.243.131 port 45408 [preauth]
+Apr 30 00:44:31 vps.kck sshd[24551]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:31 vps.kck sshd[24551]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:32 vps.kck sshd[24551]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:33 vps.kck sshd[24551]: Failed password for root from 31.214.243.131 port 37494 ssh2
+Apr 30 00:44:33 vps.kck sshd[24551]: Connection closed by authenticating user root 31.214.243.131 port 37494 [preauth]
+Apr 30 00:44:33 vps.kck sshd[24553]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:33 vps.kck sshd[24553]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:34 vps.kck sshd[24553]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:36 vps.kck sshd[24553]: Failed password for root from 31.214.243.131 port 37508 ssh2
+Apr 30 00:44:36 vps.kck sshd[24553]: Connection closed by authenticating user root 31.214.243.131 port 37508 [preauth]
+Apr 30 00:44:36 vps.kck sshd[24555]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:36 vps.kck sshd[24555]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:37 vps.kck sshd[24555]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:39 vps.kck sshd[24555]: Failed password for root from 31.214.243.131 port 37524 ssh2
+Apr 30 00:44:39 vps.kck sshd[24555]: Connection closed by authenticating user root 31.214.243.131 port 37524 [preauth]
+Apr 30 00:44:40 vps.kck sshd[24557]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:40 vps.kck sshd[24557]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:40 vps.kck sshd[24557]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:42 vps.kck sshd[24557]: Failed password for root from 31.214.243.131 port 37534 ssh2
+Apr 30 00:44:42 vps.kck sshd[24557]: Connection closed by authenticating user root 31.214.243.131 port 37534 [preauth]
+Apr 30 00:44:42 vps.kck sshd[24559]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:42 vps.kck sshd[24559]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:43 vps.kck sshd[24559]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:45 vps.kck sshd[24559]: Failed password for root from 31.214.243.131 port 54184 ssh2
+Apr 30 00:44:46 vps.kck sshd[24559]: Connection closed by authenticating user root 31.214.243.131 port 54184 [preauth]
+Apr 30 00:44:46 vps.kck sshd[24561]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:46 vps.kck sshd[24561]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:47 vps.kck sshd[24561]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:48 vps.kck sshd[24561]: Failed password for root from 31.214.243.131 port 54188 ssh2
+Apr 30 00:44:49 vps.kck sshd[24561]: Connection closed by authenticating user root 31.214.243.131 port 54188 [preauth]
+Apr 30 00:44:49 vps.kck sshd[24563]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:49 vps.kck sshd[24563]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:50 vps.kck sshd[24563]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:51 vps.kck sshd[24563]: Failed password for root from 31.214.243.131 port 54192 ssh2
+Apr 30 00:44:52 vps.kck sshd[24563]: Connection closed by authenticating user root 31.214.243.131 port 54192 [preauth]
+Apr 30 00:44:52 vps.kck sshd[24565]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:52 vps.kck sshd[24565]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:53 vps.kck sshd[24565]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:55 vps.kck sshd[24565]: Failed password for root from 31.214.243.131 port 48086 ssh2
+Apr 30 00:44:55 vps.kck sshd[24565]: Connection closed by authenticating user root 31.214.243.131 port 48086 [preauth]
+Apr 30 00:44:55 vps.kck sshd[24567]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:55 vps.kck sshd[24567]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:56 vps.kck sshd[24567]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:44:57 vps.kck sshd[24567]: Failed password for root from 31.214.243.131 port 48100 ssh2
+Apr 30 00:44:57 vps.kck sshd[24567]: Connection closed by authenticating user root 31.214.243.131 port 48100 [preauth]
+Apr 30 00:44:57 vps.kck sshd[24569]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:44:57 vps.kck sshd[24569]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:44:58 vps.kck sshd[24569]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:45:00 vps.kck sshd[24569]: Failed password for root from 31.214.243.131 port 48116 ssh2
+Apr 30 00:45:00 vps.kck sshd[24569]: Connection closed by authenticating user root 31.214.243.131 port 48116 [preauth]
+Apr 30 00:45:01 vps.kck sshd[24571]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:45:01 vps.kck sshd[24571]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:45:01 vps.kck sshd[24571]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:45:04 vps.kck sshd[24571]: Failed password for root from 31.214.243.131 port 48126 ssh2
+Apr 30 00:45:04 vps.kck sshd[24571]: Connection closed by authenticating user root 31.214.243.131 port 48126 [preauth]
+Apr 30 00:45:04 vps.kck sshd[24573]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:45:04 vps.kck sshd[24573]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:45:05 vps.kck sshd[24573]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:45:07 vps.kck sshd[24573]: Failed password for root from 31.214.243.131 port 36472 ssh2
+Apr 30 00:45:07 vps.kck sshd[24573]: Connection closed by authenticating user root 31.214.243.131 port 36472 [preauth]
+Apr 30 00:45:07 vps.kck sshd[24575]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:45:07 vps.kck sshd[24575]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:45:08 vps.kck sshd[24575]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:45:09 vps.kck sshd[24575]: Failed password for root from 31.214.243.131 port 36482 ssh2
+Apr 30 00:45:09 vps.kck sshd[24575]: Connection closed by authenticating user root 31.214.243.131 port 36482 [preauth]
+Apr 30 00:45:10 vps.kck sshd[24577]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:45:10 vps.kck sshd[24577]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:45:10 vps.kck sshd[24577]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:45:12 vps.kck sshd[24577]: Failed password for root from 31.214.243.131 port 36484 ssh2
+Apr 30 00:45:12 vps.kck sshd[24577]: Connection closed by authenticating user root 31.214.243.131 port 36484 [preauth]
+Apr 30 00:45:13 vps.kck sshd[24579]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 00:45:13 vps.kck sshd[24579]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 00:45:13 vps.kck sshd[24579]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.214.243.131  user=root[0m
+Apr 30 00:45:16 vps.kck sshd[24579]: Failed password for root from 31.214.243.131 port 34698 ssh2
+Apr 30 00:45:16 vps.kck sshd[24579]: Connection closed by authenticating user root 31.214.243.131 port 34698 [preauth]
+Apr 30 00:48:01 vps.kck CRON[24582]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 00:48:01 vps.kck CRON[24583]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 00:48:01 vps.kck CRON[24582]: pam_unix(cron:session): session closed for user root
+Apr 30 01:04:26 vps.kck systemd[1]: Starting Message of the Day...
+-- Subject: Unit motd-news.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit motd-news.service has begun starting up.
+Apr 30 01:04:26 vps.kck systemd[1]: Started Message of the Day.
+-- Subject: Unit motd-news.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit motd-news.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 01:07:50 vps.kck sshd[24591]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 01:07:50 vps.kck sshd[24591]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 01:07:52 vps.kck sshd[24591]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=45.221.11.5  user=root[0m
+Apr 30 01:07:54 vps.kck sshd[24591]: Failed password for root from 45.221.11.5 port 36843 ssh2
+Apr 30 01:07:54 vps.kck sshd[24591]: Connection closed by authenticating user root 45.221.11.5 port 36843 [preauth]
+Apr 30 01:09:49 vps.kck sshd[24594]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 01:09:49 vps.kck sshd[24594]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 01:09:51 vps.kck sshd[24594]: Invalid user user from 218.3.61.25 port 36763
+Apr 30 01:09:51 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 01:09:51 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.3.61.25[0m
+Apr 30 01:09:53 vps.kck sshd[24594]: Failed password for invalid user user from 218.3.61.25 port 36763 ssh2
+Apr 30 01:09:54 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 01:09:56 vps.kck sshd[24594]: Failed password for invalid user user from 218.3.61.25 port 36763 ssh2
+Apr 30 01:09:56 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 01:09:59 vps.kck sshd[24594]: Failed password for invalid user user from 218.3.61.25 port 36763 ssh2
+Apr 30 01:10:00 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 01:10:02 vps.kck sshd[24594]: Failed password for invalid user user from 218.3.61.25 port 36763 ssh2
+Apr 30 01:10:03 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 01:10:05 vps.kck sshd[24594]: Failed password for invalid user user from 218.3.61.25 port 36763 ssh2
+Apr 30 01:10:06 vps.kck sshd[24594]: Failed password for invalid user user from 218.3.61.25 port 36763 ssh2
+Apr 30 01:10:06 vps.kck sshd[24594]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for invalid user user from 218.3.61.25 port 36763 ssh2 [preauth][0m
+Apr 30 01:10:06 vps.kck sshd[24594]: Disconnecting invalid user user 218.3.61.25 port 36763: Too many authentication failures [preauth]
+Apr 30 01:10:06 vps.kck sshd[24594]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.3.61.25[0m
+Apr 30 01:10:06 vps.kck sshd[24594]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 01:10:06 vps.kck sshd[24596]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 01:10:06 vps.kck sshd[24596]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 01:10:09 vps.kck sshd[24596]: Invalid user user from 218.3.61.25 port 36799
+Apr 30 01:10:09 vps.kck sshd[24596]: Failed none for invalid user user from 218.3.61.25 port 36799 ssh2
+Apr 30 01:10:09 vps.kck sshd[24596]: Connection closed by invalid user user 218.3.61.25 port 36799 [preauth]
+Apr 30 01:38:01 vps.kck sshd[24602]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 01:38:01 vps.kck sshd[24602]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 01:38:02 vps.kck sshd[24602]: Did not receive identification string from 178.62.237.183 port 61000
+Apr 30 01:48:01 vps.kck CRON[24604]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 01:48:01 vps.kck CRON[24605]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 01:48:01 vps.kck CRON[24604]: pam_unix(cron:session): session closed for user root
+Apr 30 01:52:46 vps.kck sshd[24610]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 01:52:46 vps.kck sshd[24610]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 01:52:49 vps.kck sshd[24610]: Did not receive identification string from 1.15.60.168 port 38308
+Apr 30 02:04:30 vps.kck sshd[24612]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 02:04:30 vps.kck sshd[24612]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 02:04:36 vps.kck sshd[24612]: Invalid user ubnt from 118.170.131.113 port 56789
+Apr 30 02:04:36 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:04:36 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=118.170.131.113[0m
+Apr 30 02:04:39 vps.kck sshd[24612]: Failed password for invalid user ubnt from 118.170.131.113 port 56789 ssh2
+Apr 30 02:04:40 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:04:42 vps.kck sshd[24612]: Failed password for invalid user ubnt from 118.170.131.113 port 56789 ssh2
+Apr 30 02:04:44 vps.kck sshd[24612]: Failed password for invalid user ubnt from 118.170.131.113 port 56789 ssh2
+Apr 30 02:04:46 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:04:49 vps.kck sshd[24612]: Failed password for invalid user ubnt from 118.170.131.113 port 56789 ssh2
+Apr 30 02:04:50 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:04:52 vps.kck sshd[24612]: Failed password for invalid user ubnt from 118.170.131.113 port 56789 ssh2
+Apr 30 02:04:54 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:04:56 vps.kck sshd[24612]: Failed password for invalid user ubnt from 118.170.131.113 port 56789 ssh2
+Apr 30 02:04:56 vps.kck sshd[24612]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for invalid user ubnt from 118.170.131.113 port 56789 ssh2 [preauth][0m
+Apr 30 02:04:56 vps.kck sshd[24612]: Disconnecting invalid user ubnt 118.170.131.113 port 56789: Too many authentication failures [preauth]
+Apr 30 02:04:56 vps.kck sshd[24612]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=118.170.131.113[0m
+Apr 30 02:04:56 vps.kck sshd[24612]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 02:04:57 vps.kck sshd[24614]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 02:04:57 vps.kck sshd[24614]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 02:05:02 vps.kck sshd[24614]: Invalid user ubnt from 118.170.131.113 port 56928
+Apr 30 02:05:02 vps.kck sshd[24614]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:05:02 vps.kck sshd[24614]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=118.170.131.113[0m
+Apr 30 02:05:04 vps.kck sshd[24614]: Failed password for invalid user ubnt from 118.170.131.113 port 56928 ssh2
+Apr 30 02:05:05 vps.kck sshd[24614]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 02:05:07 vps.kck sshd[24614]: Failed password for invalid user ubnt from 118.170.131.113 port 56928 ssh2
+Apr 30 02:05:08 vps.kck sshd[24614]: Connection closed by invalid user ubnt 118.170.131.113 port 56928 [preauth]
+Apr 30 02:05:08 vps.kck sshd[24614]: [0;1;39m[0;1;31m[0;1;39mPAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=118.170.131.113[0m
+Apr 30 02:48:01 vps.kck CRON[24620]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 02:48:01 vps.kck CRON[24621]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 02:48:01 vps.kck CRON[24620]: pam_unix(cron:session): session closed for user root
+Apr 30 02:54:48 vps.kck sshd[24627]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 02:54:48 vps.kck sshd[24627]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 02:54:50 vps.kck sshd[24627]: Accepted password for root from 202.144.171.191 port 22214 ssh2
+Apr 30 02:54:50 vps.kck sshd[24627]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr 30 02:56:54 vps.kck python3[24739]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 02:58:35 vps.kck python3[24755]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:01:00 vps.kck python3[24939]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:01:41 vps.kck python3[24957]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:02:57 vps.kck sshd[25008]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 03:02:57 vps.kck sshd[25008]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 03:03:00 vps.kck sshd[25008]: Invalid user usr from 218.173.76.139 port 39708
+Apr 30 03:03:00 vps.kck sshd[25008]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 03:03:00 vps.kck sshd[25008]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.173.76.139[0m
+Apr 30 03:03:02 vps.kck sshd[25008]: Failed password for invalid user usr from 218.173.76.139 port 39708 ssh2
+Apr 30 03:03:02 vps.kck sshd[25008]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 03:03:04 vps.kck sshd[25008]: Failed password for invalid user usr from 218.173.76.139 port 39708 ssh2
+Apr 30 03:03:06 vps.kck sshd[25008]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 03:03:08 vps.kck sshd[25008]: Failed password for invalid user usr from 218.173.76.139 port 39708 ssh2
+Apr 30 03:03:09 vps.kck sshd[25008]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 03:03:10 vps.kck sshd[25008]: Failed password for invalid user usr from 218.173.76.139 port 39708 ssh2
+Apr 30 03:03:11 vps.kck sshd[25008]: Failed password for invalid user usr from 218.173.76.139 port 39708 ssh2
+Apr 30 03:03:12 vps.kck sshd[25008]: Connection closed by invalid user usr 218.173.76.139 port 39708 [preauth]
+Apr 30 03:03:12 vps.kck sshd[25008]: [0;1;39m[0;1;31m[0;1;39mPAM 3 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.173.76.139[0m
+Apr 30 03:03:12 vps.kck sshd[25008]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 4 > 3[0m
+Apr 30 03:04:29 vps.kck python3[25016]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:05:43 vps.kck python3[25028]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:09:38 vps.kck python3[25134]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:14:34 vps.kck python3[25206]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:14:43 vps.kck python3[25212]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:14:47 vps.kck python3[25217]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:16:08 vps.kck python3[25304]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:17:36 vps.kck python3[25366]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:19:35 vps.kck python3[25424]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:23:11 vps.kck python3[25526]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:23:14 vps.kck python3[25531]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:27:09 vps.kck sshd[25790]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 03:27:09 vps.kck sshd[25790]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 03:27:12 vps.kck sshd[25790]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=171.240.139.27  user=root[0m
+Apr 30 03:27:15 vps.kck sshd[25790]: Failed password for root from 171.240.139.27 port 45783 ssh2
+Apr 30 03:27:18 vps.kck sshd[25790]: Failed password for root from 171.240.139.27 port 45783 ssh2
+Apr 30 03:27:21 vps.kck sshd[25790]: Failed password for root from 171.240.139.27 port 45783 ssh2
+Apr 30 03:27:22 vps.kck sshd[25790]: Failed password for root from 171.240.139.27 port 45783 ssh2
+Apr 30 03:27:25 vps.kck sshd[25790]: Failed password for root from 171.240.139.27 port 45783 ssh2
+Apr 30 03:27:28 vps.kck sshd[25790]: Failed password for root from 171.240.139.27 port 45783 ssh2
+Apr 30 03:27:28 vps.kck sshd[25790]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for root from 171.240.139.27 port 45783 ssh2 [preauth][0m
+Apr 30 03:27:28 vps.kck sshd[25790]: Disconnecting authenticating user root 171.240.139.27 port 45783: Too many authentication failures [preauth]
+Apr 30 03:27:28 vps.kck sshd[25790]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=171.240.139.27  user=root[0m
+Apr 30 03:27:28 vps.kck sshd[25790]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 03:27:28 vps.kck sshd[25822]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 03:27:28 vps.kck sshd[25822]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 03:27:31 vps.kck sshd[25822]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=171.240.139.27  user=root[0m
+Apr 30 03:27:33 vps.kck sshd[25822]: Failed password for root from 171.240.139.27 port 45924 ssh2
+Apr 30 03:27:36 vps.kck sshd[25822]: Failed password for root from 171.240.139.27 port 45924 ssh2
+Apr 30 03:27:40 vps.kck sshd[25822]: Failed password for root from 171.240.139.27 port 45924 ssh2
+Apr 30 03:27:44 vps.kck sshd[25822]: Failed password for root from 171.240.139.27 port 45924 ssh2
+Apr 30 03:27:46 vps.kck sshd[25822]: Failed password for root from 171.240.139.27 port 45924 ssh2
+Apr 30 03:27:49 vps.kck sshd[25822]: Failed password for root from 171.240.139.27 port 45924 ssh2
+Apr 30 03:27:49 vps.kck sshd[25822]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for root from 171.240.139.27 port 45924 ssh2 [preauth][0m
+Apr 30 03:27:49 vps.kck sshd[25822]: Disconnecting authenticating user root 171.240.139.27 port 45924: Too many authentication failures [preauth]
+Apr 30 03:27:49 vps.kck sshd[25822]: [0;1;39m[0;1;31m[0;1;39mPAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=171.240.139.27  user=root[0m
+Apr 30 03:27:49 vps.kck sshd[25822]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 6 > 3[0m
+Apr 30 03:27:50 vps.kck sshd[25829]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 03:27:50 vps.kck sshd[25829]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 03:27:53 vps.kck sshd[25829]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=171.240.139.27  user=root[0m
+Apr 30 03:27:55 vps.kck sshd[25829]: Failed password for root from 171.240.139.27 port 46077 ssh2
+Apr 30 03:27:58 vps.kck sshd[25829]: Failed password for root from 171.240.139.27 port 46077 ssh2
+Apr 30 03:28:01 vps.kck sshd[25829]: Failed password for root from 171.240.139.27 port 46077 ssh2
+Apr 30 03:28:03 vps.kck sshd[25829]: Failed password for root from 171.240.139.27 port 46077 ssh2
+Apr 30 03:28:07 vps.kck sshd[25829]: Failed password for root from 171.240.139.27 port 46077 ssh2
+Apr 30 03:28:08 vps.kck sshd[25829]: Connection closed by authenticating user root 171.240.139.27 port 46077 [preauth]
+Apr 30 03:28:08 vps.kck sshd[25829]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=171.240.139.27  user=root[0m
+Apr 30 03:28:08 vps.kck sshd[25829]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 03:28:54 vps.kck sudo[25872]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kok ; USER=root ; COMMAND=/usr/bin/apt-get install Memcached[0m
+Apr 30 03:28:54 vps.kck sudo[25872]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 03:28:54 vps.kck sudo[25872]: pam_unix(sudo:session): session closed for user root
+Apr 30 03:28:58 vps.kck sudo[25876]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kok ; USER=root ; COMMAND=/usr/sbin/service memcached start[0m
+Apr 30 03:28:58 vps.kck sudo[25876]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 03:28:59 vps.kck sudo[25876]: pam_unix(sudo:session): session closed for user root
+Apr 30 03:48:01 vps.kck CRON[26154]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 03:48:01 vps.kck CRON[26155]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 03:48:01 vps.kck CRON[26154]: pam_unix(cron:session): session closed for user root
+Apr 30 03:57:16 vps.kck python3[26362]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:57:19 vps.kck python3[26367]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 03:59:10 vps.kck sshd[26461]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 03:59:10 vps.kck sshd[26461]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 03:59:10 vps.kck sshd[26461]: Did not receive identification string from 1.15.60.168 port 55882
+Apr 30 04:07:32 vps.kck python3[26611]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:07:36 vps.kck python3[26616]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:07:43 vps.kck python3[26621]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:16:13 vps.kck sshd[26813]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 04:16:13 vps.kck sshd[26813]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 04:16:13 vps.kck sshd[26813]: Did not receive identification string from 149.202.191.96 port 61000
+Apr 30 04:24:41 vps.kck python3[26833]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:29:46 vps.kck python3[26999]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:29:50 vps.kck python3[27004]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:36:39 vps.kck python3[27166]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:41:25 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 04:41:25 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 04:41:25 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 04:41:26 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 04:42:44 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 04:42:54 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 04:42:54 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 04:42:55 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 04:43:32 vps.kck python3[27510]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:43:59 vps.kck sudo[27541]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/systemctl status apache2[0m
+Apr 30 04:43:59 vps.kck sudo[27541]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 04:43:59 vps.kck sudo[27541]: pam_unix(sudo:session): session closed for user root
+Apr 30 04:45:18 vps.kck apache2[27633]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:45:24 vps.kck python3[27657]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:46:12 vps.kck python3[27664]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:46:38 vps.kck sudo[27714]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 stop[0m
+Apr 30 04:46:38 vps.kck sudo[27714]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 04:46:38 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 04:46:44 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 04:46:44 vps.kck sudo[27714]: pam_unix(sudo:session): session closed for user root
+Apr 30 04:46:48 vps.kck sudo[27745]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 status[0m
+Apr 30 04:46:48 vps.kck sudo[27745]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 04:46:53 vps.kck sudo[27745]: pam_unix(sudo:session): session closed for user root
+Apr 30 04:46:56 vps.kck sudo[27751]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 start[0m
+Apr 30 04:46:56 vps.kck sudo[27751]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 04:46:56 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 04:46:56 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 04:46:56 vps.kck sudo[27751]: pam_unix(sudo:session): session closed for user root
+Apr 30 04:46:58 vps.kck sudo[27826]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 status[0m
+Apr 30 04:46:58 vps.kck sudo[27826]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 04:46:58 vps.kck sudo[27826]: pam_unix(sudo:session): session closed for user root
+Apr 30 04:47:14 vps.kck apache2[27780]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:48:01 vps.kck CRON[27836]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 04:48:01 vps.kck CRON[27837]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 04:48:01 vps.kck CRON[27836]: pam_unix(cron:session): session closed for user root
+Apr 30 04:54:03 vps.kck sudo[27870]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 restart[0m
+Apr 30 04:54:03 vps.kck sudo[27870]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 04:54:03 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 04:54:03 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 04:54:03 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 04:54:03 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 04:54:03 vps.kck sudo[27870]: pam_unix(sudo:session): session closed for user root
+Apr 30 04:54:08 vps.kck apache2[27888]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 04:56:01 vps.kck CRON[27937]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 04:56:01 vps.kck CRON[27938]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly ))
+Apr 30 04:56:01 vps.kck CRON[27937]: pam_unix(cron:session): session closed for user root
+Apr 30 05:24:28 vps.kck sshd[27944]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 05:24:28 vps.kck sshd[27944]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 05:24:31 vps.kck sshd[27944]: Invalid user pi from 31.7.151.249 port 36002
+Apr 30 05:24:31 vps.kck sshd[27944]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:24:31 vps.kck sshd[27944]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.7.151.249[0m
+Apr 30 05:24:32 vps.kck sshd[27944]: Failed password for invalid user pi from 31.7.151.249 port 36002 ssh2
+Apr 30 05:24:33 vps.kck sshd[27944]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:24:35 vps.kck sshd[27944]: Failed password for invalid user pi from 31.7.151.249 port 36002 ssh2
+Apr 30 05:24:39 vps.kck sshd[27944]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:24:41 vps.kck sshd[27944]: Failed password for invalid user pi from 31.7.151.249 port 36002 ssh2
+Apr 30 05:24:43 vps.kck sshd[27944]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:24:44 vps.kck sshd[27944]: Failed password for invalid user pi from 31.7.151.249 port 36002 ssh2
+Apr 30 05:24:50 vps.kck sshd[27944]: Failed password for invalid user pi from 31.7.151.249 port 36002 ssh2
+Apr 30 05:24:58 vps.kck sshd[27944]: Connection closed by invalid user pi 31.7.151.249 port 36002 [preauth]
+Apr 30 05:24:58 vps.kck sshd[27944]: [0;1;39m[0;1;31m[0;1;39mPAM 3 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=31.7.151.249[0m
+Apr 30 05:24:58 vps.kck sshd[27944]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 4 > 3[0m
+Apr 30 05:31:48 vps.kck sshd[27947]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 05:31:48 vps.kck sshd[27947]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 05:31:53 vps.kck sshd[27947]: Invalid user admin from 119.207.96.55 port 56104
+Apr 30 05:31:53 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:31:53 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:31:56 vps.kck sshd[27947]: Failed password for invalid user admin from 119.207.96.55 port 56104 ssh2
+Apr 30 05:32:00 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:02 vps.kck sshd[27947]: Failed password for invalid user admin from 119.207.96.55 port 56104 ssh2
+Apr 30 05:32:06 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:08 vps.kck sshd[27947]: Failed password for invalid user admin from 119.207.96.55 port 56104 ssh2
+Apr 30 05:32:10 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:12 vps.kck sshd[27947]: Failed password for invalid user admin from 119.207.96.55 port 56104 ssh2
+Apr 30 05:32:17 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:19 vps.kck sshd[27947]: Failed password for invalid user admin from 119.207.96.55 port 56104 ssh2
+Apr 30 05:32:23 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:25 vps.kck sshd[27947]: Failed password for invalid user admin from 119.207.96.55 port 56104 ssh2
+Apr 30 05:32:25 vps.kck sshd[27947]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for invalid user admin from 119.207.96.55 port 56104 ssh2 [preauth][0m
+Apr 30 05:32:25 vps.kck sshd[27947]: Disconnecting invalid user admin 119.207.96.55 port 56104: Too many authentication failures [preauth]
+Apr 30 05:32:25 vps.kck sshd[27947]: [0;1;39m[0;1;31m[0;1;39mPAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:32:25 vps.kck sshd[27947]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 6 > 3[0m
+Apr 30 05:32:27 vps.kck sshd[27949]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 05:32:27 vps.kck sshd[27949]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 05:32:32 vps.kck sshd[27949]: Invalid user admin from 119.207.96.55 port 56310
+Apr 30 05:32:32 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:32 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:32:34 vps.kck sshd[27949]: Failed password for invalid user admin from 119.207.96.55 port 56310 ssh2
+Apr 30 05:32:36 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:39 vps.kck sshd[27949]: Failed password for invalid user admin from 119.207.96.55 port 56310 ssh2
+Apr 30 05:32:41 vps.kck sshd[27949]: Failed password for invalid user admin from 119.207.96.55 port 56310 ssh2
+Apr 30 05:32:43 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:45 vps.kck sshd[27949]: Failed password for invalid user admin from 119.207.96.55 port 56310 ssh2
+Apr 30 05:32:50 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:52 vps.kck sshd[27949]: Failed password for invalid user admin from 119.207.96.55 port 56310 ssh2
+Apr 30 05:32:55 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:32:58 vps.kck sshd[27949]: Failed password for invalid user admin from 119.207.96.55 port 56310 ssh2
+Apr 30 05:32:58 vps.kck sshd[27949]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for invalid user admin from 119.207.96.55 port 56310 ssh2 [preauth][0m
+Apr 30 05:32:58 vps.kck sshd[27949]: Disconnecting invalid user admin 119.207.96.55 port 56310: Too many authentication failures [preauth]
+Apr 30 05:32:58 vps.kck sshd[27949]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:32:58 vps.kck sshd[27949]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 05:33:00 vps.kck sshd[27951]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 05:33:00 vps.kck sshd[27951]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 05:33:05 vps.kck sshd[27951]: Invalid user admin from 119.207.96.55 port 56487
+Apr 30 05:33:05 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:05 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:33:07 vps.kck sshd[27951]: Failed password for invalid user admin from 119.207.96.55 port 56487 ssh2
+Apr 30 05:33:10 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:12 vps.kck sshd[27951]: Failed password for invalid user admin from 119.207.96.55 port 56487 ssh2
+Apr 30 05:33:16 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:17 vps.kck sshd[27951]: Failed password for invalid user admin from 119.207.96.55 port 56487 ssh2
+Apr 30 05:33:20 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:23 vps.kck sshd[27951]: Failed password for invalid user admin from 119.207.96.55 port 56487 ssh2
+Apr 30 05:33:25 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:28 vps.kck sshd[27951]: Failed password for invalid user admin from 119.207.96.55 port 56487 ssh2
+Apr 30 05:33:31 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:33 vps.kck sshd[27951]: Failed password for invalid user admin from 119.207.96.55 port 56487 ssh2
+Apr 30 05:33:33 vps.kck sshd[27951]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for invalid user admin from 119.207.96.55 port 56487 ssh2 [preauth][0m
+Apr 30 05:33:33 vps.kck sshd[27951]: Disconnecting invalid user admin 119.207.96.55 port 56487: Too many authentication failures [preauth]
+Apr 30 05:33:33 vps.kck sshd[27951]: [0;1;39m[0;1;31m[0;1;39mPAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:33:33 vps.kck sshd[27951]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 6 > 3[0m
+Apr 30 05:33:35 vps.kck sshd[27953]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 05:33:35 vps.kck sshd[27953]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 05:33:44 vps.kck sshd[27953]: Invalid user admin from 119.207.96.55 port 56671
+Apr 30 05:33:44 vps.kck sshd[27953]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:44 vps.kck sshd[27953]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:33:46 vps.kck sshd[27953]: Failed password for invalid user admin from 119.207.96.55 port 56671 ssh2
+Apr 30 05:33:48 vps.kck sshd[27953]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:33:50 vps.kck sshd[27953]: Failed password for invalid user admin from 119.207.96.55 port 56671 ssh2
+Apr 30 05:33:53 vps.kck sshd[27953]: Connection closed by invalid user admin 119.207.96.55 port 56671 [preauth]
+Apr 30 05:33:53 vps.kck sshd[27953]: [0;1;39m[0;1;31m[0;1;39mPAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.207.96.55[0m
+Apr 30 05:38:27 vps.kck sshd[27956]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 05:38:27 vps.kck sshd[27956]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 05:39:35 vps.kck sshd[27956]: Invalid user admin from 112.164.104.55 port 33857
+Apr 30 05:39:35 vps.kck sshd[27956]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 05:39:35 vps.kck sshd[27956]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.164.104.55[0m
+Apr 30 05:39:37 vps.kck sshd[27956]: Failed password for invalid user admin from 112.164.104.55 port 33857 ssh2
+Apr 30 05:48:01 vps.kck CRON[27959]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 05:48:01 vps.kck CRON[27960]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 05:48:01 vps.kck CRON[27959]: pam_unix(cron:session): session closed for user root
+Apr 30 06:10:26 vps.kck systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Apr 30 06:10:26 vps.kck systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+Apr 30 06:10:26 vps.kck systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 06:10:27 vps.kck systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 06:48:01 vps.kck CRON[28017]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 06:48:01 vps.kck CRON[28018]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 06:48:01 vps.kck CRON[28017]: pam_unix(cron:session): session closed for user root
+Apr 30 06:57:46 vps.kck sshd[28024]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 06:57:46 vps.kck sshd[28024]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 06:57:55 vps.kck sshd[28024]: Invalid user telnet from 183.108.211.209 port 55418
+Apr 30 06:57:55 vps.kck sshd[28024]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 06:57:55 vps.kck sshd[28024]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.108.211.209[0m
+Apr 30 06:57:57 vps.kck sshd[28024]: Failed password for invalid user telnet from 183.108.211.209 port 55418 ssh2
+Apr 30 06:58:00 vps.kck sshd[28024]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 06:58:02 vps.kck sshd[28024]: Failed password for invalid user telnet from 183.108.211.209 port 55418 ssh2
+Apr 30 06:58:05 vps.kck sshd[28024]: Failed password for invalid user telnet from 183.108.211.209 port 55418 ssh2
+Apr 30 06:58:06 vps.kck sshd[28024]: Connection closed by invalid user telnet 183.108.211.209 port 55418 [preauth]
+Apr 30 06:58:06 vps.kck sshd[28024]: [0;1;39m[0;1;31m[0;1;39mPAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.108.211.209[0m
+Apr 30 07:05:44 vps.kck sshd[24627]: pam_unix(sshd:session): session closed for user root
+Apr 30 07:48:01 vps.kck CRON[28031]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 07:48:01 vps.kck CRON[28032]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 07:48:01 vps.kck CRON[28031]: pam_unix(cron:session): session closed for user root
+Apr 30 07:52:42 vps.kck sshd[28037]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 07:52:42 vps.kck sshd[28037]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 07:52:49 vps.kck sshd[28037]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.186.198.235  user=root[0m
+Apr 30 07:52:50 vps.kck sshd[28037]: Failed password for root from 112.186.198.235 port 60511 ssh2
+Apr 30 07:52:55 vps.kck sshd[28037]: Failed password for root from 112.186.198.235 port 60511 ssh2
+Apr 30 07:52:59 vps.kck sshd[28037]: Failed password for root from 112.186.198.235 port 60511 ssh2
+Apr 30 07:53:03 vps.kck sshd[28037]: Failed password for root from 112.186.198.235 port 60511 ssh2
+Apr 30 07:53:07 vps.kck sshd[28037]: Failed password for root from 112.186.198.235 port 60511 ssh2
+Apr 30 07:53:11 vps.kck sshd[28037]: Failed password for root from 112.186.198.235 port 60511 ssh2
+Apr 30 07:53:11 vps.kck sshd[28037]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for root from 112.186.198.235 port 60511 ssh2 [preauth][0m
+Apr 30 07:53:11 vps.kck sshd[28037]: Disconnecting authenticating user root 112.186.198.235 port 60511: Too many authentication failures [preauth]
+Apr 30 07:53:11 vps.kck sshd[28037]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.186.198.235  user=root[0m
+Apr 30 07:53:11 vps.kck sshd[28037]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 07:53:14 vps.kck sshd[28040]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 07:53:14 vps.kck sshd[28040]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 07:53:21 vps.kck sshd[28040]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.186.198.235  user=root[0m
+Apr 30 07:53:23 vps.kck sshd[28040]: Failed password for root from 112.186.198.235 port 60690 ssh2
+Apr 30 07:53:27 vps.kck sshd[28040]: Failed password for root from 112.186.198.235 port 60690 ssh2
+Apr 30 07:53:31 vps.kck sshd[28040]: Failed password for root from 112.186.198.235 port 60690 ssh2
+Apr 30 07:53:36 vps.kck sshd[28040]: Failed password for root from 112.186.198.235 port 60690 ssh2
+Apr 30 07:53:40 vps.kck sshd[28040]: Failed password for root from 112.186.198.235 port 60690 ssh2
+Apr 30 07:53:44 vps.kck sshd[28040]: Failed password for root from 112.186.198.235 port 60690 ssh2
+Apr 30 07:53:44 vps.kck sshd[28040]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for root from 112.186.198.235 port 60690 ssh2 [preauth][0m
+Apr 30 07:53:44 vps.kck sshd[28040]: Disconnecting authenticating user root 112.186.198.235 port 60690: Too many authentication failures [preauth]
+Apr 30 07:53:44 vps.kck sshd[28040]: [0;1;39m[0;1;31m[0;1;39mPAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.186.198.235  user=root[0m
+Apr 30 07:53:44 vps.kck sshd[28040]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 6 > 3[0m
+Apr 30 07:53:47 vps.kck sshd[28042]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 07:53:47 vps.kck sshd[28042]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 07:53:54 vps.kck sshd[28042]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.186.198.235  user=root[0m
+Apr 30 07:53:56 vps.kck sshd[28042]: Failed password for root from 112.186.198.235 port 60853 ssh2
+Apr 30 07:54:00 vps.kck sshd[28042]: Failed password for root from 112.186.198.235 port 60853 ssh2
+Apr 30 07:54:04 vps.kck sshd[28042]: Failed password for root from 112.186.198.235 port 60853 ssh2
+Apr 30 07:54:09 vps.kck sshd[28042]: Failed password for root from 112.186.198.235 port 60853 ssh2
+Apr 30 07:54:15 vps.kck sshd[28042]: Failed password for root from 112.186.198.235 port 60853 ssh2
+Apr 30 07:54:16 vps.kck sshd[28042]: Connection closed by authenticating user root 112.186.198.235 port 60853 [preauth]
+Apr 30 07:54:16 vps.kck sshd[28042]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.186.198.235  user=root[0m
+Apr 30 07:54:16 vps.kck sshd[28042]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 08:15:34 vps.kck sshd[28045]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 08:15:34 vps.kck sshd[28045]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 08:15:37 vps.kck sshd[28045]: Invalid user ubnt from 121.175.50.75 port 42377
+Apr 30 08:15:37 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:15:37 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=121.175.50.75[0m
+Apr 30 08:15:39 vps.kck sshd[28045]: Failed password for invalid user ubnt from 121.175.50.75 port 42377 ssh2
+Apr 30 08:15:40 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:15:42 vps.kck sshd[28045]: Failed password for invalid user ubnt from 121.175.50.75 port 42377 ssh2
+Apr 30 08:15:44 vps.kck sshd[28045]: Failed password for invalid user ubnt from 121.175.50.75 port 42377 ssh2
+Apr 30 08:15:45 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:15:47 vps.kck sshd[28045]: Failed password for invalid user ubnt from 121.175.50.75 port 42377 ssh2
+Apr 30 08:15:48 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:15:49 vps.kck sshd[28045]: Failed password for invalid user ubnt from 121.175.50.75 port 42377 ssh2
+Apr 30 08:15:51 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:15:53 vps.kck sshd[28045]: Failed password for invalid user ubnt from 121.175.50.75 port 42377 ssh2
+Apr 30 08:15:53 vps.kck sshd[28045]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for invalid user ubnt from 121.175.50.75 port 42377 ssh2 [preauth][0m
+Apr 30 08:15:53 vps.kck sshd[28045]: Disconnecting invalid user ubnt 121.175.50.75 port 42377: Too many authentication failures [preauth]
+Apr 30 08:15:53 vps.kck sshd[28045]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=121.175.50.75[0m
+Apr 30 08:15:53 vps.kck sshd[28045]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 08:15:55 vps.kck sshd[28047]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 08:15:55 vps.kck sshd[28047]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 08:15:57 vps.kck sshd[28047]: Invalid user ubnt from 121.175.50.75 port 42581
+Apr 30 08:15:57 vps.kck sshd[28047]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:15:57 vps.kck sshd[28047]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=121.175.50.75[0m
+Apr 30 08:15:59 vps.kck sshd[28047]: Failed password for invalid user ubnt from 121.175.50.75 port 42581 ssh2
+Apr 30 08:16:00 vps.kck sshd[28047]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 08:16:01 vps.kck sshd[28047]: Failed password for invalid user ubnt from 121.175.50.75 port 42581 ssh2
+Apr 30 08:16:02 vps.kck sshd[28047]: Connection closed by invalid user ubnt 121.175.50.75 port 42581 [preauth]
+Apr 30 08:16:02 vps.kck sshd[28047]: [0;1;39m[0;1;31m[0;1;39mPAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=121.175.50.75[0m
+Apr 30 08:22:08 vps.kck sshd[28053]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 08:22:08 vps.kck sshd[28053]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 08:22:10 vps.kck sshd[28053]: Accepted password for root from 125.63.24.36 port 12442 ssh2
+Apr 30 08:22:10 vps.kck sshd[28053]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr 30 08:23:59 vps.kck sudo[28099]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/sbin/service apache2 restart[0m
+Apr 30 08:23:59 vps.kck sudo[28099]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 08:23:59 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 08:24:00 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 08:24:00 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 08:24:00 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 08:24:00 vps.kck sudo[28099]: pam_unix(sudo:session): session closed for user root
+Apr 30 08:24:04 vps.kck apache2[28117]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 08:48:01 vps.kck CRON[28233]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 08:48:01 vps.kck CRON[28234]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 08:48:01 vps.kck CRON[28233]: pam_unix(cron:session): session closed for user root
+Apr 30 08:49:50 vps.kck apache2[28264]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 08:50:15 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 08:50:15 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 08:50:15 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 08:50:16 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 08:50:18 vps.kck apache2[28302]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 08:51:38 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 08:51:38 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 08:51:38 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 08:51:38 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 08:51:52 vps.kck apache2[28373]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 08:54:18 vps.kck sshd[28431]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 08:54:18 vps.kck sshd[28431]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 08:54:22 vps.kck sshd[28431]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.203.36.32  user=root[0m
+Apr 30 08:54:24 vps.kck sshd[28431]: Failed password for root from 119.203.36.32 port 39100 ssh2
+Apr 30 08:54:27 vps.kck sshd[28431]: Failed password for root from 119.203.36.32 port 39100 ssh2
+Apr 30 08:54:32 vps.kck sshd[28431]: Failed password for root from 119.203.36.32 port 39100 ssh2
+Apr 30 08:54:34 vps.kck sshd[28431]: Failed password for root from 119.203.36.32 port 39100 ssh2
+Apr 30 08:54:37 vps.kck sshd[28431]: Failed password for root from 119.203.36.32 port 39100 ssh2
+Apr 30 08:54:42 vps.kck sshd[28431]: Failed password for root from 119.203.36.32 port 39100 ssh2
+Apr 30 08:54:42 vps.kck sshd[28431]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for root from 119.203.36.32 port 39100 ssh2 [preauth][0m
+Apr 30 08:54:42 vps.kck sshd[28431]: Disconnecting authenticating user root 119.203.36.32 port 39100: Too many authentication failures [preauth]
+Apr 30 08:54:42 vps.kck sshd[28431]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.203.36.32  user=root[0m
+Apr 30 08:54:42 vps.kck sshd[28431]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 08:54:44 vps.kck sshd[28433]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 08:54:44 vps.kck sshd[28433]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 08:54:48 vps.kck sshd[28433]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.203.36.32  user=root[0m
+Apr 30 08:54:50 vps.kck sshd[28433]: Failed password for root from 119.203.36.32 port 39210 ssh2
+Apr 30 08:54:54 vps.kck sshd[28433]: Failed password for root from 119.203.36.32 port 39210 ssh2
+Apr 30 08:54:58 vps.kck sshd[28433]: Failed password for root from 119.203.36.32 port 39210 ssh2
+Apr 30 08:55:01 vps.kck sshd[28433]: Failed password for root from 119.203.36.32 port 39210 ssh2
+Apr 30 08:55:05 vps.kck sshd[28433]: Failed password for root from 119.203.36.32 port 39210 ssh2
+Apr 30 08:55:10 vps.kck sshd[28433]: Failed password for root from 119.203.36.32 port 39210 ssh2
+Apr 30 08:55:10 vps.kck sshd[28433]: [0;1;31m[0;1;39m[0;1;31merror: maximum authentication attempts exceeded for root from 119.203.36.32 port 39210 ssh2 [preauth][0m
+Apr 30 08:55:10 vps.kck sshd[28433]: Disconnecting authenticating user root 119.203.36.32 port 39210: Too many authentication failures [preauth]
+Apr 30 08:55:10 vps.kck sshd[28433]: [0;1;39m[0;1;31m[0;1;39mPAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.203.36.32  user=root[0m
+Apr 30 08:55:10 vps.kck sshd[28433]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 6 > 3[0m
+Apr 30 08:55:11 vps.kck sshd[28435]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 08:55:11 vps.kck sshd[28435]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 08:55:14 vps.kck sshd[28435]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.203.36.32  user=root[0m
+Apr 30 08:55:17 vps.kck sshd[28435]: Failed password for root from 119.203.36.32 port 39342 ssh2
+Apr 30 08:55:21 vps.kck sshd[28435]: Failed password for root from 119.203.36.32 port 39342 ssh2
+Apr 30 08:55:25 vps.kck sshd[28435]: Failed password for root from 119.203.36.32 port 39342 ssh2
+Apr 30 08:55:29 vps.kck sshd[28435]: Failed password for root from 119.203.36.32 port 39342 ssh2
+Apr 30 08:55:32 vps.kck sshd[28435]: Failed password for root from 119.203.36.32 port 39342 ssh2
+Apr 30 08:55:33 vps.kck sshd[28435]: Connection closed by authenticating user root 119.203.36.32 port 39342 [preauth]
+Apr 30 08:55:33 vps.kck sshd[28435]: [0;1;39m[0;1;31m[0;1;39mPAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=119.203.36.32  user=root[0m
+Apr 30 08:55:33 vps.kck sshd[28435]: [0;1;31m[0;1;39m[0;1;31mPAM service(sshd) ignoring max retries; 5 > 3[0m
+Apr 30 09:00:43 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 09:00:44 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 09:00:44 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 09:00:44 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 09:00:48 vps.kck apache2[28463]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 09:01:03 vps.kck sudo[28512]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/tail /var/log/apache2/error.log[0m
+Apr 30 09:01:03 vps.kck sudo[28512]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:01:03 vps.kck sudo[28512]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:05:08 vps.kck sudo[28556]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/ps aux[0m
+Apr 30 09:05:08 vps.kck sudo[28556]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:05:08 vps.kck sudo[28556]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:05:21 vps.kck sudo[28559]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/killall apache2[0m
+Apr 30 09:05:21 vps.kck sudo[28559]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:05:21 vps.kck sudo[28559]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:05:21 vps.kck apachectl[28563]: httpd (no pid file) not running
+Apr 30 09:05:29 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 09:05:29 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 09:05:48 vps.kck sudo[28628]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/apache2ctl -t[0m
+Apr 30 09:05:48 vps.kck sudo[28628]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:05:48 vps.kck sudo[28628]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:05:54 vps.kck sudo[28632]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/apache2ctl -S[0m
+Apr 30 09:05:54 vps.kck sudo[28632]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:05:54 vps.kck sudo[28632]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:06:32 vps.kck sudo[28636]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/nano /etc/apache2/sites-enabled/000-default.conf[0m
+Apr 30 09:06:32 vps.kck sudo[28636]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:07:02 vps.kck sudo[28636]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:07:09 vps.kck sudo[28638]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/grep -i -r error /var/log/apache2/[0m
+Apr 30 09:07:09 vps.kck sudo[28638]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:07:09 vps.kck sudo[28638]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:08:24 vps.kck sudo[28640]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/grep -i -r error /var/log/apache2/[0m
+Apr 30 09:08:24 vps.kck sudo[28640]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:08:24 vps.kck sudo[28640]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:08:50 vps.kck sudo[28642]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/nano /etc/apache2/sites-enabled/000-default.conf[0m
+Apr 30 09:08:50 vps.kck sudo[28642]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:10:06 vps.kck sudo[28642]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:10:36 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 09:10:36 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 09:10:36 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 09:10:36 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 09:10:38 vps.kck sudo[28707]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/grep -i -r error /var/log/apache2/[0m
+Apr 30 09:10:38 vps.kck sudo[28707]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 09:10:38 vps.kck sudo[28707]: pam_unix(sudo:session): session closed for user root
+Apr 30 09:10:45 vps.kck apache2[28661]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 09:48:01 vps.kck CRON[28716]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 09:48:01 vps.kck CRON[28717]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 09:48:01 vps.kck CRON[28716]: pam_unix(cron:session): session closed for user root
+Apr 30 10:48:01 vps.kck CRON[28726]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 10:48:01 vps.kck CRON[28727]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 10:48:01 vps.kck CRON[28726]: pam_unix(cron:session): session closed for user root
+Apr 30 11:24:16 vps.kck sshd[28736]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ecdsa_key[0m
+Apr 30 11:24:16 vps.kck sshd[28736]: [0;1;31m[0;1;39m[0;1;31merror: Could not load host key: /etc/ssh/ssh_host_ed25519_key[0m
+Apr 30 11:24:18 vps.kck sshd[28736]: Invalid user admin from 118.10.90.129 port 55954
+Apr 30 11:24:18 vps.kck sshd[28736]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m
+Apr 30 11:24:18 vps.kck sshd[28736]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=118.10.90.129[0m
+Apr 30 11:24:20 vps.kck sshd[28736]: Failed password for invalid user admin from 118.10.90.129 port 55954 ssh2
+Apr 30 11:24:20 vps.kck sshd[28736]: Connection closed by invalid user admin 118.10.90.129 port 55954 [preauth]
+Apr 30 11:48:01 vps.kck CRON[28739]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 30 11:48:01 vps.kck CRON[28740]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 30 11:48:01 vps.kck CRON[28739]: pam_unix(cron:session): session closed for user root
+Apr 30 11:49:46 vps.kck sudo[28745]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/grep -i -r error /var/log/apache2/[0m
+Apr 30 11:49:46 vps.kck sudo[28745]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:49:46 vps.kck sudo[28745]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:51:44 vps.kck sudo[28750]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/nano /etc/apache2/sites-enabled/000-default.conf[0m
+Apr 30 11:51:44 vps.kck sudo[28750]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:51:57 vps.kck sudo[28750]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:55:19 vps.kck python3[28761]: looking for plugins in '/usr/lib64/sasl2', failed to open directory, error: No such file or directory
+Apr 30 11:56:17 vps.kck sudo[28810]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/nano /etc/apache2/sites-enabled/000-default.conf[0m
+Apr 30 11:56:17 vps.kck sudo[28810]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:58:38 vps.kck sudo[28810]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:58:38 vps.kck sudo[28812]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get update[0m
+Apr 30 11:58:38 vps.kck sudo[28812]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:58:45 vps.kck sudo[28812]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:58:46 vps.kck sudo[29045]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get install libapache2-mod-wsgi[0m
+Apr 30 11:58:46 vps.kck sudo[29045]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:58:50 vps.kck libapache2-mod-wsgi-py3[29084]: apache2_invoke prerm: Disable module wsgi
+Apr 30 11:58:50 vps.kck libapache2-mod-wsgi-py3[29089]: [0;1;31m[0;1;39m[0;1;31mapache2_reload: Your configuration is broken. Not restarting Apache 2[0m
+Apr 30 11:58:50 vps.kck libapache2-mod-wsgi-py3[29092]: [0;1;31m[0;1;39m[0;1;31mapache2_reload: AH00526: Syntax error on line 36 of /etc/apache2/sites-enabled/000-default.conf:[0m
+Apr 30 11:58:50 vps.kck libapache2-mod-wsgi-py3[29093]: [0;1;31m[0;1;39m[0;1;31mapache2_reload: Invalid command 'WSGIApplicationGroup', perhaps misspelled or defined by a module not included in the server configuration[0m
+Apr 30 11:58:52 vps.kck libapache2-mod-wsgi[29215]: apache2_invoke: Enable module wsgi
+Apr 30 11:58:52 vps.kck systemd[1]: Reloading.
+Apr 30 11:58:52 vps.kck systemd[1]: /lib/systemd/system/vzfifo.service:19: Support for option SysVStartPriority= has been removed and it is ignored
+Apr 30 11:58:52 vps.kck systemd[1]: [0;1;39m[0;1;31m[0;1;39mFailed to set devices.allow on /system.slice/memcached.service: Operation not permitted[0m
+Apr 30 11:58:52 vps.kck systemd[1]: [0;1;39m[0;1;31m[0;1;39mFailed to set devices.allow on /system.slice/memcached.service: Operation not permitted[0m
+Apr 30 11:58:53 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 11:58:53 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 11:58:53 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 11:58:53 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 11:59:28 vps.kck sudo[29045]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:59:31 vps.kck sudo[12747]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get install libapache2-mod-wsgi[0m
+Apr 30 11:59:31 vps.kck sudo[12747]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:59:31 vps.kck sudo[12747]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:59:36 vps.kck sudo[12751]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get update[0m
+Apr 30 11:59:36 vps.kck sudo[12751]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:59:38 vps.kck sudo[12751]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:59:42 vps.kck sudo[12982]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get install libapache2-mod-wsgi[0m
+Apr 30 11:59:42 vps.kck sudo[12982]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:59:42 vps.kck sudo[12982]: pam_unix(sudo:session): session closed for user root
+Apr 30 11:59:43 vps.kck sudo[12986]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/a2enmod wsgi[0m
+Apr 30 11:59:43 vps.kck sudo[12986]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 11:59:43 vps.kck sudo[12986]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:00:05 vps.kck sudo[12991]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 restart[0m
+Apr 30 12:00:05 vps.kck sudo[12991]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:00:05 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 12:00:05 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 12:00:05 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 12:00:06 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 12:00:06 vps.kck sudo[12991]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:00:09 vps.kck sudo[13055]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 status[0m
+Apr 30 12:00:09 vps.kck sudo[13055]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:00:09 vps.kck sudo[13055]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:03:29 vps.kck sudo[13065]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/nano /etc/apache2/sites-enabled/000-default.conf[0m
+Apr 30 12:03:29 vps.kck sudo[13065]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:05:19 vps.kck sudo[13065]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:05:24 vps.kck sudo[13067]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/a2ensite 000-default.conf[0m
+Apr 30 12:05:24 vps.kck sudo[13067]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:05:24 vps.kck sudo[13067]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:05:34 vps.kck sudo[13072]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+Apr 30 12:05:34 vps.kck sudo[13072]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:05:34 vps.kck systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+Apr 30 12:05:34 vps.kck systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+Apr 30 12:05:34 vps.kck sudo[13072]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:09:26 vps.kck sudo[13130]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+Apr 30 12:09:26 vps.kck sudo[13130]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:09:26 vps.kck systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+Apr 30 12:09:26 vps.kck systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+Apr 30 12:09:26 vps.kck sudo[13130]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:09:36 vps.kck sudo[13184]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/sbin/service apache2 status[0m
+Apr 30 12:09:36 vps.kck sudo[13184]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:09:36 vps.kck sudo[13184]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:10:26 vps.kck sudo[13192]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get remove libapache2-mod-python libapache2-mod-wsgi[0m
+Apr 30 12:10:26 vps.kck sudo[13192]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:10:41 vps.kck libapache2-mod-wsgi[13220]: apache2_invoke prerm: Disable module wsgi
+Apr 30 12:10:41 vps.kck libapache2-mod-wsgi[13225]: [0;1;31m[0;1;39m[0;1;31mapache2_reload: Your configuration is broken. Not restarting Apache 2[0m
+Apr 30 12:10:41 vps.kck libapache2-mod-wsgi[13228]: [0;1;31m[0;1;39m[0;1;31mapache2_reload: AH00526: Syntax error on line 36 of /etc/apache2/sites-enabled/000-default.conf:[0m
+Apr 30 12:10:41 vps.kck libapache2-mod-wsgi[13229]: [0;1;31m[0;1;39m[0;1;31mapache2_reload: Invalid command 'WSGIApplicationGroup', perhaps misspelled or defined by a module not included in the server configuration[0m
+Apr 30 12:10:41 vps.kck sudo[13192]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:10:47 vps.kck sudo[13236]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/usr/bin/apt-get install libapache2-mod-wsgi-py3[0m
+Apr 30 12:10:47 vps.kck sudo[13236]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:10:48 vps.kck libapache2-mod-wsgi-py3[13288]: apache2_invoke: Enable module wsgi
+Apr 30 12:10:49 vps.kck systemd[1]: Reloading.
+Apr 30 12:10:49 vps.kck systemd[1]: /lib/systemd/system/vzfifo.service:19: Support for option SysVStartPriority= has been removed and it is ignored
+Apr 30 12:10:49 vps.kck systemd[1]: [0;1;39m[0;1;31m[0;1;39mFailed to set devices.allow on /system.slice/memcached.service: Operation not permitted[0m
+Apr 30 12:10:49 vps.kck systemd[1]: [0;1;39m[0;1;31m[0;1;39mFailed to set devices.allow on /system.slice/memcached.service: Operation not permitted[0m
+Apr 30 12:10:49 vps.kck systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+Apr 30 12:10:49 vps.kck systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+Apr 30 12:10:49 vps.kck systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+Apr 30 12:10:49 vps.kck systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+Apr 30 12:10:49 vps.kck sudo[13236]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:11:20 vps.kck sudo[13374]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/nano /etc/apache2/sites-enabled/000-default.conf[0m
+Apr 30 12:11:20 vps.kck sudo[13374]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:11:35 vps.kck sudo[13374]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:11:47 vps.kck sudo[13376]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/kck ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+Apr 30 12:11:47 vps.kck sudo[13376]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Apr 30 12:11:47 vps.kck systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+Apr 30 12:11:47 vps.kck apachectl[13379]: AH00526: Syntax error on line 43 of /etc/apache2/sites-enabled/000-default.conf:
+Apr 30 12:11:47 vps.kck apachectl[13379]: order takes one argument, 'allow,deny', 'deny,allow', or 'mutual-failure'
+Apr 30 12:11:47 vps.kck apachectl[13379]: Action 'graceful' failed.
+Apr 30 12:11:47 vps.kck apachectl[13379]: The Apache error log may have more information.
+Apr 30 12:11:47 vps.kck systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+Apr 30 12:11:47 vps.kck sudo[13376]: pam_unix(sudo:session): session closed for user root
+Apr 30 12:11:47 vps.kck systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
