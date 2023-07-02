@@ -39,31 +39,28 @@
 <section class="contact-section">
   <div class="container">
     <div class="d-none d-sm-block mb-5 pb-4">
-      <div class="mapouter-cu">
-        <div class="gmap_canvas-cu">
-          <iframe class="gmap_iframe-cu" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=834&amp;height=464&amp;hl=en&amp;q=kck kok Jerteh terengganu&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Kck%20kok%20engineering&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 290px;
+                    width: 100%%;
+                }
+            </style><a href="https://www.embedgooglemap.net">embed google maps iframe</a>
+            <style>
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 290px;
+                    width: 100%%;
+                }
+            </style>
         </div>
-        <style>
-          .mapouter-cu {
-            position: relative;
-            text-align: right;
-            width: 100% !important;
-            height: 400px !important;
-          }
-
-          .gmap_canvas-cu {
-            overflow: hidden;
-            background: none !important;
-            width: 100% !important;
-            height: 400px !important;
-          }
-
-          .gmap_iframe-cu {
-            width: 100% !important;
-            height: 400px !important;
-          }
-        </style>
-      </div>
+    </div>
     </div> 
     {% if failed %} <div class="alert alert-warning" role="alert"> Recheck your details again. </div> {% endif %} <div class="row">
       <div class="col-12"> 
@@ -80,7 +77,7 @@
             {% csrf_token %} 
             <div class="col-12">
               <div class="form-group">
-                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Saya mahu quotation'" placeholder=" 🛠 Mintak sebut harga konkrit, kren atau servis mesin lay untuk project..."></textarea>
+                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Saya mahu quotation untuk projek...'" placeholder=" 🛠 Mintak sebut harga konkrit, kren atau servis mesin lay untuk project..."></textarea>
               </div>
             </div>
             <div class="col-sm-6">
@@ -146,8 +143,8 @@
             <i class="ti-email"></i>
           </span>
           <div class="media-body">
-            <h3>kckokengineering@gmail.com</h3>
-            <p>Send us your query anytime!</p>
+            <h3>hello@kckok.my</h3>
+            <p>Email kami bila-bila masa sahaja!</p>
           </div>
         </div>
       </div>

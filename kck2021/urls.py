@@ -2,9 +2,13 @@ from . import views
 from django.conf import settings
 from django.urls import path
 from django.conf.urls.static import static
+from django.views.generic.base import RedirectView
+from django.contrib.staticfiles.storage import staticfiles_storage
+
 
 app_name = "kck"
 urlpatterns = [
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('/img/logo/favicon.ico'))),
     path("", views.index, name="index"),
     path("about", views.about, name="about"),
     path("contact", views.contact, name="contact"),

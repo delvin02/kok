@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import ArticleCategories, Article, Career, Department, Job, Project, ProjectImage
-from django_summernote.admin import SummernoteModelAdmin
+from .models import ArticleCategories, Article, Career, Department, Job, Project, ProjectImages
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -12,15 +11,13 @@ class PostAdmin(admin.ModelAdmin):
 class ArticleAdmin(admin.ModelAdmin):
     search_fields =("title", "slug", "body", "categories")
     
-    class Media:
-        js=('tiny.js',)
+    class Meta:
+        model = Article
+        exclude = ['updated_date']
 
 admin.site.register(Career)
 admin.site.register(Department)
 admin.site.register(Job)
-admin.site.register(ProjectImage)
-@admin.register(Project)
-class ProjectAdmin(admin.ModelAdmin):
+admin.site.register(ProjectImages)
+admin.site.register(Project)
 
-    class Media:
-        js=('project.js',)

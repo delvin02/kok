@@ -361,14 +361,13 @@ hr {
 }
 @media (min-width: 550px){
     .section-padding {
-        padding-top: 100px;
-        padding-bottom: 120px
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 @media (max-width: 500px){
     .section-padding {
         padding-top: 40px;
-        padding-bottom: 70px;
     }
 }
 .separator {
@@ -2147,27 +2146,27 @@ div.info-right
 
 .section-padding2 {
     padding-top: 100px;
-    padding-bottom: 100px
+    padding-bottom: 50px
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .section-padding2 {
         padding-top: 100px;
-        padding-bottom: 100px
+        padding-bottom: 50px
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .section-padding2 {
         padding-top: 100px;
-        padding-bottom: 100px
+        padding-bottom: 50px
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section-padding2 {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 }
 
@@ -2181,8 +2180,9 @@ div.info-right
 @media (max-width: 575px) {
     .section-padding2 {
         padding-top: 35px;
-        padding-bottom: 50px
+        padding-bottom: 10px
     }
+
 }
 
 .section-padding30 {
@@ -2266,7 +2266,7 @@ div.info-right
 }
 
 .footer-padding {
-    padding-top: 130px;
+    padding-top: 100px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -8473,6 +8473,7 @@ del {
     background-color: #ebcaae;
     border-radius: 10px;
 }
+
 .blog_item_img .d-inline-block h2:hover{
     color: #c0762b !important;
 }

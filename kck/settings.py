@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '&0^_enc-c4l79p7d=g7p5_2nx4)&_s9v5vpux^m3!7&!ep!3ef'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['185.201.9.2', 'kckok.my', 'http://kckok.my', 'www.kckok.my', 'http://www.kckok.my', '.kckok.my', '*']
 
@@ -26,7 +26,9 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'kck2021',
     'tinymce',
-    'django_summernote',
+    'django_light',
+    'ckeditor', # CKEditor config
+    'ckeditor_uploader', # CKEditor media uploader
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     'compressor',
 ]
 
+
+
 # Define Site Id 
 SITE_ID = 1
 
@@ -50,22 +54,6 @@ CACHES = {
     }
 }
 
-DEFAULT = {
-    'selector': 'textarea',
-    'theme': 'modern',
-    'plugins': [
-    'advlist autolink link image lists charmap print preview hr anchor pagebreak',
-    'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
-    'table emoticons template paste help'
-    ],
-    'toolbar1': 'bold italic underline | alignleft aligncenter alignright alignjustify '
-           '| bullist numlist | outdent indent | table | link image | codesample | preview code',
-    'contextmenu': 'formats | link image',
-    'menubar': False,
-    'inline': False,
-    'statusbar': True,
-    'height': 360,
-}
 
 MIDDLEWARE = [
     # Compressor Starts
@@ -115,28 +103,6 @@ DATABASES = {
     }
 }
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'Delvin',
-#        'USER': 'postgres',
-#        'PASSWORD': 'admin',
-#        'HOST': '127.0.0.1',
-#        'PORT': '5432',
-#    }
-#}
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'dbdjmfutnn3jep',
-#       'USER': 'xtvbuaeepxmbyx',
-#        'PASSWORD': '0dd65e237b5b214c1c098120af26f31724a4fbbb807561acdc8b45538ea42898',
-#        'HOST': 'ec2-44-197-40-76.compute-1.amazonaws.com',
-#        'PORT': 5432,
-#    }
-#}
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -159,7 +125,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'ms'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Asia/Singapore'
 
@@ -227,16 +193,76 @@ COMPRESS_FILTERS = {
 HTML_MINIFY = True
 KEEP_COMMENTS_ON_MINIFYING = True
 
+# CKEditor
+CKEDITOR_UPLOAD_PATH="uploads/"
+
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'language': 'en',
+        'toolbar_Custom': [
+            {'name': 'document', 'items': ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates']},
+            {'name': 'clipboard', 'items': ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']},
+            {'name': 'editing', 'items': ['Find', 'Replace', '-', 'SelectAll']},
+            {'name': 'forms',
+             'items': ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton',
+                       'HiddenField']},
+            '/',
+            {'name': 'basicstyles',
+             'items': ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
+            {'name': 'paragraph',
+             'items': ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-',
+                       'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl',
+                       'Language']},
+            {'name': 'links', 'items': ['Link', 'Unlink', 'Anchor']},
+            {'name': 'insert',
+             'items': ['Image', 'Youtube','Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe']},
+            '/',
+            {'name': 'styles', 'items': ['Styles', 'Format', 'Font', 'FontSize']},
+            {'name': 'colors', 'items': ['TextColor', 'BGColor']},
+            {'name': 'tools', 'items': ['Maximize', 'ShowBlocks']},
+            {'name': 'about', 'items': ['CodeSnippet']},
+            {'name': 'about', 'items': ['About']},
+            '/',  # put this to force next toolbar on new line
+            {'name': 'yourcustomtools', 'items': [
+                # put the name of your editor.ui.addButton here
+                'Preview',
+                'Maximize',
+
+            ]},
+        ],
+        'contentsCss': [STATIC_URL + 'css/custom_ckeditor.css'],
+        'toolbar': 'Custom',  # put selected toolbar config here
+        'toolbarGroups': [{ 'name': 'document', 'groups': [ 'mode', 'document', 'doctools' ] }],
+        'height': 400,
+        # 'width': '100%',
+        'filebrowserWindowHeight': 725,
+        'filebrowserWindowWidth': 940,
+        'toolbarCanCollapse': True,
+        'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
+        'tabSpaces': 4,
+        'extraPlugins': ','.join([
+            'uploadimage', # the upload image feature
+            # your extra plugins here
+            'div',
+            'autolink',
+            'autoembed',
+            'embedsemantic',
+            'autogrow',
+            'devtools',
+            'widget',
+            'lineutils',
+            'clipboard',
+            'dialog',
+            'dialogui',
+            'elementspath',
+            'codesnippet',
+        ]),
+    }
+}
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-EMAIL_HOST="smtp.gmail.com"
-EMAIL_POST=587
-EMAIL_HOST_USER="kckokengineering@gmail.com"
-EMAIL_HOST_PASSWORD="Kckokengineering1234"
-EMAIL_USE_TLS=True

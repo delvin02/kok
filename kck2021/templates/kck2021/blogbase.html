@@ -1,125 +1,114 @@
-{% extends "kck2021/layout.html" %}
-{% load static %}
-{% block title%}{{ post.title }} {% endblock %}
-
-{% block og %}
+{% extends "kck2021/layout.html" %} {% load static %} {% block title%}{{ post.title }} {% endblock %} {% block og %}
 <meta property="og:url" content="{{ request.get_host }}{{ request.get_full_path }}" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ post.title }}" />
 <meta property="og:description" content="{{ post.intro }}" />
-<meta property="og:image" content="{{ request.get_host }}{{ post.thumbnail.url }}" />
-{% endblock %}
-
-{% block body %}
-    <div class="slider-area ">
-    <div class="single-slider hero-overly slider-height2 d-flex align-items-center" style="background-image: url({% static 'img/hero/blog.jpeg' %});">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="hero-cap pt-100">
-                        <h2> KCK Blog</h2>
-                        <nav aria-label="breadcrumb ">
-                            <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{% url 'kck:index' %}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{% url 'kck:blog' %}"> Blog</a></li> 
-                            <li class="breadcrumb-item"><a href="{% url 'kck:readblog' post.slug %}"> {{ post.title }}</a></li> 
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+<meta property="og:image" content="{{ request.get_host }}{{ post.thumbnail.url }}" /> {% endblock %} {% block body %} <div class="slider-area ">
+  <div class="single-slider hero-overly slider-height2 d-flex align-items-center" style="background-image: url({{ post.thumbnail.url }});">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="hero-cap pt-100">
+            <h2> KCK Blog</h2>
+            <nav aria-label="breadcrumb ">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{% url 'kck:index' %}">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="{% url 'kck:blog' %}"> Blog</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-   <section class="blog_area single-post-area section-padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-8 posts-list">
-
-               <div class="single-post">
-                  <div class="feature-img">
-                     <img class="img-fluid" src="{{ post.thumbnail }}" alt="{{post.title}}">
-                  </div>
-                  <div class="blog_details">
-                     <h2>{{ post.title}}
-                     </h2>
-                     <ul class="blog-info-link mt-3 mb-4">
-                        <li>{{ post.author}} </li>
-                        <li> {{ post.date_added|date }}
-                     </ul>
-                     <p>
-                        {{ post.body | safe }}
-                     </p>
-                  </div>
-               </div>
-               <div class="blog-author">
-                  <div class="media align-items-center">
-                     <div class="media-body">
-                        <h4> Penulis:{{ post.author }} | {{ post.date_added|date }}</h4>
-                        <p> KCK KOK ENGINEERING &copy; </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-    <div class="col-lg-4">
-        <div class="blog_right_sidebar">
-            <aside class="single_sidebar_widget search_widget">
-                <form action="#">
-                    <div class="form-group">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder='Search Keyword'
-                                onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Search Keyword'">
-                            <div class="input-group-append">
-                                <button class="btns" type="button"><i class="ti-search"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                        type="submit">Search</button>
-                </form>
-            </aside>
-            <aside class="single_sidebar_widget post_category_widget">
-                <div class="position-sticky">
-                    <h4 class="widget_title text-center"><a class="kck" href="kckok.my">KCK KOK ENGINEERING</a> </h4>
-                    <div class="media">
-                        <p><a class="kck" href="kckok.my">KCK KOK ENGINEERING</a> adalah sebuah syarikat yang ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. Syarikat KCK menjalankan pelbagai jenis perniagaan yang merangkumi semua skop pembinaan yang awak dapat menamakan. Selain itu, syarikat KCK juga melibatkan diri dalam pelbagai projek sama ada projek swasta atau agensi kerajaan.</p>
-                    </div>
-                </div>
-            </aside>
-            {% if recent %}
-            <aside class="single_sidebar_widget popular_post_widget">
-                <h3 class="widget_title">Artikel Rawak</h3>
-                {% for post in recent %}
-                <div class="media post_item">
-                    <img src="{{ post.thumbnail.url }}" alt="{{ post.title }}" width="80px" height="auto">
-                    <div class="media-body">
-                        <a href="{% url 'kck:readblog' post.slug %}">
-                            <h3>{{ post.title|truncatewords:7}} <h3>
-                        </a>
-                        <p>{{ post.date_added|date:'Y M d D' }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </aside>
-            {% endif %}
-            <aside class="single_sidebar_widget post_category_widget">
-                <h4 class="widget_title">Kategori</h4>
-                <ul class="list cat-list">
-                {% for article in categories %}
-                    <li>
-                        <a href="{% url 'kck:catBlog' article.category%}" class="d-flex category-font">
-                            <p> {{ article.category }} – </p>
-                            <p> &nbsp; {{ article.articleCategories.count }}</p>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </aside>
-                </div>
-            </div>
-        </div>
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+    <div class="row d-flex">
+      <div class="col-lg-12">
+        <p class="companyColor text-center">KCK BLOG</p>
+          <div class="text-center mt-3">
+            <h2>{{ post.title }}</h2>
+          <hr>
+          </div>
+      </div>
     </div>
+  </div>
 </section>
-{% endblock %}
+<section class="blog_area single-post-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 posts-list">
+        <div class="single-post">
+          <div class="blog_details">
+            <p>
+              {{ post.body | safe }}
+            </p>
+          </div>
+        </div>
+        <div class="blog-author">
+          <div class="media align-items-center">
+            <div class="media-body">
+              <h4> Penulis:{{ post.author }} | {{ post.date_added|date }}</h4>
+              <p> KCK KOK ENGINEERING &copy; </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="blog_right_sidebar">
+          <aside class="single_sidebar_widget search_widget">
+            <!-- Handle search request -->
+            <form action="{% url 'kck:blog' %}">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <input name="search" type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                  <div class="input-group-append">
+                    <button class="btns" type="button">
+                      <i class="ti-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Search</button>
+            </form>
+          </aside>
+          <aside class="single_sidebar_widget post_category_widget">
+            <div class="position-sticky">
+              <h4 class="widget_title text-center">
+                <a class="kck" href="kckok.my">KCK KOK ENGINEERING</a>
+              </h4>
+              <div class="media">
+                <p>
+                  <a class="kck" href="kckok.my">KCK KOK ENGINEERING</a> adalah sebuah syarikat yang ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan. Syarikat KCK menjalankan pelbagai jenis perniagaan yang merangkumi semua skop pembinaan yang awak dapat menamakan. Selain itu, syarikat KCK juga melibatkan diri dalam pelbagai projek sama ada projek swasta atau agensi kerajaan.
+                </p>
+              </div>
+            </div>
+          </aside> {% if recent %} <aside class="single_sidebar_widget popular_post_widget">
+            <h3 class="widget_title">Artikel Rawak</h3> {% for post in recent %} <div class="media post_item">
+              <img src="{{ post.thumbnail.url }}" alt="{{ post.title }}" width="80px" height="auto">
+              <div class="media-body">
+                <a href="{% url 'kck:readblog' post.slug %}">
+                  <h3>{{ post.title|truncatewords:7}}
+                    <h3>
+                </a>
+                <p>{{ post.date_added|date:'Y M d D' }}</p>
+              </div>
+            </div> {% endfor %}
+          </aside> {% endif %} <aside class="single_sidebar_widget post_category_widget">
+            <h4 class="widget_title">Kategori</h4>
+            <ul class="list cat-list"> {% for article in categories %} <li>
+                <a href="{% url 'kck:catBlog' article.category%}" class="d-flex category-font">
+                  <p> {{ article.category }}</p>
+                </a>
+              </li> {% endfor %} </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> {% endblock %}

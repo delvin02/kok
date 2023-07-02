@@ -36,13 +36,12 @@
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
                     {% for post in pages %}
-                    
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="{{ post.thumbnail.url }}" alt="{{ post.title }} ">
                                 <a href="{% url 'kck:readblog' post.slug %}" class="blog_item_date">
-                                    <h3>{{ post.day }}</h3>
-                                    <p>{{ post.month }}</p>
+                                    <h3>{{ post.date_added| date:"j"}}</h3>
+                                    <p>{{ post.date_added| date:"F" }}</p>
                                 </a>
                             </div>
 
@@ -52,11 +51,6 @@
                                 </a>
                                 <p>{{ post.intro }}</p>
                                 <a href="{% url 'kck:readblog' post.slug %}" class="genric-btn info-border">Read more » </a>
-<!--                                <ul class="blog-info-link">-->
-<!---->
-<!--                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>-->
-<!--                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>-->
-<!--                                </ul>-->
                             </div>
                         </article>
                         {% empty %}
@@ -99,7 +93,7 @@
                                                 onfocus="this.placeholder = ''"
                                                 onblur="this.placeholder = 'Masukan topik'">
                                             <div class="input-group-append">
-                                                <button class="btns" type="button"><i class="ti-search"></i></button>
+                                                <button class="btns" type="submit"><i class="ti-search"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -147,57 +141,6 @@
                             {% endfor %}
                             </ul>
                         </aside>
-<!---->
-<!---->
-<!--                        <aside class="single_sidebar_widget instagram_feeds">-->
-<!--                            <h4 class="widget_title">Instagram Feeds</h4>-->
-<!--                            <ul class="instagram_row flex-wrap">-->
-<!--                                <li>-->
-<!--                                    <a href="#">-->
-<!--                                        <img class="img-fluid" src="assets/img/post/post_5.png" alt="">-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="#">-->
-<!--                                        <img class="img-fluid" src="assets/img/post/post_6.png" alt="">-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="#">-->
-<!--                                        <img class="img-fluid" src="assets/img/post/post_7.png" alt="">-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="#">-->
-<!--                                        <img class="img-fluid" src="assets/img/post/post_8.png" alt="">-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="#">-->
-<!--                                        <img class="img-fluid" src="assets/img/post/post_9.png" alt="">-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="#">-->
-<!--                                        <img class="img-fluid" src="assets/img/post/post_10.png" alt="">-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </aside>-->
-<!---->
-<!---->
-<!--                        <aside class="single_sidebar_widget newsletter_widget">-->
-<!--                            <h4 class="widget_title">Newsletter</h4>-->
-<!---->
-<!--                            <form action="#">-->
-<!--                                <div class="form-group">-->
-<!--                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"-->
-<!--                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>-->
-<!--                                </div>-->
-<!--                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"-->
-<!--                                    type="submit">Subscribe</button>-->
-<!--                            </form>-->
-<!--                        </aside>-->
                     </div>
                 </div>
             </div>

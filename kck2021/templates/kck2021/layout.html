@@ -12,7 +12,8 @@
           ttq.load('CERMKF3C77UDF971MLKG');
           ttq.page();
         }(window, document, 'ttq');
-        </script>
+        
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW9L4K5GPN"></script>
     <script>
@@ -25,7 +26,24 @@
 
         gtag('config', 'G-PW9L4K5GPN');
     </script>
-
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '766272401825975');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=766272401825975&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <!-- Google Tag Manager -->
     <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -41,7 +59,7 @@
     <meta name="description"
         content="KCK KOK ENGINEERING adalah sebuah syarikat yang berada di Jerteh Terengganu, ditubuhkan pada tahun 1997, sudah berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan kimpalan.">
     <meta name="keywords"
-        content="kck kok engineering, simen, kck kren, kck simen, kck readymix, kck jerteh, kok engineering, kckok, simen setiu, simen kampung raja, kck kampung raja, kck kren, concrete kampung raja, concrete jerteh, batu pembinaan, batu, mesin lay, pasir, pasir pembinaan, crane service">
+        content="kck kok engineering, simen, konkrit akok, kampung raja konkrit,kck kren, kck simen, kck readymix, kck jerteh, kok engineering, kckok, simen setiu, simen kampung raja, kck kampung raja, kck kren, concrete kampung raja, concrete jerteh, batu pembinaan, batu, mesin lay, pasir, pasir pembinaan, crane service">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="facebook-domain-verification" content="iafdmnej033a9az3l66om38vq6hcsa" />
@@ -55,7 +73,8 @@
     <link rel="manifest" href="site.webmanifest">
 
     <!-- Tab bar icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo/kcklogo.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- CSS here -->
     {% compress css %}
@@ -103,7 +122,7 @@
     <header>
         <!-- Description -->
         <!-- Popup -->
-        <div class="container">
+        {% comment %} <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="modal fade" id="myModal" tabindex="-2" role="dialog"
@@ -263,7 +282,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> {% endcomment %}
 
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -383,6 +402,11 @@
             <div class="footer-area footer-padding">
                 <div class="container">
                     <div class="row justify-content-between">
+                        <div class="col-md-12 p-3">
+                            <h1 class="text-center companyColor uppercase">Pembekal NOMBOR 1 dalam Kelantan & Terengganu.</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between pt-3">
                         <div class="col-lg-4 col-md-12 col-sm-8">
                             <div class="single-footer-caption mb-30 text-center">
                                 <!-- logo -->
@@ -392,7 +416,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p class="info1">KCK KOK ENGINEERING, ditubuhkan pada tahun 1997, sudah
+                                    <p class="info1">KCK KOK ENGINEERING (0872618-X), ditubuhkan pada tahun 1997, sudah
                                             berkhidmat 8 tahun dalam industri konkrit dan 20 tahun dalam perkhidmatan
                                             kimpalan.</p>
                                     </div>

@@ -6,7 +6,7 @@ from django.http import HttpResponse, FileResponse, Http404
 from django.views.generic import ListView, DetailView
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from .models import Article, ArticleCategories, Career, Department, Job, Project
+from .models import Article, ArticleCategories, Career, Department, Job, Project, ProjectImages
 from django.views.decorators.http import require_POST, require_GET
 
 # Views for /robots.txt
@@ -107,6 +107,9 @@ def catBlog(request, category):
     })
 
 def readblog(request, slug_name):
+    if 'search' in request.GET:
+        blog(request)
+        
     post = Article.objects.get(slug=slug_name)
     categories = ArticleCategories.objects.all()
     recent = Article.objects.all().order_by('?')[:5]
@@ -115,6 +118,7 @@ def readblog(request, slug_name):
         "categories": categories,
         "recent": recent
     })
+
 def career(request):
     jobs = Career.objects.all()
 
@@ -131,8 +135,10 @@ def project(request):
 
 def readproject(request, slug_title):
     project = Project.objects.get(slug=slug_title)
+    images = ProjectImages.objects.filter(project=project)
     return render(request, "kck2021/projectbase.html", {
         "project": project,
+        "images": images
     })
 def semix_terms(request):
     return render(request, "kck2021/semix-terms.html")
