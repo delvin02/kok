@@ -20,6 +20,25 @@ DEBUG = False
 ALLOWED_HOSTS = ['185.201.9.2', 'kckok.my', 'http://kckok.my', 'www.kckok.my', 'http://www.kckok.my', '.kckok.my', '*']
 
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': './error/django-errors.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -123,7 +142,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
+# https://docs.djangoproject.com/en/3.2/topics/i18n/f
 
 LANGUAGE_CODE = 'en'
 

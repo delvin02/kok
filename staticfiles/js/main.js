@@ -2,16 +2,33 @@
   "use strict";
   $(document).ready(function () {
     init_typed();
-    load_modal();
+    // load_modal();
+
+    var desiredProgress = 30;
+    var contentLoadedProgress = 0;
+
+    var interval = setInterval(function () {
+      contentLoadedProgress += 1;
+
+      if (contentLoadedProgress >= desiredProgress) {
+        clearInterval(interval);
+        $("#preloader-active").delay(450).fadeOut("slow");
+        $("body").delay(450).css({
+          overflow: "visible",
+        });
+      }
+    }, 10);
   });
 
   /* 1. Proloder */
-  $(window).on("load", function () {
-    $("#preloader-active").delay(450).fadeOut("slow");
-    $("body").delay(450).css({
-      overflow: "visible",
-    });
-  });
+  // $(window).on("load", function () {
+    
+  //   $("#preloader-active").delay(450).fadeOut("slow");
+  //   $("body").delay(450).css({
+  //     overflow: "visible",
+  //   });
+  
+  // });
   /* Modal */
   /*
   function load_modal() {
