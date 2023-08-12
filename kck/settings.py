@@ -66,13 +66,19 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 # Cache
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
+#         'LOCATION': '127.0.0.1:11211',
+#     }
+# }
+
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
-        'LOCATION': '127.0.0.1:11211',
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',  # A unique identifier for your cache
     }
-}
-
+}   
 
 MIDDLEWARE = [
     # Compressor Starts
@@ -112,7 +118,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'kck.wsgi.application'
 
 
-# Database
+# Da65455tabase
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
