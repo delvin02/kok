@@ -118,7 +118,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'kck.wsgi.application'
 
 
-# Da65455tabase
+# Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
@@ -148,7 +148,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/f
+# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en'
 
@@ -190,8 +190,10 @@ MEDIA_URL = '/media/'
 STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    os.path.join(BASE_DIR, 'static'),
 ]
+
+
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
@@ -217,9 +219,6 @@ COMPRESS_FILTERS = {
 }
 HTML_MINIFY = True
 KEEP_COMMENTS_ON_MINIFYING = True
-
-# CKEditor
-CKEDITOR_UPLOAD_PATH="uploads/"
 
 
 
@@ -286,6 +285,10 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
+# CKEditor
+CKEDITOR_UPLOAD_PATH="uploads/"
+CKEDITOR_BASEPATH = STATIC_URL + 'ckeditor/ckeditor/'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

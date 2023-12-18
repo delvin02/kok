@@ -1,17 +1,15 @@
 from tkinter import CASCADE
 from django.db import models
 from django.utils.timezone import now
-from tinymce import models as tinymce_models
 from datetime import datetime, date
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
 from ckeditor.fields import RichTextField
-
+from django.utils.text import slugify
 from ckeditor_uploader.fields import RichTextUploadingField 
 
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 
-from tinymce.models import HTMLField
 # Create your models here.
 
 class ArticleCategories(models.Model):
@@ -45,11 +43,12 @@ class Article(models.Model):
     #     return reverse("kck:readblog", args=[self.slug,])
 
     def save(self, *args, **kwargs):
-        if not self.id:
-            self.date_added = timezone.now()
-        self.updated_date = timezone.now()
-        return super(Article, self).save(*args, **kwargs)
-    
+            if not self.id:  # Check if it's a new instance
+                self.slug = slugify(self.title)  # Generate slug from title
+                self.date_added = timezone.now()
+            self.updated_date = timezone.now()
+            super(Article, self).save(*args, **kwargs)
+
 class Department(models.Model):
     agency = models.CharField(max_length=50)
 
@@ -58,19 +57,19 @@ class Department(models.Model):
 
     def __str__(self):
         return self.agency
+    
+class JobType(models.Model):
+    name = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name
+    
 class Career(models.Model):
+    jobTypes = models.ManyToManyField(JobType, blank=True, related_name='careers')
     jobName = models.CharField(max_length=30)
     department = models.ForeignKey(Department, on_delete=models.CASCADE, related_name="agencyName")
-    imageLogo = models.ImageField(upload_to='static/img/job/')
     jobLocation = models.CharField(max_length=30)
-    estimatedSalary = models.PositiveIntegerField(
-            default=1000,
-            validators=[
-            MaxValueValidator(10000),
-            MinValueValidator(1)
-        ]
-    )
+    link = models.URLField(default="#")
     timeAdded = models.DateField(default=datetime.now,blank=True)
 
     class Meta:
@@ -78,6 +77,11 @@ class Career(models.Model):
     
     def __str__(self):
         return f"{self.id} | {self.jobName} | {self.timeAdded}"
+    
+    def save(self, *args, **kwargs):
+        if not self.id:  # Check if it's a new instance
+            self.timeAdded = timezone.now()
+        super(Career, self).save(*args, **kwargs)
 
 class Job(models.Model):
     specialization = models.CharField(max_length=255);
@@ -113,5 +117,3 @@ class ProjectImages(models.Model):
     def __str__(self):
         return f"{self.id} | {self.project.title}"
 
-class Text(models.Model):
-    text = HTMLField()

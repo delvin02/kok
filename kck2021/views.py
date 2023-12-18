@@ -120,10 +120,9 @@ def readblog(request, slug_name):
     })
 
 def career(request):
-    jobs = Career.objects.all()
-
+    careers = Career.objects.all()
     return render(request, "kck2021/career.html", {
-        "jobs": jobs
+        "careers": careers
     })
 
 
