@@ -28,6 +28,11 @@ urlpatterns = [
     path("project/<slug:slug_title>", views.readproject, name="readproject"),
     path("404", views.error, name="error"),
     path("robots.txt", views.robots_txt),
+
+    path('terms/<str:company_name>/<slug:slug>/', views.legal_with_company, name='legal_with_company'),
+
+    path('terms/<slug:slug>/', views.legal_without_company, name='legal_without_company')
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -4,6 +4,7 @@ FROM python:3.9-buster
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
+RUN apt-get update && apt-get install -y dos2unix
 RUN apt-get update && apt-get install nginx vim -y --no-install-recommends
 RUN apt-get install python3-tk -y
 RUN apt-get install memcached -y
@@ -16,7 +17,13 @@ RUN mkdir -p /opt/app
 RUN mkdir -p /opt/app/pip_cache
 RUN mkdir -p /opt/app/kck
 COPY requirements.txt start-server.sh /opt/app/
-COPY .pip_cache /opt/app/pip_cache/
+
+# Windows script dos2unix
+COPY start-server.sh /opt/app/start-server.sh
+RUN dos2unix /opt/app/start-server.sh && chmod +x /opt/app/start-server.sh
+RUN pip install gunicorn
+
+# COPY .pip_cache /opt/app/pip_cache/
 COPY . /opt/app/kck/
 RUN pip install -r /opt/app/requirements.txt --cache-dir /opt/app/pip_cache
 RUN chmod -R 755 /opt/app/kck/

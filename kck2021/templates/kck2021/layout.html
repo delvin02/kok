@@ -78,15 +78,15 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="preloader-active">
         <div class="preloader d-flex flex-column align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
+            <div class="preloader-inner position-relative ">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
                     <img src="{% static 'img/logo/kcklogo.png' %}" alt="kck">
-                    <p class="font-weight-bold companyColor mb-0 pt-7">KCK</p>
-                    <small class="uppercase companyColor font-barlow">Kok Engineering</small>
                 </div>
             </div>
-            <h3 class="pt-10 font-roboto companyColor text-center"> Repurposing spaces. </h3>
+            <h1 class="font-weight-bold companyColor mb-0 mt-2">KCK</h1>
+
+            <h3 class="font-roboto companyColor text-center"> Repurposing spaces</h3>
         </div>
     </div>
     <!-- Preloader Start -->
@@ -356,7 +356,7 @@
         <!-- Header End -->
     </header>
     <div class="info-right sticky-whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=60127288433" class="info-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=60127288433" class="info-whatsapp" onclick="ga('send', 'event', 'WhatsApp', 'click', 'Contact via WhatsApp');">
             <i class="fab fa-whatsapp my-auto"></i>
         </a>
         <div class="fixed-whatsapp mt-1">

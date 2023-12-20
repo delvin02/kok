@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.core.mail import EmailMessage, BadHeaderError
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
@@ -6,7 +6,7 @@ from django.http import HttpResponse, FileResponse, Http404
 from django.views.generic import ListView, DetailView
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from .models import Article, ArticleCategories, Career, Department, Job, Project, ProjectImages
+from .models import Article, ArticleCategories, Career, Department, Job, Project, ProjectImages, Legal
 from django.views.decorators.http import require_POST, require_GET
 
 # Views for /robots.txt
@@ -120,10 +120,9 @@ def readblog(request, slug_name):
     })
 
 def career(request):
-    jobs = Career.objects.all()
-
+    careers = Career.objects.all()
     return render(request, "kck2021/career.html", {
-        "jobs": jobs
+        "careers": careers
     })
 
 
@@ -151,3 +150,11 @@ def voucher(request):
 
 def error(request, exception):
     return render(request, "404.html", status=404)
+
+def legal_with_company(request, company_name, slug):
+    legal = get_object_or_404(Legal, company__name__iexact=company_name, slug=slug)
+    return render(request, 'kck2021/legal_detail.html', {'legal': legal})
+
+def legal_without_company(request, slug):
+    legal = get_object_or_404(Legal, slug=slug, company__isnull=True)
+    return render(request, 'kck2021/legal_detail.html', {'legal': legal})

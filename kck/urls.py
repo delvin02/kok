@@ -14,9 +14,8 @@ sitemaps = {
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("kck2021.urls")),
-    path('tinymce/', include('tinymce.urls')),
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')), # The CKEditor path
+    path('', include("kck2021.urls", namespace='kck')),
+    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')), 
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
