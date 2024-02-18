@@ -1,0 +1,62 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+{% load identity_tags %}
+
+{% block title%}KCK KOK ENGINEERING SDN BHD | About Us {% endblock %}
+
+{% block og %}
+<meta property="og:url" content="http://kckok.my" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="KCK Kok Engineering SDN BHD | About us" />
+<meta property="og:description" content="KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan kimpalan (mesin-lay) berasas logam" />
+<meta property="og:image" content="http://kckok.my/static/img/hero/background-2.jpg" />
+{% endblock %}
+
+{% block body %}
+<main>
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" style="background-image: url({% static 'img/hero/prtoj.jpeg' %});">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap pt-100">
+                            <h2>Identity Register</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:identity_register' %}">Register</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:identity_registered' identity.reference_code %}">{{ identity.reference_code}} </a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:identity_register_status' identity.reference_code %}">Status </a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container my-5">
+        <h1> {{ identity.reference_code }} </h1>
+
+        {% if identity.verified %}
+        <p class="text-white p-3 bg-success"> Pengesahan lengkap.
+        </p>
+
+        {% elif identity.statuses.all|has_status:"Belum disemak" %}
+        <p class="text-white p-3 bg-warning"> Pengesahan masih dijalankan, harap maklum. </p>
+
+        {% else %}
+            
+            <p class="text-white p-3 bg-danger"> Pengesahan gagal </p>
+            <ul>
+                {% for status in identity.statuses.all %}
+                    <li>{{ forloop.counter }}. {{ status.status }}</li>
+                {% endfor %}
+            </ul>
+            </br>
+            <button class="border-company rounded  p-2" style="background: rgba(192, 118, 43, 1);">
+                <a href="{% url 'kck:identity_reupload_request' identity.reference_code %}" class="text-white">Muat-naik sekali lagi</a>
+            </button>
+        {% endif%}
+    </section>
+</main>
+{% endblock %}

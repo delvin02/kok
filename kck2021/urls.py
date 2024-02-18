@@ -26,6 +26,13 @@ urlpatterns = [
     path("career", views.career, name="career"),
     path("project", views.project, name="project"),
     path("project/<slug:slug_title>", views.readproject, name="readproject"),
+    path("identity/register", views.identity_register, name="identity_register"),
+    path("identity/register/<str:reference_code>", views.identity_registered, name="identity_registered"),
+    path('identity/register/<str:reference_code>/status', views.identity_register_status, name='identity_register_status'),
+    
+    path('identity/reupload/<str:reference_code>/request', views.identity_reupload_request, name="identity_reupload_request"),
+    path('identity/reupload/<str:token>', views.identity_reupload, name="identity_reupload"),
+
     path("404", views.error, name="error"),
     path("robots.txt", views.robots_txt),
 

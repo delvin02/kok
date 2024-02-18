@@ -1,10 +1,13 @@
 from django.contrib import admin
-from .models import Article, ArticleCategories, Career, Department, Job, Project, ProjectImages, JobType, LegalCategory, Company, Legal
+from .models import Article, ArticleCategories, Career, Department, Job, Project, ProjectImages, JobType, LegalCategory, Company, Legal, IdentityStatus, IdentityRegister, IdentityRegisterChangeLog
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from django import forms
 from django.db import IntegrityError
 from django.utils.text import slugify
 from django.utils.html import format_html
+from django.utils.translation import gettext_lazy
+from django.core.exceptions import ValidationError
+from django.contrib import messages
 
 
 class MyAdminSite(admin.AdminSite):
@@ -83,6 +86,55 @@ class LegalAdmin(admin.ModelAdmin):
 class ProjectAdmin(admin.ModelAdmin):
     form = ProjectAdminForm
 
+
+class IdentityRegisterForm(forms.ModelForm):
+    class Meta:
+        model = IdentityRegister
+        fields = '__all__'
+
+    def clean(self):
+        cleaned_data = super().clean()
+        statuses = cleaned_data.get('statuses')
+        verified = cleaned_data.get('verified')
+
+        if verified and not statuses.filter(status="Pengesahan selesai").exists():
+            error_message = gettext_lazy("'Pengesahan selesai' must be included in statuses if verified is True.")
+            self.add_error('statuses', error_message)
+
+        return cleaned_data
+    
+class IdentityRegisterAdmin(admin.ModelAdmin):
+    form = IdentityRegisterForm
+
+    list_display = ("reference_code", "name", "phone" , "created", "get_statuses", "verified", "changed_by")
+    search_fields = ("reference_code", "phone", "name", "verified")
+    
+    fields = ("phone", "front", "back", "selfie", "name","statuses", "verified")
+
+    def get_statuses(self, obj):
+        return ", ".join([status.status for status in obj.statuses.all()])
+    get_statuses.short_description = 'Statuses'
+
+    def changed_by(self, obj):
+        latest_change = IdentityRegisterChangeLog.objects.filter(identity_register=obj).order_by('-timestamp').first()
+        return latest_change.user.username if latest_change else "Unknown"
+    changed_by.short_description = 'Changed By'
+
+
+    def save_model(self, request, obj, form, change):
+        
+        obj.save()
+        if change:  # If the object is being edited
+            # Log the change and the user who made it
+            IdentityRegisterChangeLog.objects.create(identity_register=obj, user=request.user)
+            change_message = f"Changed by {request.user.username}"
+            admin.ModelAdmin.log_change(self, request, obj, change_message)
+        else:  # If the object is being added
+            # Log the addition and the user who made it
+            IdentityRegisterChangeLog.objects.create(identity_register=obj, user=request.user)
+            change_message = f"Added by {request.user.username}"
+            admin.ModelAdmin.log_addition(self, request, obj, change_message)
+
 # Register your models with their respective ModelAdmin class
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(ArticleCategories)
@@ -95,3 +147,5 @@ admin.site.register(JobType)
 admin.site.register(Legal, LegalAdmin)
 admin.site.register(Company)
 admin.site.register(LegalCategory)
+admin.site.register(IdentityStatus)
+admin.site.register(IdentityRegister, IdentityRegisterAdmin)

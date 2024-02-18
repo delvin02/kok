@@ -1,0 +1,53 @@
+{% extends "kck2021/layout.html" %}
+{% load static %}
+{% load identity_tags %}
+
+{% block title%}KCK KOK ENGINEERING SDN BHD | About Us {% endblock %}
+
+{% block og %}
+<meta property="og:url" content="http://kckok.my" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="KCK Kok Engineering SDN BHD | About us" />
+<meta property="og:description" content="KCK KOK ENGINEERING, ditubuhkan pada tahun 1993 yang berasas di lokasi Besut, sudah berkhidmat hampir 12 tahun dalam industri konkrit siap pakai dan hampir 20 tahun dalam perkhidmatan kimpalan (mesin-lay) berasas logam" />
+<meta property="og:image" content="http://kckok.my/static/img/hero/background-2.jpg" />
+{% endblock %}
+
+{% block body %}
+<main>
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" style="background-image: url({% static 'img/hero/prtoj.jpeg' %});">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap pt-100">
+                            <h2>Identity Register</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:identity_register' %}">Register</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'kck:identity_registered' identity.reference_code %}">{{ identity.reference_code}} </a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container my-5">
+        <h1 class="">Pendaftaran Berjaya! </h1>
+        <h1>KOD RUJUKAN: <span class="companyColor">{{ identity.reference_code }}</span></h1>
+        <h4 class="text-secondary my-2">
+            Sila hantarkan kod rujukan kepada pihak kami melalui WhatsApp untuk menafsir.
+        </h4>
+        </br>
+        <a href="https://api.whatsapp.com/send?phone=60108887883&text=Identiti%20berjaya%20didaftar.%20Sila%20rujuk%20kod%20{{ identity.reference_code }}" alt="whatsapp-link" class="p-2 my-4 text-white" style="background:#25d366;">
+            <i class="fab fa-whatsapp my-auto"></i>
+            Whatsapp</a>
+        </br>
+    </br>
+            <p>Klik <a href="{% url 'kck:identity_register_status' identity.reference_code %}">status </a> pendaftaran disini.</p>
+
+
+    </section>
+</main>
+{% endblock %}

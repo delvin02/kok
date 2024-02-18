@@ -2,6 +2,7 @@ from tkinter import CASCADE
 from django.db import models
 from django.utils.timezone import now
 from datetime import datetime, date
+from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
 from ckeditor.fields import RichTextField
@@ -9,6 +10,9 @@ from django.utils.text import slugify
 from ckeditor_uploader.fields import RichTextUploadingField 
 from django.urls import reverse
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
+import uuid
+from django.core.exceptions import ValidationError
+from django.utils.translation import gettext_lazy
 
 # Create your models here.
 
@@ -202,3 +206,108 @@ class Legal(models.Model):
             return reverse('kck:legal_with_company', kwargs={'company_name': self.company.name.lower(), 'slug': self.slug})
         else:
             return reverse('kck:legal_without_company', kwargs={'slug': self.slug})
+
+
+class IdentityStatus(models.Model):
+    status = models.CharField(max_length=255)
+
+    class Meta:
+        ordering = ['status']
+        verbose_name_plural = "Identity - Status"
+
+
+    def __str__(self):
+        return self.status  
+
+'''
+    IMAGE PATH FOR IDENTITY
+'''
+
+
+def unique_upload_path(instance, filename, folder_name):
+    phone = instance.phone
+    now = datetime.now().strftime("%Y%m%d%H%M%S")
+    ext = filename.split('.')[-1]
+    new_filename = f"{now}.{ext}"
+    return f'identity/{phone}/{folder_name}/{new_filename}'
+
+def front_image_upload_path(instance, filename):
+    # Call the generic function with 'front' as the folder name
+    return unique_upload_path(instance, filename, 'front')
+
+def back_image_upload_path(instance, filename):
+    # Call the generic function with 'back' as the folder name
+    return unique_upload_path(instance, filename, 'back')
+
+def selfie_image_upload_path(instance, filename):
+    # Call the generic function with 'selfie' as the folder name
+    return unique_upload_path(instance, filename, 'selfie')
+
+
+class IdentityRegister(models.Model):
+    reference_code = models.CharField(max_length=20, unique=True, editable=False)
+    phone = models.CharField(max_length=20, blank=False)
+    front = models.ImageField(upload_to=front_image_upload_path, blank=False)
+    back = models.ImageField(upload_to=back_image_upload_path, blank=False)
+    selfie = models.ImageField(upload_to=selfie_image_upload_path, blank=False)
+    
+    name = models.TextField(blank=True)
+    verified = models.BooleanField(default=False)
+    statuses = models.ManyToManyField(IdentityStatus)
+
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['reference_code']
+        verbose_name_plural = "Identity"
+
+    def __str__(self):
+        return self.reference_code
+    
+    def clean(self):
+        # Custom validation logic
+        if self.verified and not self.name:
+            raise ValidationError({'name': gettext_lazy("Nama wajib di-isi untuk memenuhi proses verifikasi.")})
+        
+
+    def save(self, *args, **kwargs):
+
+        if not self.pk:  
+            last_instance = IdentityRegister.objects.order_by('-id').first()
+            last_id = last_instance.id if last_instance else 0
+            primary_id = last_id + 1 
+            last_three_digits = self.phone[-3:] 
+            self.reference_code = f'SEMIX{str(primary_id).zfill(4)}-{last_three_digits}'
+
+        
+        
+        self.clean()
+
+        super(IdentityRegister, self).save(*args, **kwargs) 
+
+
+        if not self.statuses.exists():
+            default_status, _ = IdentityStatus.objects.get_or_create(status="Belum disemak")
+            self.statuses.add(default_status)
+
+    def get_absolute_url(self):
+        return reverse('kck:identity_register_status', kwargs={'reference_code': self.reference_code})
+
+class IdentityRegisterChangeLog(models.Model):
+    identity_register = models.ForeignKey(IdentityRegister, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-timestamp']
+    
+    
+class ReuploadToken(models.Model):
+    identity_register = models.ForeignKey(IdentityRegister, on_delete=models.CASCADE)
+    token = models.CharField(max_length=64, unique=True)
+    expires_at = models.DateTimeField()
+
+    @property
+    def is_valid(self):
+        return timezone.now() < self.expires_at
